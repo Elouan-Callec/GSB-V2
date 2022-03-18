@@ -32,6 +32,8 @@
         myReader.Read()
         If (myReader.GetString(0) = 1) Then
             MessageBox.Show("Connexion réussie")
+            ProfilVisiteurMedical.Show()
+            Me.Close()
         Else
             MessageBox.Show("Connexion échouée")
         End If
