@@ -95,6 +95,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ProfilVisiteurMedical.Designer.vb">
+      <DependentUpon>ProfilVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilVisiteurMedical.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormulaireConnexion.resx">
@@ -105,6 +111,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilVisiteurMedical.resx">
+      <DependentUpon>ProfilVisiteurMedical.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
