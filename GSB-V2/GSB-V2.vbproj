@@ -24,6 +24,8 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>GSB-V2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +48,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -73,6 +78,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AfficheDelegueregional.Designer.vb">
+      <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AfficheDelegueregional.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormulaireConnexion.Designer.vb">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </Compile>
@@ -83,6 +94,12 @@
       <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
     </Compile>
     <Compile Include="InterfaceDelegueregional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AffichageDelegueRegional.Designer.vb">
+      <DependentUpon>AffichageDelegueRegional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AffichageDelegueRegional.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -103,11 +120,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AfficheDelegueregional.resx">
+      <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceDelegueregional.resx">
       <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\AffichageDelegueRegional.resx">
+      <DependentUpon>AffichageDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -117,6 +140,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
