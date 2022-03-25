@@ -79,6 +79,12 @@
     <Compile Include="FormulaireConnexion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="InterfaceDelegueregional.Designer.vb">
+      <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceDelegueregional.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceDelegueregional.resx">
+      <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
