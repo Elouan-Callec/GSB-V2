@@ -118,6 +118,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RedigerCompteRendu.Designer.vb">
+      <DependentUpon>RedigerCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RedigerCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AfficheDelegueregional.resx">
@@ -137,6 +143,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedigerCompteRendu.resx">
+      <DependentUpon>RedigerCompteRendu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

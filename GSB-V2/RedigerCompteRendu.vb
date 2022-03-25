@@ -1,4 +1,4 @@
-﻿Public Class AfficheDelegueregional
+﻿Public Class RedigerCompteRendu
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         InterfaceDelegueregional.Show()
         Me.Close()

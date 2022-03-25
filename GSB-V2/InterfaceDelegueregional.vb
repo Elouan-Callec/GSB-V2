@@ -7,7 +7,7 @@
 
 
     Private Sub InterfaceDelegueregional_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim affichePrenom As String = "SELECT ename FROM emp WHERE login ='JONES';"
+        Dim SQLaffichePrenom As String = "SELECT ename FROM emp WHERE login ='JONES';"
 
         Labelprenom.Text = testprenom
         Labelnom.Text = testnom
@@ -15,9 +15,13 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'AfficheDelegueregional.Show()
-        'Me.Close()
-        Me.Hide()
         AfficheDelegueregional.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Buttonredigercompterendu_Click(sender As Object, e As EventArgs) Handles Buttonredigercompterendu.Click
+        RedigerCompteRendu.Show()
+        Me.Close()
+
     End Sub
 End Class
