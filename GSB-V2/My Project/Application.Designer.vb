@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.GSB_V2.InterfaceDelegueregional
+            Me.MainForm = Global.GSB_V2.FormulaireConnexion
         End Sub
     End Class
 End Namespace

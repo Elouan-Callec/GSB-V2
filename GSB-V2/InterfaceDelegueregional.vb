@@ -3,14 +3,37 @@
     Dim myCommand As New Odbc.OdbcCommand
     Dim myReader As Odbc.OdbcDataReader
     Dim testprenom As String = "JONES"
-    Dim testnom As String = "JONESS"
+    Dim testnom As String = "JONES"
+
+    Function Connection(codesql)
+        Dim connString As String = "DSN=CNXORA06;Uid=SCOTT;Pwd=TIGER;"
+        myConnection.ConnectionString = connString
+        myConnection.Open()
+        myCommand.Connection = myConnection
+        myCommand.CommandText = codesql
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+    End Function
 
 
     Private Sub InterfaceDelegueregional_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Dim connString As String = "DSN=CNXORA06;Uid=SCOTT;Pwd=TIGER;"
+        myConnection.ConnectionString = connString
+        myConnection.Open()
+
+
+
         Dim SQLaffichePrenom As String = "SELECT ename FROM emp WHERE login ='JONES';"
 
-        Labelprenom.Text = testprenom
-        Labelnom.Text = testnom
+        myCommand.Connection = myConnection
+        'Connection(SQLaffichePrenom)
+        myCommand.CommandText = SQLaffichePrenom
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+
+        Labelprenom.Text = myReader.GetValue(0)
+        Labelnom.Text = "Test"
 
     End Sub
 
