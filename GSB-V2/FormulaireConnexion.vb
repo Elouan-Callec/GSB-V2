@@ -24,7 +24,7 @@
         Dim login As String = TextBoxlogin.Text
         Dim password As String = TextBoxmotdepasse.Text
 
-        Dim query As String = "SELECT count(*) FROM emp WHERE ename = '" + password + "' AND login = '" + login + "';"
+        Dim query As String = "SELECT count(*) FROM emp WHERE login = '" + login + "' AND password = '" + password + "';"
         myCommand.Connection = myConnection
         myCommand.CommandText = query
         myReader = myCommand.ExecuteReader
