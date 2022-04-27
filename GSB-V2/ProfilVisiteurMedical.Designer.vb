@@ -22,13 +22,13 @@ Partial Class ProfilVisiteurMedical
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BoutonModifier = New System.Windows.Forms.Button()
+        Me.BoutonAffichage = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxCompteRendu = New System.Windows.Forms.ComboBox()
         Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
-        Me.Buttonredigercompterendu = New System.Windows.Forms.Button()
+        Me.BoutonRedigerCompteRendu = New System.Windows.Forms.Button()
         Me.LinkLabelmodifiermoncompte = New System.Windows.Forms.LinkLabel()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
@@ -36,25 +36,25 @@ Partial Class ProfilVisiteurMedical
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button2
+        'BoutonModifier
         '
-        Me.Button2.Location = New System.Drawing.Point(360, 171)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(118, 21)
-        Me.Button2.TabIndex = 61
-        Me.Button2.Text = "Modifier"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BoutonModifier.Location = New System.Drawing.Point(360, 171)
+        Me.BoutonModifier.Margin = New System.Windows.Forms.Padding(2)
+        Me.BoutonModifier.Name = "BoutonModifier"
+        Me.BoutonModifier.Size = New System.Drawing.Size(118, 21)
+        Me.BoutonModifier.TabIndex = 61
+        Me.BoutonModifier.Text = "Modifier"
+        Me.BoutonModifier.UseVisualStyleBackColor = True
         '
-        'Button1
+        'BoutonAffichage
         '
-        Me.Button1.Location = New System.Drawing.Point(196, 171)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(118, 21)
-        Me.Button1.TabIndex = 60
-        Me.Button1.Text = "Affichage"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BoutonAffichage.Location = New System.Drawing.Point(196, 171)
+        Me.BoutonAffichage.Margin = New System.Windows.Forms.Padding(2)
+        Me.BoutonAffichage.Name = "BoutonAffichage"
+        Me.BoutonAffichage.Size = New System.Drawing.Size(118, 21)
+        Me.BoutonAffichage.TabIndex = 60
+        Me.BoutonAffichage.Text = "Affichage"
+        Me.BoutonAffichage.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -66,16 +66,16 @@ Partial Class ProfilVisiteurMedical
         Me.Label1.TabIndex = 59
         Me.Label1.Text = "ConsulterCompteRendu"
         '
-        'ComboBox1
+        'ComboBoxCompteRendu
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"CompteRendu n°1", "CompteRendu n°2", "CompteRendu n°3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(196, 128)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(283, 21)
-        Me.ComboBox1.TabIndex = 58
-        Me.ComboBox1.Text = "CompteRendu n°1"
+        Me.ComboBoxCompteRendu.FormattingEnabled = True
+        Me.ComboBoxCompteRendu.Items.AddRange(New Object() {"CompteRendu n°1", "CompteRendu n°2", "CompteRendu n°3"})
+        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(196, 128)
+        Me.ComboBoxCompteRendu.Margin = New System.Windows.Forms.Padding(2)
+        Me.ComboBoxCompteRendu.Name = "ComboBoxCompteRendu"
+        Me.ComboBoxCompteRendu.Size = New System.Drawing.Size(283, 21)
+        Me.ComboBoxCompteRendu.TabIndex = 58
+        Me.ComboBoxCompteRendu.Text = "CompteRendu n°1"
         '
         'LabelVisiteurMedical
         '
@@ -95,14 +95,14 @@ Partial Class ProfilVisiteurMedical
         Me.Labelhiérarchieparsecteur.TabIndex = 56
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
-        'Buttonredigercompterendu
+        'BoutonRedigerCompteRendu
         '
-        Me.Buttonredigercompterendu.Location = New System.Drawing.Point(196, 311)
-        Me.Buttonredigercompterendu.Name = "Buttonredigercompterendu"
-        Me.Buttonredigercompterendu.Size = New System.Drawing.Size(151, 30)
-        Me.Buttonredigercompterendu.TabIndex = 55
-        Me.Buttonredigercompterendu.Text = "Rediger un compte rendu"
-        Me.Buttonredigercompterendu.UseVisualStyleBackColor = True
+        Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(196, 311)
+        Me.BoutonRedigerCompteRendu.Name = "BoutonRedigerCompteRendu"
+        Me.BoutonRedigerCompteRendu.Size = New System.Drawing.Size(151, 30)
+        Me.BoutonRedigerCompteRendu.TabIndex = 55
+        Me.BoutonRedigerCompteRendu.Text = "Rediger un compte rendu"
+        Me.BoutonRedigerCompteRendu.UseVisualStyleBackColor = True
         '
         'LinkLabelmodifiermoncompte
         '
@@ -145,13 +145,13 @@ Partial Class ProfilVisiteurMedical
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(635, 374)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BoutonModifier)
+        Me.Controls.Add(Me.BoutonAffichage)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.ComboBoxCompteRendu)
         Me.Controls.Add(Me.LabelVisiteurMedical)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
-        Me.Controls.Add(Me.Buttonredigercompterendu)
+        Me.Controls.Add(Me.BoutonRedigerCompteRendu)
         Me.Controls.Add(Me.LinkLabelmodifiermoncompte)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
@@ -164,13 +164,13 @@ Partial Class ProfilVisiteurMedical
 
     End Sub
 
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BoutonModifier As Button
+    Friend WithEvents BoutonAffichage As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBoxCompteRendu As ComboBox
     Friend WithEvents LabelVisiteurMedical As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
-    Friend WithEvents Buttonredigercompterendu As Button
+    Friend WithEvents BoutonRedigerCompteRendu As Button
     Friend WithEvents LinkLabelmodifiermoncompte As LinkLabel
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
