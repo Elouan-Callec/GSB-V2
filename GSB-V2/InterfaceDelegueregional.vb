@@ -5,6 +5,7 @@
     Dim testprenom As String = "JONES"
     Dim testnom As String = "JONES"
 
+
     Function Connection(codesql)
         Dim connString As String = "DSN=CNXORA06;Uid=SCOTT;Pwd=TIGER;"
         myConnection.ConnectionString = connString
@@ -38,12 +39,12 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        AfficheDelegueregional.Show()
+        RedigerCompteRendu.Show()
         Me.Close()
     End Sub
 
     Private Sub Buttonredigercompterendu_Click(sender As Object, e As EventArgs) Handles Buttonredigercompterendu.Click
-        RedigerCompteRendu.Show()
+        AfficheDelegueregional.Show()
         Me.Close()
 
     End Sub
