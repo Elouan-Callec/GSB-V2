@@ -1,5 +1,8 @@
 ﻿Public Class ProfilVisiteurMedical
-    Private Sub Buttonredigercompterendu_Click(sender As Object, e As EventArgs) Handles BoutonRedigerCompteRendu.Click
 
+    Private Sub ProfilVisiteurMedical_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.LabelNom.Text = FormulaireConnexion.TextBoxlogin.Text
     End Sub
+
+
 End Class

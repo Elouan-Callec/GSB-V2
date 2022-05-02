@@ -30,7 +30,7 @@ Partial Class ProfilVisiteurMedical
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.BoutonRedigerCompteRendu = New System.Windows.Forms.Button()
         Me.LinkLabelmodifiermoncompte = New System.Windows.Forms.LinkLabel()
-        Me.Labelnom = New System.Windows.Forms.Label()
+        Me.LabelNom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,14 +114,14 @@ Partial Class ProfilVisiteurMedical
         Me.LinkLabelmodifiermoncompte.TabStop = True
         Me.LinkLabelmodifiermoncompte.Text = "Modifier mon compte"
         '
-        'Labelnom
+        'LabelNom
         '
-        Me.Labelnom.AutoSize = True
-        Me.Labelnom.Location = New System.Drawing.Point(97, 7)
-        Me.Labelnom.Name = "Labelnom"
-        Me.Labelnom.Size = New System.Drawing.Size(29, 13)
-        Me.Labelnom.TabIndex = 53
-        Me.Labelnom.Text = "Nom"
+        Me.LabelNom.AutoSize = True
+        Me.LabelNom.Location = New System.Drawing.Point(97, 7)
+        Me.LabelNom.Name = "LabelNom"
+        Me.LabelNom.Size = New System.Drawing.Size(29, 13)
+        Me.LabelNom.TabIndex = 53
+        Me.LabelNom.Text = "Nom"
         '
         'Labelprenom
         '
@@ -153,7 +153,7 @@ Partial Class ProfilVisiteurMedical
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.BoutonRedigerCompteRendu)
         Me.Controls.Add(Me.LinkLabelmodifiermoncompte)
-        Me.Controls.Add(Me.Labelnom)
+        Me.Controls.Add(Me.LabelNom)
         Me.Controls.Add(Me.Labelprenom)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "ProfilVisiteurMedical"
@@ -172,7 +172,7 @@ Partial Class ProfilVisiteurMedical
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents BoutonRedigerCompteRendu As Button
     Friend WithEvents LinkLabelmodifiermoncompte As LinkLabel
-    Friend WithEvents Labelnom As Label
+    Friend WithEvents LabelNom As Label
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
 End Class
