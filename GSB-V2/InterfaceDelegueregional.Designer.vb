@@ -67,7 +67,7 @@ Partial Class InterfaceDelegueregional
         Me.Buttonredigercompterendu.Name = "Buttonredigercompterendu"
         Me.Buttonredigercompterendu.Size = New System.Drawing.Size(151, 35)
         Me.Buttonredigercompterendu.TabIndex = 55
-        Me.Buttonredigercompterendu.Text = "Rediger un compte rendu"
+        Me.Buttonredigercompterendu.Text = "Saisir un compte rendu"
         Me.Buttonredigercompterendu.UseVisualStyleBackColor = True
         '
         'Labelhiérarchieparsecteur
@@ -103,7 +103,7 @@ Partial Class InterfaceDelegueregional
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(151, 37)
         Me.Button1.TabIndex = 60
-        Me.Button1.Text = "Affichage"
+        Me.Button1.Text = "Visionner l'activité des visiteurs"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'InterfaceDelegueregional
