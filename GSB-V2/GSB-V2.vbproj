@@ -136,6 +136,9 @@
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificationCompteRenduVisiteurMedical.resx">
+      <DependentUpon>ModificationCompteRenduVisiteurMedical.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
