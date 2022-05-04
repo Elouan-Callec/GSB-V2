@@ -22,21 +22,21 @@ Partial Class FormulaireConnexion
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBoxlogin = New System.Windows.Forms.TextBox()
+        Me.TextBoxLogin = New System.Windows.Forms.TextBox()
         Me.ButtonLogin = New System.Windows.Forms.Button()
-        Me.TextBoxmotdepasse = New System.Windows.Forms.TextBox()
+        Me.TextBoxMotDePasse = New System.Windows.Forms.TextBox()
         Me.Labelmotdepasse = New System.Windows.Forms.Label()
         Me.Labellogin = New System.Windows.Forms.Label()
         Me.Labelconnexion = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'TextBoxlogin
+        'TextBoxLogin
         '
-        Me.TextBoxlogin.Location = New System.Drawing.Point(202, 162)
-        Me.TextBoxlogin.Name = "TextBoxlogin"
-        Me.TextBoxlogin.Size = New System.Drawing.Size(399, 20)
-        Me.TextBoxlogin.TabIndex = 18
-        Me.TextBoxlogin.Text = "Entrer le login"
+        Me.TextBoxLogin.Location = New System.Drawing.Point(202, 162)
+        Me.TextBoxLogin.Name = "TextBoxLogin"
+        Me.TextBoxLogin.Size = New System.Drawing.Size(399, 20)
+        Me.TextBoxLogin.TabIndex = 18
+        Me.TextBoxLogin.Text = "Entrer le login"
         '
         'ButtonLogin
         '
@@ -47,15 +47,15 @@ Partial Class FormulaireConnexion
         Me.ButtonLogin.Text = "LOGIN"
         Me.ButtonLogin.UseVisualStyleBackColor = True
         '
-        'TextBoxmotdepasse
+        'TextBoxMotDePasse
         '
-        Me.TextBoxmotdepasse.AutoCompleteCustomSource.AddRange(New String() {"Entrer le mot de passe"})
-        Me.TextBoxmotdepasse.Location = New System.Drawing.Point(202, 269)
-        Me.TextBoxmotdepasse.Name = "TextBoxmotdepasse"
-        Me.TextBoxmotdepasse.Size = New System.Drawing.Size(399, 20)
-        Me.TextBoxmotdepasse.TabIndex = 16
-        Me.TextBoxmotdepasse.Tag = ""
-        Me.TextBoxmotdepasse.Text = "Entrer le mot de passe"
+        Me.TextBoxMotDePasse.AutoCompleteCustomSource.AddRange(New String() {"Entrer le mot de passe"})
+        Me.TextBoxMotDePasse.Location = New System.Drawing.Point(202, 269)
+        Me.TextBoxMotDePasse.Name = "TextBoxMotDePasse"
+        Me.TextBoxMotDePasse.Size = New System.Drawing.Size(399, 20)
+        Me.TextBoxMotDePasse.TabIndex = 16
+        Me.TextBoxMotDePasse.Tag = ""
+        Me.TextBoxMotDePasse.Text = "Entrer le mot de passe"
         '
         'Labelmotdepasse
         '
@@ -92,9 +92,9 @@ Partial Class FormulaireConnexion
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TextBoxlogin)
+        Me.Controls.Add(Me.TextBoxLogin)
         Me.Controls.Add(Me.ButtonLogin)
-        Me.Controls.Add(Me.TextBoxmotdepasse)
+        Me.Controls.Add(Me.TextBoxMotDePasse)
         Me.Controls.Add(Me.Labelmotdepasse)
         Me.Controls.Add(Me.Labellogin)
         Me.Controls.Add(Me.Labelconnexion)
@@ -105,9 +105,9 @@ Partial Class FormulaireConnexion
 
     End Sub
 
-    Friend WithEvents TextBoxlogin As TextBox
+    Friend WithEvents TextBoxLogin As TextBox
     Friend WithEvents ButtonLogin As Button
-    Friend WithEvents TextBoxmotdepasse As TextBox
+    Friend WithEvents TextBoxMotDePasse As TextBox
     Friend WithEvents Labelmotdepasse As Label
     Friend WithEvents Labellogin As Label
     Friend WithEvents Labelconnexion As Label

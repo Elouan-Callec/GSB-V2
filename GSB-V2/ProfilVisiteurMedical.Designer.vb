@@ -62,9 +62,9 @@ Partial Class ProfilVisiteurMedical
         Me.Label1.Location = New System.Drawing.Point(193, 92)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(119, 13)
+        Me.Label1.Size = New System.Drawing.Size(133, 13)
         Me.Label1.TabIndex = 59
-        Me.Label1.Text = "ConsulterCompteRendu"
+        Me.Label1.Text = "Consultation compte rendu"
         '
         'ComboBoxCompteRendu
         '

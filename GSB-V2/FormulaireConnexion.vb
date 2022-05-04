@@ -21,8 +21,8 @@
     End Sub
 
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
-        Dim login As String = TextBoxlogin.Text
-        Dim password As String = TextBoxmotdepasse.Text
+        Dim login As String = TextBoxLogin.Text
+        Dim password As String = TextBoxMotDePasse.Text
 
         Dim query As String = "SELECT count(*) FROM emp WHERE login = '" + login + "' AND password = '" + password + "';"
         myCommand.Connection = myConnection
