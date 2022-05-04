@@ -73,10 +73,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Affichage2CompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>Affichage2CompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Affichage2CompteRenduVisiteurMedical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffichageCompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageCompteRenduVisiteurMedical.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormulaireConnexion.Designer.vb">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </Compile>
     <Compile Include="FormulaireConnexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificationCompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>ModificationCompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationCompteRenduVisiteurMedical.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -101,8 +119,20 @@
     <Compile Include="ProfilVisiteurMedical.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RedactionCompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>RedactionCompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RedactionCompteRenduVisiteurMedical.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Affichage2CompteRenduVisiteurMedical.resx">
+      <DependentUpon>Affichage2CompteRenduVisiteurMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffichageCompteRenduVisiteurMedical.resx">
+      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProfilVisiteurMedical.resx">
       <DependentUpon>ProfilVisiteurMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedactionCompteRenduVisiteurMedical.resx">
+      <DependentUpon>RedactionCompteRenduVisiteurMedical.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

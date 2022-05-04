@@ -1,0 +1,3 @@
+﻿Public Class RedactionCompteRenduVisiteurMedical
+
+End Class
