@@ -32,7 +32,7 @@ Partial Class FormulaireConnexion
         '
         'TextBoxLogin
         '
-        Me.TextBoxLogin.Location = New System.Drawing.Point(202, 162)
+        Me.TextBoxLogin.Location = New System.Drawing.Point(215, 200)
         Me.TextBoxLogin.Name = "TextBoxLogin"
         Me.TextBoxLogin.Size = New System.Drawing.Size(399, 20)
         Me.TextBoxLogin.TabIndex = 18
@@ -40,7 +40,7 @@ Partial Class FormulaireConnexion
         '
         'ButtonLogin
         '
-        Me.ButtonLogin.Location = New System.Drawing.Point(202, 355)
+        Me.ButtonLogin.Location = New System.Drawing.Point(215, 393)
         Me.ButtonLogin.Name = "ButtonLogin"
         Me.ButtonLogin.Size = New System.Drawing.Size(399, 40)
         Me.ButtonLogin.TabIndex = 17
@@ -50,7 +50,7 @@ Partial Class FormulaireConnexion
         'TextBoxMotDePasse
         '
         Me.TextBoxMotDePasse.AutoCompleteCustomSource.AddRange(New String() {"Entrer le mot de passe"})
-        Me.TextBoxMotDePasse.Location = New System.Drawing.Point(202, 269)
+        Me.TextBoxMotDePasse.Location = New System.Drawing.Point(215, 307)
         Me.TextBoxMotDePasse.Name = "TextBoxMotDePasse"
         Me.TextBoxMotDePasse.Size = New System.Drawing.Size(399, 20)
         Me.TextBoxMotDePasse.TabIndex = 16
@@ -61,7 +61,7 @@ Partial Class FormulaireConnexion
         '
         Me.Labelmotdepasse.AutoSize = True
         Me.Labelmotdepasse.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labelmotdepasse.Location = New System.Drawing.Point(199, 235)
+        Me.Labelmotdepasse.Location = New System.Drawing.Point(212, 273)
         Me.Labelmotdepasse.Name = "Labelmotdepasse"
         Me.Labelmotdepasse.Size = New System.Drawing.Size(93, 17)
         Me.Labelmotdepasse.TabIndex = 15
@@ -71,7 +71,7 @@ Partial Class FormulaireConnexion
         '
         Me.Labellogin.AutoSize = True
         Me.Labellogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labellogin.Location = New System.Drawing.Point(199, 122)
+        Me.Labellogin.Location = New System.Drawing.Point(212, 160)
         Me.Labellogin.Name = "Labellogin"
         Me.Labellogin.Size = New System.Drawing.Size(43, 17)
         Me.Labellogin.TabIndex = 14
@@ -91,7 +91,7 @@ Partial Class FormulaireConnexion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(805, 505)
         Me.Controls.Add(Me.TextBoxLogin)
         Me.Controls.Add(Me.ButtonLogin)
         Me.Controls.Add(Me.TextBoxMotDePasse)
