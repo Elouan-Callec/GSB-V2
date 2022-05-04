@@ -79,10 +79,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AfficheDelegueregional.Designer.vb">
-      <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
+    <Compile Include="AfficheDelegueRegional.Designer.vb">
+      <DependentUpon>AfficheDelegueRegional.vb</DependentUpon>
     </Compile>
-    <Compile Include="AfficheDelegueregional.vb">
+    <Compile Include="AfficheDelegueRegional.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulaireConnexion.Designer.vb">
@@ -91,10 +91,10 @@
     <Compile Include="FormulaireConnexion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfaceDelegueregional.Designer.vb">
-      <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
+    <Compile Include="InterfaceDelegueRegional.Designer.vb">
+      <DependentUpon>InterfaceDelegueRegional.vb</DependentUpon>
     </Compile>
-    <Compile Include="InterfaceDelegueregional.vb">
+    <Compile Include="InterfaceDelegueRegional.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AffichageDelegueRegional.Designer.vb">
@@ -127,14 +127,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AfficheDelegueregional.resx">
-      <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
+    <EmbeddedResource Include="AfficheDelegueRegional.resx">
+      <DependentUpon>AfficheDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterfaceDelegueregional.resx">
-      <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
+    <EmbeddedResource Include="InterfaceDelegueRegional.resx">
+      <DependentUpon>InterfaceDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\AffichageDelegueRegional.resx">
       <DependentUpon>AffichageDelegueRegional.vb</DependentUpon>

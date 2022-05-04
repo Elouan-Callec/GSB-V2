@@ -48,4 +48,16 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Labelnom_Click(sender As Object, e As EventArgs) Handles Labelnom.Click
+        'Dim nom As String
+
+        'Dim query As String = "SELECT count(*) FROM emp WHERE ename = '" + password + "' AND login = '" + login + "';"
+        'myCommand.Connection = myConnection
+        'myCommand.CommandText = query
+        'myReader = myCommand.ExecuteReader
+
+
+        myReader.Read()
+    End Sub
 End Class
