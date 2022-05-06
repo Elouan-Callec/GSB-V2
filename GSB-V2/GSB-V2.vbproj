@@ -85,7 +85,12 @@
     <Compile Include="AffichageActiviteVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AffichageCompteRenduDelegueRegional.vb" />
+    <Compile Include="AffichageCompteRenduDelegueRegional.Designer.vb">
+      <DependentUpon>AffichageCompteRenduDelegueRegional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageCompteRenduDelegueRegional.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AfficheDelegueregional.Designer.vb">
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
     </Compile>
@@ -148,6 +153,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AffichageActiviteVisiteur.resx">
       <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffichageCompteRenduDelegueRegional.resx">
+      <DependentUpon>AffichageCompteRenduDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AfficheDelegueregional.resx">
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
