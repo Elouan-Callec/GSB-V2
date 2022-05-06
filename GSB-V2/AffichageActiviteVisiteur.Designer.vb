@@ -28,6 +28,10 @@ Partial Class AffichageActiviteVisiteur
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BoutonModifier = New System.Windows.Forms.Button()
+        Me.BoutonAffichage = New System.Windows.Forms.Button()
+        Me.ComboBoxCompteRendu = New System.Windows.Forms.ComboBox()
+        Me.BoutonRedigerCompteRendu = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,11 +89,55 @@ Partial Class AffichageActiviteVisiteur
         Me.PictureBox1.TabIndex = 64
         Me.PictureBox1.TabStop = False
         '
+        'BoutonModifier
+        '
+        Me.BoutonModifier.Location = New System.Drawing.Point(419, 220)
+        Me.BoutonModifier.Margin = New System.Windows.Forms.Padding(2)
+        Me.BoutonModifier.Name = "BoutonModifier"
+        Me.BoutonModifier.Size = New System.Drawing.Size(118, 21)
+        Me.BoutonModifier.TabIndex = 73
+        Me.BoutonModifier.Text = "Modifier"
+        Me.BoutonModifier.UseVisualStyleBackColor = True
+        '
+        'BoutonAffichage
+        '
+        Me.BoutonAffichage.Location = New System.Drawing.Point(254, 220)
+        Me.BoutonAffichage.Margin = New System.Windows.Forms.Padding(2)
+        Me.BoutonAffichage.Name = "BoutonAffichage"
+        Me.BoutonAffichage.Size = New System.Drawing.Size(118, 21)
+        Me.BoutonAffichage.TabIndex = 72
+        Me.BoutonAffichage.Text = "Afficher"
+        Me.BoutonAffichage.UseVisualStyleBackColor = True
+        '
+        'ComboBoxCompteRendu
+        '
+        Me.ComboBoxCompteRendu.FormattingEnabled = True
+        Me.ComboBoxCompteRendu.Items.AddRange(New Object() {"CompteRendu n°1", "CompteRendu n°2", "CompteRendu n°3"})
+        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(254, 177)
+        Me.ComboBoxCompteRendu.Margin = New System.Windows.Forms.Padding(2)
+        Me.ComboBoxCompteRendu.Name = "ComboBoxCompteRendu"
+        Me.ComboBoxCompteRendu.Size = New System.Drawing.Size(283, 21)
+        Me.ComboBoxCompteRendu.TabIndex = 71
+        Me.ComboBoxCompteRendu.Text = "CompteRendu n°1"
+        '
+        'BoutonRedigerCompteRendu
+        '
+        Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(254, 312)
+        Me.BoutonRedigerCompteRendu.Name = "BoutonRedigerCompteRendu"
+        Me.BoutonRedigerCompteRendu.Size = New System.Drawing.Size(151, 30)
+        Me.BoutonRedigerCompteRendu.TabIndex = 70
+        Me.BoutonRedigerCompteRendu.Text = "Rediger un compte rendu"
+        Me.BoutonRedigerCompteRendu.UseVisualStyleBackColor = True
+        '
         'AffichageActiviteVisiteur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BoutonModifier)
+        Me.Controls.Add(Me.BoutonAffichage)
+        Me.Controls.Add(Me.ComboBoxCompteRendu)
+        Me.Controls.Add(Me.BoutonRedigerCompteRendu)
         Me.Controls.Add(Me.LabelVisiteurMedical)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.LinkLabelmodifiermoncompte)
@@ -110,4 +158,8 @@ Partial Class AffichageActiviteVisiteur
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BoutonModifier As Button
+    Friend WithEvents BoutonAffichage As Button
+    Friend WithEvents ComboBoxCompteRendu As ComboBox
+    Friend WithEvents BoutonRedigerCompteRendu As Button
 End Class
