@@ -79,6 +79,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AffichageActiviteVisiteur.Designer.vb">
+      <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageActiviteVisiteur.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AfficheDelegueregional.Designer.vb">
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
     </Compile>
@@ -119,14 +125,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RedigerCompteRendu.Designer.vb">
-      <DependentUpon>RedigerCompteRendu.vb</DependentUpon>
+    <Compile Include="RedactionCompteRendu.Designer.vb">
+      <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
     </Compile>
-    <Compile Include="RedigerCompteRendu.vb">
+    <Compile Include="RedactionCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionVisiteur.Designer.vb">
+      <DependentUpon>SelectionVisiteur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionVisiteur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisionCompteRenduDelegueRegional.Designer.vb">
+      <DependentUpon>VisionCompteRenduDelegueRegional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VisionCompteRenduDelegueRegional.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AffichageActiviteVisiteur.resx">
+      <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AfficheDelegueregional.resx">
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
     </EmbeddedResource>
@@ -145,8 +166,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="RedigerCompteRendu.resx">
-      <DependentUpon>RedigerCompteRendu.vb</DependentUpon>
+    <EmbeddedResource Include="RedactionCompteRendu.resx">
+      <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionVisiteur.resx">
+      <DependentUpon>SelectionVisiteur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisionCompteRenduDelegueRegional.resx">
+      <DependentUpon>VisionCompteRenduDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

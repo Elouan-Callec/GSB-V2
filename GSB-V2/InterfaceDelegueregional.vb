@@ -38,12 +38,12 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        RedigerCompteRendu.Show()
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActivieVisiteur.Click
+        RedactionCompteRendu.Show()
         Me.Close()
     End Sub
 
-    Private Sub Buttonredigercompterendu_Click(sender As Object, e As EventArgs) Handles Buttonredigercompterendu.Click
+    Private Sub Buttonredigercompterendu_Click(sender As Object, e As EventArgs) Handles ButtonRedigerCompteRendu.Click
         AfficheDelegueregional.Show()
         Me.Close()
 
