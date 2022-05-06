@@ -8,7 +8,7 @@
     Dim connString As String
 
     Private Sub FormulaireConnexion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        connString = "DSN=CNXORA06;Uid=SCOTT;Pwd=TIGER;"
+        connString = "DSN=CNXORA06;Uid=SYSTEM;Pwd=Iroise29;"
 
         myConnection.ConnectionString = connString
 
@@ -24,7 +24,7 @@
         Dim login As String = TextBoxlogin.Text
         Dim password As String = TextBoxmotdepasse.Text
 
-        Dim query As String = "SELECT count(*) FROM emp WHERE ename = '" + password + "' AND login = '" + login + "';"
+        Dim query As String = "SELECT count(*) FROM VISITEUR WHERE login = '" + login + "' AND password = '" + password + "';"
         myCommand.Connection = myConnection
         myCommand.CommandText = query
         myReader = myCommand.ExecuteReader
