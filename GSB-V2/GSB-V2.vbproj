@@ -85,10 +85,10 @@
     <Compile Include="Affichage2CompteRenduVisiteurMedical.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AffichageActiviteVisiteur.Designer.vb">
-      <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
+    <Compile Include="AffichageCompteRenduVisiteur.Designer.vb">
+      <DependentUpon>AffichageCompteRenduVisiteur.vb</DependentUpon>
     </Compile>
-    <Compile Include="AffichageActiviteVisiteur.vb">
+    <Compile Include="AffichageCompteRenduVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AffichageCompteRendu.Designer.vb">
@@ -161,19 +161,13 @@
     <Compile Include="SelectionVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisionnageCompteRenduDelegueRegional.Designer.vb">
-      <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
-    </Compile>
-    <Compile Include="VisionnageCompteRenduDelegueRegional.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Affichage2CompteRenduVisiteurMedical.resx">
       <DependentUpon>Affichage2CompteRenduVisiteurMedical.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AffichageActiviteVisiteur.resx">
-      <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
+    <EmbeddedResource Include="AffichageCompteRenduVisiteur.resx">
+      <DependentUpon>AffichageCompteRenduVisiteur.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AffichageCompteRendu.resx">
       <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
@@ -207,9 +201,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionVisiteur.resx">
       <DependentUpon>SelectionVisiteur.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VisionnageCompteRenduDelegueRegional.resx">
-      <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -25,12 +25,12 @@ Partial Class InterfaceDelegueregional
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.LinkLabelmodifiermoncompte = New System.Windows.Forms.LinkLabel()
-        Me.ButtonRedigerCompteRendu = New System.Windows.Forms.Button()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ButtonVisionnerActivieVisiteur = New System.Windows.Forms.Button()
         Me.ButtonVoirCompteRendu = New System.Windows.Forms.Button()
+        Me.BoutonRedigerCompteRendu = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,15 +61,6 @@ Partial Class InterfaceDelegueregional
         Me.LinkLabelmodifiermoncompte.TabIndex = 54
         Me.LinkLabelmodifiermoncompte.TabStop = True
         Me.LinkLabelmodifiermoncompte.Text = "Modifier mon compte"
-        '
-        'ButtonRedigerCompteRendu
-        '
-        Me.ButtonRedigerCompteRendu.Location = New System.Drawing.Point(216, 318)
-        Me.ButtonRedigerCompteRendu.Name = "ButtonRedigerCompteRendu"
-        Me.ButtonRedigerCompteRendu.Size = New System.Drawing.Size(200, 35)
-        Me.ButtonRedigerCompteRendu.TabIndex = 55
-        Me.ButtonRedigerCompteRendu.Text = "Rediger un compte rendu"
-        Me.ButtonRedigerCompteRendu.UseVisualStyleBackColor = True
         '
         'Labelhiérarchieparsecteur
         '
@@ -116,16 +107,25 @@ Partial Class InterfaceDelegueregional
         Me.ButtonVoirCompteRendu.Text = "Voir mes comptes rendus"
         Me.ButtonVoirCompteRendu.UseVisualStyleBackColor = True
         '
+        'BoutonRedigerCompteRendu
+        '
+        Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(216, 318)
+        Me.BoutonRedigerCompteRendu.Name = "BoutonRedigerCompteRendu"
+        Me.BoutonRedigerCompteRendu.Size = New System.Drawing.Size(200, 34)
+        Me.BoutonRedigerCompteRendu.TabIndex = 74
+        Me.BoutonRedigerCompteRendu.Text = "Rediger un compte rendu"
+        Me.BoutonRedigerCompteRendu.UseVisualStyleBackColor = True
+        '
         'InterfaceDelegueregional
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(648, 480)
+        Me.ClientSize = New System.Drawing.Size(657, 483)
+        Me.Controls.Add(Me.BoutonRedigerCompteRendu)
         Me.Controls.Add(Me.ButtonVoirCompteRendu)
         Me.Controls.Add(Me.ButtonVisionnerActivieVisiteur)
         Me.Controls.Add(Me.LabelVisiteurMedical)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
-        Me.Controls.Add(Me.ButtonRedigerCompteRendu)
         Me.Controls.Add(Me.LinkLabelmodifiermoncompte)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
@@ -141,10 +141,10 @@ Partial Class InterfaceDelegueregional
     Friend WithEvents Labelprenom As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents LinkLabelmodifiermoncompte As LinkLabel
-    Friend WithEvents ButtonRedigerCompteRendu As Button
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents LabelVisiteurMedical As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ButtonVisionnerActivieVisiteur As Button
     Friend WithEvents ButtonVoirCompteRendu As Button
+    Friend WithEvents BoutonRedigerCompteRendu As Button
 End Class
