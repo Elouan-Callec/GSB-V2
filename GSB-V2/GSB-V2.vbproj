@@ -65,6 +65,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
   </ItemGroup>
+	
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -78,6 +79,7 @@
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
+	
   <ItemGroup>
 
     <Compile Include="Affichage2CompteRenduVisiteurMedical.Designer.vb">
@@ -90,6 +92,7 @@
       <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
     </Compile>
     <Compile Include="AffichageCompteRenduVisiteurMedical.vb">
+	</Compile>
 
     <Compile Include="AffichageActiviteVisiteur.Designer.vb">
       <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
@@ -120,7 +123,9 @@
     <Compile Include="ModificationCompteRenduVisiteurMedical.Designer.vb">
       <DependentUpon>ModificationCompteRenduVisiteurMedical.vb</DependentUpon>
     </Compile>
+		
     <Compile Include="ModificationCompteRenduVisiteurMedical.vb">
+	</Compile>
 
     <Compile Include="InterfaceDelegueregional.Designer.vb">
       <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
@@ -162,6 +167,7 @@
       <DependentUpon>RedactionCompteRenduVisiteurMedical.vb</DependentUpon>
     </Compile>
     <Compile Include="RedactionCompteRenduVisiteurMedical.vb">
+	</Compile>
 
     <Compile Include="RedactionCompteRendu.Designer.vb">
       <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
@@ -182,7 +188,8 @@
 
       <SubType>Form</SubType>
     </Compile>
-  </ItemGroup>
+	</ItemGroup>
+	  
   <ItemGroup>
 
     <EmbeddedResource Include="Affichage2CompteRenduVisiteurMedical.resx">
@@ -190,6 +197,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AffichageCompteRenduVisiteurMedical.resx">
       <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
+	</EmbeddedResource>
 
     <EmbeddedResource Include="AffichageActiviteVisiteur.resx">
       <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
@@ -207,6 +215,7 @@
 
     <EmbeddedResource Include="ModificationCompteRenduVisiteurMedical.resx">
       <DependentUpon>ModificationCompteRenduVisiteurMedical.vb</DependentUpon>
+	</EmbeddedResource>
 
     <EmbeddedResource Include="InterfaceDelegueregional.resx">
       <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
@@ -227,6 +236,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RedactionCompteRenduVisiteurMedical.resx">
       <DependentUpon>RedactionCompteRenduVisiteurMedical.vb</DependentUpon>
+	</EmbeddedResource>
 
     <EmbeddedResource Include="RedactionCompteRendu.resx">
       <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
@@ -239,6 +249,7 @@
 
     </EmbeddedResource>
   </ItemGroup>
+	
   <ItemGroup>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
