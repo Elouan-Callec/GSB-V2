@@ -1,0 +1,3 @@
+﻿Public Class VisionnageCompteRenduDelegueRegional
+
+End Class

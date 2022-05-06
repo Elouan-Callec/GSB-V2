@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class VisionCompteRenduDelegueRegional
+Partial Class VisionnageCompteRenduDelegueRegional
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -91,7 +91,7 @@ Partial Class VisionCompteRenduDelegueRegional
         '
         'BoutonModifier
         '
-        Me.BoutonModifier.Location = New System.Drawing.Point(430, 216)
+        Me.BoutonModifier.Location = New System.Drawing.Point(415, 215)
         Me.BoutonModifier.Margin = New System.Windows.Forms.Padding(2)
         Me.BoutonModifier.Name = "BoutonModifier"
         Me.BoutonModifier.Size = New System.Drawing.Size(118, 21)
@@ -101,7 +101,7 @@ Partial Class VisionCompteRenduDelegueRegional
         '
         'BoutonAffichage
         '
-        Me.BoutonAffichage.Location = New System.Drawing.Point(265, 216)
+        Me.BoutonAffichage.Location = New System.Drawing.Point(250, 215)
         Me.BoutonAffichage.Margin = New System.Windows.Forms.Padding(2)
         Me.BoutonAffichage.Name = "BoutonAffichage"
         Me.BoutonAffichage.Size = New System.Drawing.Size(118, 21)
@@ -113,7 +113,7 @@ Partial Class VisionCompteRenduDelegueRegional
         '
         Me.ComboBoxCompteRendu.FormattingEnabled = True
         Me.ComboBoxCompteRendu.Items.AddRange(New Object() {"CompteRendu n°1", "CompteRendu n°2", "CompteRendu n°3"})
-        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(265, 173)
+        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(250, 172)
         Me.ComboBoxCompteRendu.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxCompteRendu.Name = "ComboBoxCompteRendu"
         Me.ComboBoxCompteRendu.Size = New System.Drawing.Size(283, 21)
@@ -122,7 +122,7 @@ Partial Class VisionCompteRenduDelegueRegional
         '
         'BoutonRedigerCompteRendu
         '
-        Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(265, 308)
+        Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(250, 307)
         Me.BoutonRedigerCompteRendu.Name = "BoutonRedigerCompteRendu"
         Me.BoutonRedigerCompteRendu.Size = New System.Drawing.Size(151, 30)
         Me.BoutonRedigerCompteRendu.TabIndex = 74

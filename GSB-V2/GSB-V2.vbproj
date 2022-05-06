@@ -137,10 +137,10 @@
     <Compile Include="SelectionVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisionCompteRenduDelegueRegional.Designer.vb">
-      <DependentUpon>VisionCompteRenduDelegueRegional.vb</DependentUpon>
+    <Compile Include="VisionnageCompteRenduDelegueRegional.Designer.vb">
+      <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
     </Compile>
-    <Compile Include="VisionCompteRenduDelegueRegional.vb">
+    <Compile Include="VisionnageCompteRenduDelegueRegional.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -172,8 +172,8 @@
     <EmbeddedResource Include="SelectionVisiteur.resx">
       <DependentUpon>SelectionVisiteur.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VisionCompteRenduDelegueRegional.resx">
-      <DependentUpon>VisionCompteRenduDelegueRegional.vb</DependentUpon>
+    <EmbeddedResource Include="VisionnageCompteRenduDelegueRegional.resx">
+      <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
