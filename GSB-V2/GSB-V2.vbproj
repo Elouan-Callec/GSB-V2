@@ -85,6 +85,7 @@
     <Compile Include="AffichageActiviteVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AffichageCompteRenduDelegueRegional.vb" />
     <Compile Include="AfficheDelegueregional.Designer.vb">
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
     </Compile>
