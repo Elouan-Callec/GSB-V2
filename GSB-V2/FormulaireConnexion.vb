@@ -32,8 +32,23 @@
         myReader.Read()
         If (myReader.GetString(0) = 1) Then
             MessageBox.Show("Connexion réussie")
+
+            Dim ID_role = "SELECT ROLE FROM VISITEUR WHERE login ='" + login + "';"
+
+            If (ID_role = 1) Then
+
+            End If
+
+            If (ID_role = 2) Then
+
+            End If
+
+            If (ID_role = 3) Then
+
+            End If
+
         Else
-            MessageBox.Show("Connexion échouée")
+                MessageBox.Show("Connexion échouée")
         End If
     End Sub
 End Class
