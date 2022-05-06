@@ -79,6 +79,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Affichage2CompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>Affichage2CompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Affichage2CompteRenduVisiteurMedical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffichageCompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageCompteRenduVisiteurMedical.vb">
+
     <Compile Include="AffichageActiviteVisiteur.Designer.vb">
       <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
     </Compile>
@@ -95,6 +107,7 @@
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
     </Compile>
     <Compile Include="AfficheDelegueregional.vb">
+
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulaireConnexion.Designer.vb">
@@ -103,6 +116,12 @@
     <Compile Include="FormulaireConnexion.vb">
       <SubType>Form</SubType>
     </Compile>
+
+    <Compile Include="ModificationCompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>ModificationCompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationCompteRenduVisiteurMedical.vb">
+
     <Compile Include="InterfaceDelegueregional.Designer.vb">
       <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
     </Compile>
@@ -113,6 +132,7 @@
       <DependentUpon>AffichageDelegueRegional.vb</DependentUpon>
     </Compile>
     <Compile Include="My Project\AffichageDelegueRegional.vb">
+
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -131,6 +151,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+
+    <Compile Include="ProfilVisiteurMedical.Designer.vb">
+      <DependentUpon>ProfilVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilVisiteurMedical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedactionCompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>RedactionCompteRenduVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RedactionCompteRenduVisiteurMedical.vb">
+
     <Compile Include="RedactionCompteRendu.Designer.vb">
       <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
     </Compile>
@@ -147,10 +179,18 @@
       <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
     </Compile>
     <Compile Include="VisionnageCompteRenduDelegueRegional.vb">
+
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+
+    <EmbeddedResource Include="Affichage2CompteRenduVisiteurMedical.resx">
+      <DependentUpon>Affichage2CompteRenduVisiteurMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffichageCompteRenduVisiteurMedical.resx">
+      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
+
     <EmbeddedResource Include="AffichageActiviteVisiteur.resx">
       <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
     </EmbeddedResource>
@@ -159,15 +199,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AfficheDelegueregional.resx">
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="ModificationCompteRenduVisiteurMedical.resx">
+      <DependentUpon>ModificationCompteRenduVisiteurMedical.vb</DependentUpon>
+
     <EmbeddedResource Include="InterfaceDelegueregional.resx">
       <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\AffichageDelegueRegional.resx">
       <DependentUpon>AffichageDelegueRegional.vb</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -175,6 +221,13 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="ProfilVisiteurMedical.resx">
+      <DependentUpon>ProfilVisiteurMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedactionCompteRenduVisiteurMedical.resx">
+      <DependentUpon>RedactionCompteRenduVisiteurMedical.vb</DependentUpon>
+
     <EmbeddedResource Include="RedactionCompteRendu.resx">
       <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +236,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VisionnageCompteRenduDelegueRegional.resx">
       <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
+
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

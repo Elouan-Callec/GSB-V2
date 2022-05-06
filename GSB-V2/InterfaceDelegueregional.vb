@@ -1,4 +1,4 @@
-﻿Public Class InterfaceDelegueregional
+Public Class InterfaceDelegueregional
     Dim myConnection As New Odbc.OdbcConnection
     Dim myCommand As New Odbc.OdbcCommand
     Dim myReader As Odbc.OdbcDataReader
