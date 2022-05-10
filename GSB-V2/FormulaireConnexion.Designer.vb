@@ -81,7 +81,7 @@ Partial Class FormulaireConnexion
         '
         Me.Labelconnexion.AutoSize = True
         Me.Labelconnexion.Font = New System.Drawing.Font("Microsoft Sans Serif", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labelconnexion.Location = New System.Drawing.Point(300, 56)
+        Me.Labelconnexion.Location = New System.Drawing.Point(300, 49)
         Me.Labelconnexion.Name = "Labelconnexion"
         Me.Labelconnexion.Size = New System.Drawing.Size(229, 51)
         Me.Labelconnexion.TabIndex = 13
