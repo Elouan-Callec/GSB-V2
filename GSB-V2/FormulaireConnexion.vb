@@ -10,7 +10,6 @@ Public Class FormulaireConnexion
     Dim connString As String
 
 
-
     Private Sub FormulaireConnexion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connString = "DSN=CNXORA06;Uid=SYSTEM;Pwd=Iroise29;"
 

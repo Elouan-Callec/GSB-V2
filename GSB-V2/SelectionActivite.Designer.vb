@@ -40,30 +40,27 @@ Partial Class SelectionActivite
         'LabelVisiteurMedical
         '
         Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(161, 60)
-        Me.LabelVisiteurMedical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(121, 49)
         Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(116, 17)
+        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(87, 13)
         Me.LabelVisiteurMedical.TabIndex = 63
         Me.LabelVisiteurMedical.Text = "Délégué régional"
         '
         'Labelhiérarchieparsecteur
         '
         Me.Labelhiérarchieparsecteur.AutoSize = True
-        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(72, 60)
-        Me.Labelhiérarchieparsecteur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(54, 49)
         Me.Labelhiérarchieparsecteur.Name = "Labelhiérarchieparsecteur"
-        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(81, 17)
+        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(61, 13)
         Me.Labelhiérarchieparsecteur.TabIndex = 62
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
         'LinkLabelmodifiermoncompte
         '
         Me.LinkLabelmodifiermoncompte.AutoSize = True
-        Me.LinkLabelmodifiermoncompte.Location = New System.Drawing.Point(72, 29)
-        Me.LinkLabelmodifiermoncompte.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LinkLabelmodifiermoncompte.Location = New System.Drawing.Point(54, 24)
         Me.LinkLabelmodifiermoncompte.Name = "LinkLabelmodifiermoncompte"
-        Me.LinkLabelmodifiermoncompte.Size = New System.Drawing.Size(139, 17)
+        Me.LinkLabelmodifiermoncompte.Size = New System.Drawing.Size(105, 13)
         Me.LinkLabelmodifiermoncompte.TabIndex = 61
         Me.LinkLabelmodifiermoncompte.TabStop = True
         Me.LinkLabelmodifiermoncompte.Text = "Modifier mon compte"
@@ -71,89 +68,92 @@ Partial Class SelectionActivite
         'Labelnom
         '
         Me.Labelnom.AutoSize = True
-        Me.Labelnom.Location = New System.Drawing.Point(133, 13)
-        Me.Labelnom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Labelnom.Location = New System.Drawing.Point(100, 11)
         Me.Labelnom.Name = "Labelnom"
-        Me.Labelnom.Size = New System.Drawing.Size(37, 17)
+        Me.Labelnom.Size = New System.Drawing.Size(29, 13)
         Me.Labelnom.TabIndex = 60
         Me.Labelnom.Text = "Nom"
         '
         'Labelprenom
         '
         Me.Labelprenom.AutoSize = True
-        Me.Labelprenom.Location = New System.Drawing.Point(72, 13)
-        Me.Labelprenom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Labelprenom.Location = New System.Drawing.Point(54, 11)
         Me.Labelprenom.Name = "Labelprenom"
-        Me.Labelprenom.Size = New System.Drawing.Size(57, 17)
+        Me.Labelprenom.Size = New System.Drawing.Size(43, 13)
         Me.Labelprenom.TabIndex = 59
         Me.Labelprenom.Text = "Prenom"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(13, 13)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Location = New System.Drawing.Point(10, 11)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 52)
         Me.PictureBox1.TabIndex = 58
         Me.PictureBox1.TabStop = False
         '
         'ComboBoxActiviteVisiteur
         '
         Me.ComboBoxActiviteVisiteur.FormattingEnabled = True
-        Me.ComboBoxActiviteVisiteur.Location = New System.Drawing.Point(351, 190)
+        Me.ComboBoxActiviteVisiteur.Location = New System.Drawing.Point(56, 167)
+        Me.ComboBoxActiviteVisiteur.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBoxActiviteVisiteur.Name = "ComboBoxActiviteVisiteur"
-        Me.ComboBoxActiviteVisiteur.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBoxActiviteVisiteur.Size = New System.Drawing.Size(92, 21)
         Me.ComboBoxActiviteVisiteur.TabIndex = 64
         '
         'ComboBoxActiviteEquipe
         '
         Me.ComboBoxActiviteEquipe.FormattingEnabled = True
-        Me.ComboBoxActiviteEquipe.Location = New System.Drawing.Point(351, 393)
+        Me.ComboBoxActiviteEquipe.Location = New System.Drawing.Point(56, 332)
+        Me.ComboBoxActiviteEquipe.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBoxActiviteEquipe.Name = "ComboBoxActiviteEquipe"
-        Me.ComboBoxActiviteEquipe.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBoxActiviteEquipe.Size = New System.Drawing.Size(92, 21)
         Me.ComboBoxActiviteEquipe.TabIndex = 65
         '
         'LabelChoixVisiteur
         '
         Me.LabelChoixVisiteur.AutoSize = True
-        Me.LabelChoixVisiteur.Location = New System.Drawing.Point(348, 153)
+        Me.LabelChoixVisiteur.Location = New System.Drawing.Point(54, 137)
+        Me.LabelChoixVisiteur.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelChoixVisiteur.Name = "LabelChoixVisiteur"
-        Me.LabelChoixVisiteur.Size = New System.Drawing.Size(111, 17)
+        Me.LabelChoixVisiteur.Size = New System.Drawing.Size(84, 13)
         Me.LabelChoixVisiteur.TabIndex = 66
         Me.LabelChoixVisiteur.Text = "Choix du visiteur"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(348, 356)
+        Me.Label1.Location = New System.Drawing.Point(54, 302)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(128, 17)
+        Me.Label1.Size = New System.Drawing.Size(97, 13)
         Me.Label1.TabIndex = 67
         Me.Label1.Text = "Choix d'une équipe"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(351, 242)
+        Me.Button1.Location = New System.Drawing.Point(56, 210)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(56, 19)
         Me.Button1.TabIndex = 68
         Me.Button1.Text = "Valider"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(351, 445)
+        Me.Button2.Location = New System.Drawing.Point(56, 375)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(56, 19)
         Me.Button2.TabIndex = 69
         Me.Button2.Text = "Valider"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'SelectionActivite
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(807, 550)
+        Me.ClientSize = New System.Drawing.Size(802, 467)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -166,6 +166,7 @@ Partial Class SelectionActivite
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "SelectionActivite"
         Me.Text = "SelectionActivite"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

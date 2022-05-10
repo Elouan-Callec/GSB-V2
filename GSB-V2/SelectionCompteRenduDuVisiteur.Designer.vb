@@ -37,7 +37,7 @@ Partial Class SelectionCompteRenduDuVisiteur
         '
         Me.ComboBoxCompteRendu.FormattingEnabled = True
         Me.ComboBoxCompteRendu.Items.AddRange(New Object() {"CompteRendu n°1", "CompteRendu n°2", "CompteRendu n°3"})
-        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(126, 178)
+        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(59, 172)
         Me.ComboBoxCompteRendu.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxCompteRendu.Name = "ComboBoxCompteRendu"
         Me.ComboBoxCompteRendu.Size = New System.Drawing.Size(283, 21)
@@ -46,7 +46,7 @@ Partial Class SelectionCompteRenduDuVisiteur
         '
         'BoutonAffichage
         '
-        Me.BoutonAffichage.Location = New System.Drawing.Point(199, 229)
+        Me.BoutonAffichage.Location = New System.Drawing.Point(132, 223)
         Me.BoutonAffichage.Margin = New System.Windows.Forms.Padding(2)
         Me.BoutonAffichage.Name = "BoutonAffichage"
         Me.BoutonAffichage.Size = New System.Drawing.Size(118, 21)
@@ -112,7 +112,7 @@ Partial Class SelectionCompteRenduDuVisiteur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(593, 313)
+        Me.ClientSize = New System.Drawing.Size(384, 313)
         Me.Controls.Add(Me.LabelVisiteurMedical)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.LinkLabelmodifiermoncompte)
