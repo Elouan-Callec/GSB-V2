@@ -115,10 +115,10 @@
     <Compile Include="FormulaireConnexion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProfilDelegueregional.Designer.vb">
-      <DependentUpon>ProfilDelegueregional.vb</DependentUpon>
+    <Compile Include="ProfilDelegueRegional.Designer.vb">
+      <DependentUpon>ProfilDelegueRegional.vb</DependentUpon>
     </Compile>
-    <Compile Include="ProfilDelegueregional.vb">
+    <Compile Include="ProfilDelegueRegional.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModificationCompteRendu.Designer.vb">
@@ -193,8 +193,8 @@
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfilDelegueregional.resx">
-      <DependentUpon>ProfilDelegueregional.vb</DependentUpon>
+    <EmbeddedResource Include="ProfilDelegueRegional.resx">
+      <DependentUpon>ProfilDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificationCompteRendu.resx">
       <DependentUpon>ModificationCompteRendu.vb</DependentUpon>

@@ -53,7 +53,8 @@ Public Class FormulaireConnexion
             myReader.Read()
 
             If (myReader.GetString(0) = 1) Then
-
+                ProfilVisiteurMedical.Show()
+                Me.Close()
             End If
 
             If (myReader.GetString(0) = 2) Then
