@@ -79,16 +79,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AffichageCompteRenduVisiteurMedical.Designer.vb">
-      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
+    <Compile Include="AffichageCompteRendu.Designer.vb">
+      <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
     </Compile>
-    <Compile Include="AffichageCompteRenduVisiteurMedical.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AffichageCompteRenduVisiteur.Designer.vb">
-      <DependentUpon>AffichageCompteRenduVisiteur.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AffichageCompteRenduVisiteur.vb">
+    <Compile Include="AffichageCompteRendu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SelectionActivite.Designer.vb">
@@ -169,11 +163,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AffichageCompteRenduVisiteurMedical.resx">
-      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AffichageCompteRenduVisiteur.resx">
-      <DependentUpon>AffichageCompteRenduVisiteur.vb</DependentUpon>
+    <EmbeddedResource Include="AffichageCompteRendu.resx">
+      <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionActivite.resx">
       <DependentUpon>SelectionActivite.vb</DependentUpon>

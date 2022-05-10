@@ -61,23 +61,4 @@ Public Class ProfilDelegueregional
         myReader.Read()
     End Sub
 
-    Private Sub ComboBoxCompteRendu_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub BoutonModifier_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub BoutonAffichage_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub BoutonRedigerCompteRendu_Click(sender As Object, e As EventArgs) Handles BoutonRedigerCompteRendu.Click
-
-    End Sub
 End Class

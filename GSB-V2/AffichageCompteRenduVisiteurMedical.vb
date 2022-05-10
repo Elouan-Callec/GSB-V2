@@ -1,3 +1,0 @@
-﻿Public Class AffichageCompteRenduVisiteurMedical
-
-End Class
