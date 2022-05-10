@@ -2,8 +2,6 @@ Public Class ProfilDelegueregional
     Dim myConnection As New Odbc.OdbcConnection
     Dim myCommand As New Odbc.OdbcCommand
     Dim myReader As Odbc.OdbcDataReader
-    Dim testprenom As String = "JONES"
-    Dim testnom As String = "JONES"
 
 
     Function Connection(codesql)
@@ -25,7 +23,7 @@ Public Class ProfilDelegueregional
 
 
 
-        Dim SQLaffichePrenom As String = "SELECT ename FROM emp WHERE login ='JONES';"
+        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login ='JMohammed';"
 
         myCommand.Connection = myConnection
         'Connection(SQLaffichePrenom)
