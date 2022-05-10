@@ -24,6 +24,8 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>GSB-V2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,12 +49,16 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,10 +79,58 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AffichageCompteRendu.Designer.vb">
+      <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixRedacteurCompteRendu.Designer.vb">
+      <DependentUpon>ChoixRedacteurCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChoixRedacteurCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionActivite.Designer.vb">
+      <DependentUpon>SelectionActivite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionActivite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionCompteRendu.Designer.vb">
+      <DependentUpon>SelectionCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffichageActivite.Designer.vb">
+      <DependentUpon>AffichageActivite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffichageActivite.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormulaireConnexion.Designer.vb">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </Compile>
     <Compile Include="FormulaireConnexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilDelegueRegional.Designer.vb">
+      <DependentUpon>ProfilDelegueRegional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilDelegueRegional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificationCompteRendu.Designer.vb">
+      <DependentUpon>ModificationCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AffichageDelegueRegional.Designer.vb">
+      <DependentUpon>AffichageDelegueRegional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AffichageDelegueRegional.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -95,10 +149,58 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ProfilVisiteurMedical.Designer.vb">
+      <DependentUpon>ProfilVisiteurMedical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilVisiteurMedical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedactionCompteRendu.Designer.vb">
+      <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RedactionCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionCompteRenduDuVisiteur.Designer.vb">
+      <DependentUpon>SelectionCompteRenduDuVisiteur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionCompteRenduDuVisiteur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionVisiteur.Designer.vb">
+      <DependentUpon>SelectionVisiteur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionVisiteur.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AffichageCompteRendu.resx">
+      <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixRedacteurCompteRendu.resx">
+      <DependentUpon>ChoixRedacteurCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionActivite.resx">
+      <DependentUpon>SelectionActivite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionCompteRendu.resx">
+      <DependentUpon>SelectionCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffichageActivite.resx">
+      <DependentUpon>AffichageActivite.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilDelegueRegional.resx">
+      <DependentUpon>ProfilDelegueRegional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificationCompteRendu.resx">
+      <DependentUpon>ModificationCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\AffichageDelegueRegional.resx">
+      <DependentUpon>AffichageDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -106,8 +208,21 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProfilVisiteurMedical.resx">
+      <DependentUpon>ProfilVisiteurMedical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedactionCompteRendu.resx">
+      <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionCompteRenduDuVisiteur.resx">
+      <DependentUpon>SelectionCompteRenduDuVisiteur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionVisiteur.resx">
+      <DependentUpon>SelectionVisiteur.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
