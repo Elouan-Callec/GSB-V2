@@ -79,10 +79,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Affichage2CompteRenduVisiteurMedical.Designer.vb">
-      <DependentUpon>Affichage2CompteRenduVisiteurMedical.vb</DependentUpon>
+    <Compile Include="AffichageCompteRenduVisiteurMedical.Designer.vb">
+      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
     </Compile>
-    <Compile Include="Affichage2CompteRenduVisiteurMedical.vb">
+    <Compile Include="AffichageCompteRenduVisiteurMedical.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AffichageActiviteVisiteur.Designer.vb">
@@ -91,10 +91,16 @@
     <Compile Include="AffichageActiviteVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AffichageCompteRendu.Designer.vb">
-      <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
+    <Compile Include="SelectionActivite.Designer.vb">
+      <DependentUpon>SelectionActivite.vb</DependentUpon>
     </Compile>
-    <Compile Include="AffichageCompteRendu.vb">
+    <Compile Include="SelectionActivite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionCompteRendu.Designer.vb">
+      <DependentUpon>SelectionCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionCompteRendu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AfficheDelegueregional.Designer.vb">
@@ -109,10 +115,10 @@
     <Compile Include="FormulaireConnexion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfaceDelegueregional.Designer.vb">
-      <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
+    <Compile Include="ProfilDelegueregional.Designer.vb">
+      <DependentUpon>ProfilDelegueregional.vb</DependentUpon>
     </Compile>
-    <Compile Include="InterfaceDelegueregional.vb">
+    <Compile Include="ProfilDelegueregional.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModificationCompteRendu.Designer.vb">
@@ -161,22 +167,19 @@
     <Compile Include="SelectionVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisionnageCompteRenduDelegueRegional.Designer.vb">
-      <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
-    </Compile>
-    <Compile Include="VisionnageCompteRenduDelegueRegional.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Affichage2CompteRenduVisiteurMedical.resx">
-      <DependentUpon>Affichage2CompteRenduVisiteurMedical.vb</DependentUpon>
+    <EmbeddedResource Include="AffichageCompteRenduVisiteurMedical.resx">
+      <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AffichageActiviteVisiteur.resx">
       <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AffichageCompteRendu.resx">
-      <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
+    <EmbeddedResource Include="SelectionActivite.resx">
+      <DependentUpon>SelectionActivite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionCompteRendu.resx">
+      <DependentUpon>SelectionCompteRendu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AfficheDelegueregional.resx">
       <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
@@ -184,8 +187,8 @@
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterfaceDelegueregional.resx">
-      <DependentUpon>InterfaceDelegueregional.vb</DependentUpon>
+    <EmbeddedResource Include="ProfilDelegueregional.resx">
+      <DependentUpon>ProfilDelegueregional.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificationCompteRendu.resx">
       <DependentUpon>ModificationCompteRendu.vb</DependentUpon>
@@ -207,9 +210,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionVisiteur.resx">
       <DependentUpon>SelectionVisiteur.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VisionnageCompteRenduDelegueRegional.resx">
-      <DependentUpon>VisionnageCompteRenduDelegueRegional.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

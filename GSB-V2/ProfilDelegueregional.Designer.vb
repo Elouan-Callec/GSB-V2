@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class InterfaceDelegueregional
+Partial Class ProfilDelegueregional
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -29,7 +29,7 @@ Partial Class InterfaceDelegueregional
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ButtonVisionnerActivieVisiteur = New System.Windows.Forms.Button()
+        Me.ButtonSelectionActivite = New System.Windows.Forms.Button()
         Me.ButtonVoirCompteRendu = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -37,36 +37,40 @@ Partial Class InterfaceDelegueregional
         'Labelprenom
         '
         Me.Labelprenom.AutoSize = True
-        Me.Labelprenom.Location = New System.Drawing.Point(56, 12)
+        Me.Labelprenom.Location = New System.Drawing.Point(75, 15)
+        Me.Labelprenom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelprenom.Name = "Labelprenom"
-        Me.Labelprenom.Size = New System.Drawing.Size(43, 13)
+        Me.Labelprenom.Size = New System.Drawing.Size(57, 17)
         Me.Labelprenom.TabIndex = 52
         Me.Labelprenom.Text = "Prenom"
         '
         'Labelnom
         '
         Me.Labelnom.AutoSize = True
-        Me.Labelnom.Location = New System.Drawing.Point(102, 12)
+        Me.Labelnom.Location = New System.Drawing.Point(136, 15)
+        Me.Labelnom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelnom.Name = "Labelnom"
-        Me.Labelnom.Size = New System.Drawing.Size(29, 13)
+        Me.Labelnom.Size = New System.Drawing.Size(37, 17)
         Me.Labelnom.TabIndex = 53
         Me.Labelnom.Text = "Nom"
         '
         'LinkLabelmodifiermoncompte
         '
         Me.LinkLabelmodifiermoncompte.AutoSize = True
-        Me.LinkLabelmodifiermoncompte.Location = New System.Drawing.Point(56, 25)
+        Me.LinkLabelmodifiermoncompte.Location = New System.Drawing.Point(75, 31)
+        Me.LinkLabelmodifiermoncompte.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabelmodifiermoncompte.Name = "LinkLabelmodifiermoncompte"
-        Me.LinkLabelmodifiermoncompte.Size = New System.Drawing.Size(105, 13)
+        Me.LinkLabelmodifiermoncompte.Size = New System.Drawing.Size(139, 17)
         Me.LinkLabelmodifiermoncompte.TabIndex = 54
         Me.LinkLabelmodifiermoncompte.TabStop = True
         Me.LinkLabelmodifiermoncompte.Text = "Modifier mon compte"
         '
         'ButtonRedigerCompteRendu
         '
-        Me.ButtonRedigerCompteRendu.Location = New System.Drawing.Point(216, 318)
+        Me.ButtonRedigerCompteRendu.Location = New System.Drawing.Point(288, 391)
+        Me.ButtonRedigerCompteRendu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonRedigerCompteRendu.Name = "ButtonRedigerCompteRendu"
-        Me.ButtonRedigerCompteRendu.Size = New System.Drawing.Size(200, 35)
+        Me.ButtonRedigerCompteRendu.Size = New System.Drawing.Size(267, 43)
         Me.ButtonRedigerCompteRendu.TabIndex = 55
         Me.ButtonRedigerCompteRendu.Text = "Rediger un compte rendu"
         Me.ButtonRedigerCompteRendu.UseVisualStyleBackColor = True
@@ -74,55 +78,59 @@ Partial Class InterfaceDelegueregional
         'Labelhiérarchieparsecteur
         '
         Me.Labelhiérarchieparsecteur.AutoSize = True
-        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(56, 50)
+        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(75, 62)
+        Me.Labelhiérarchieparsecteur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelhiérarchieparsecteur.Name = "Labelhiérarchieparsecteur"
-        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(61, 13)
+        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(81, 17)
         Me.Labelhiérarchieparsecteur.TabIndex = 56
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
         'LabelVisiteurMedical
         '
         Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(123, 50)
+        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(164, 62)
+        Me.LabelVisiteurMedical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(87, 13)
+        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(116, 17)
         Me.LabelVisiteurMedical.TabIndex = 57
         Me.LabelVisiteurMedical.Text = "Délégué régional"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 15)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(39, 52)
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
         Me.PictureBox1.TabIndex = 51
         Me.PictureBox1.TabStop = False
         '
-        'ButtonVisionnerActivieVisiteur
+        'ButtonSelectionActivite
         '
-        Me.ButtonVisionnerActivieVisiteur.Location = New System.Drawing.Point(216, 168)
-        Me.ButtonVisionnerActivieVisiteur.Margin = New System.Windows.Forms.Padding(2)
-        Me.ButtonVisionnerActivieVisiteur.Name = "ButtonVisionnerActivieVisiteur"
-        Me.ButtonVisionnerActivieVisiteur.Size = New System.Drawing.Size(200, 37)
-        Me.ButtonVisionnerActivieVisiteur.TabIndex = 60
-        Me.ButtonVisionnerActivieVisiteur.Text = "Visionner l'activité d'un visiteur"
-        Me.ButtonVisionnerActivieVisiteur.UseVisualStyleBackColor = True
+        Me.ButtonSelectionActivite.Location = New System.Drawing.Point(288, 207)
+        Me.ButtonSelectionActivite.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonSelectionActivite.Name = "ButtonSelectionActivite"
+        Me.ButtonSelectionActivite.Size = New System.Drawing.Size(267, 46)
+        Me.ButtonSelectionActivite.TabIndex = 60
+        Me.ButtonSelectionActivite.Text = "Sélectionner une activité"
+        Me.ButtonSelectionActivite.UseVisualStyleBackColor = True
         '
         'ButtonVoirCompteRendu
         '
-        Me.ButtonVoirCompteRendu.Location = New System.Drawing.Point(216, 243)
+        Me.ButtonVoirCompteRendu.Location = New System.Drawing.Point(288, 299)
+        Me.ButtonVoirCompteRendu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonVoirCompteRendu.Name = "ButtonVoirCompteRendu"
-        Me.ButtonVoirCompteRendu.Size = New System.Drawing.Size(200, 37)
+        Me.ButtonVoirCompteRendu.Size = New System.Drawing.Size(267, 46)
         Me.ButtonVoirCompteRendu.TabIndex = 61
-        Me.ButtonVoirCompteRendu.Text = "Voir mes comptes rendus"
+        Me.ButtonVoirCompteRendu.Text = "Sélectionner un compte rendu"
         Me.ButtonVoirCompteRendu.UseVisualStyleBackColor = True
         '
-        'InterfaceDelegueregional
+        'ProfilDelegueregional
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(648, 480)
+        Me.ClientSize = New System.Drawing.Size(864, 591)
         Me.Controls.Add(Me.ButtonVoirCompteRendu)
-        Me.Controls.Add(Me.ButtonVisionnerActivieVisiteur)
+        Me.Controls.Add(Me.ButtonSelectionActivite)
         Me.Controls.Add(Me.LabelVisiteurMedical)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.ButtonRedigerCompteRendu)
@@ -130,7 +138,8 @@ Partial Class InterfaceDelegueregional
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "InterfaceDelegueregional"
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Name = "ProfilDelegueregional"
         Me.Text = "InterfaceDelegueregional"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -145,6 +154,6 @@ Partial Class InterfaceDelegueregional
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents LabelVisiteurMedical As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ButtonVisionnerActivieVisiteur As Button
+    Friend WithEvents ButtonSelectionActivite As Button
     Friend WithEvents ButtonVoirCompteRendu As Button
 End Class

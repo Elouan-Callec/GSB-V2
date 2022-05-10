@@ -1,4 +1,4 @@
-Public Class InterfaceDelegueregional
+Public Class ProfilDelegueregional
     Dim myConnection As New Odbc.OdbcConnection
     Dim myCommand As New Odbc.OdbcCommand
     Dim myReader As Odbc.OdbcDataReader
@@ -38,7 +38,7 @@ Public Class InterfaceDelegueregional
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActivieVisiteur.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonSelectionActivite.Click
         RedactionCompteRendu.Show()
         Me.Close()
     End Sub

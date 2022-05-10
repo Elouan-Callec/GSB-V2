@@ -1,6 +1,6 @@
 ﻿Public Class RedactionCompteRendu
     Private Sub Button1_Click(sender As Object, e As EventArgs)
-        InterfaceDelegueregional.Show()
+        ProfilDelegueregional.Show()
         Me.Close()
     End Sub
 
