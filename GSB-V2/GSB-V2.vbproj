@@ -85,6 +85,12 @@
     <Compile Include="AffichageCompteRendu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChoixRedacteurCompteRendu.Designer.vb">
+      <DependentUpon>ChoixRedacteurCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChoixRedacteurCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SelectionActivite.Designer.vb">
       <DependentUpon>SelectionActivite.vb</DependentUpon>
     </Compile>
@@ -97,10 +103,10 @@
     <Compile Include="SelectionCompteRendu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AfficheDelegueregional.Designer.vb">
-      <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
+    <Compile Include="AffichageActivite.Designer.vb">
+      <DependentUpon>AffichageActivite.vb</DependentUpon>
     </Compile>
-    <Compile Include="AfficheDelegueregional.vb">
+    <Compile Include="AffichageActivite.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulaireConnexion.Designer.vb">
@@ -155,6 +161,12 @@
     <Compile Include="RedactionCompteRendu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SelectionCompteRenduDuVisiteur.Designer.vb">
+      <DependentUpon>SelectionCompteRenduDuVisiteur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionCompteRenduDuVisiteur.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SelectionVisiteur.Designer.vb">
       <DependentUpon>SelectionVisiteur.vb</DependentUpon>
     </Compile>
@@ -166,14 +178,17 @@
     <EmbeddedResource Include="AffichageCompteRendu.resx">
       <DependentUpon>AffichageCompteRendu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChoixRedacteurCompteRendu.resx">
+      <DependentUpon>ChoixRedacteurCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectionActivite.resx">
       <DependentUpon>SelectionActivite.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionCompteRendu.resx">
       <DependentUpon>SelectionCompteRendu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AfficheDelegueregional.resx">
-      <DependentUpon>AfficheDelegueregional.vb</DependentUpon>
+    <EmbeddedResource Include="AffichageActivite.resx">
+      <DependentUpon>AffichageActivite.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaireConnexion.resx">
       <DependentUpon>FormulaireConnexion.vb</DependentUpon>
@@ -198,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RedactionCompteRendu.resx">
       <DependentUpon>RedactionCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionCompteRenduDuVisiteur.resx">
+      <DependentUpon>SelectionCompteRenduDuVisiteur.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionVisiteur.resx">
       <DependentUpon>SelectionVisiteur.vb</DependentUpon>

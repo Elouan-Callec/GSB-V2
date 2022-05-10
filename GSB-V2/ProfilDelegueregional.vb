@@ -44,7 +44,7 @@ Public Class ProfilDelegueregional
     End Sub
 
     Private Sub Buttonredigercompterendu_Click(sender As Object, e As EventArgs)
-        AfficheDelegueregional.Show()
+        AffichageActivite.Show()
         Me.Close()
 
     End Sub

@@ -1,4 +1,4 @@
-﻿Public Class AfficheDelegueregional
+﻿Public Class AffichageActivite
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ProfilDelegueregional.Show()
         Me.Close()
