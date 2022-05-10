@@ -85,10 +85,10 @@
     <Compile Include="AffichageCompteRenduVisiteurMedical.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AffichageActiviteVisiteur.Designer.vb">
-      <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
+    <Compile Include="AffichageCompteRenduVisiteur.Designer.vb">
+      <DependentUpon>AffichageCompteRenduVisiteur.vb</DependentUpon>
     </Compile>
-    <Compile Include="AffichageActiviteVisiteur.vb">
+    <Compile Include="AffichageCompteRenduVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SelectionActivite.Designer.vb">
@@ -172,8 +172,8 @@
     <EmbeddedResource Include="AffichageCompteRenduVisiteurMedical.resx">
       <DependentUpon>AffichageCompteRenduVisiteurMedical.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AffichageActiviteVisiteur.resx">
-      <DependentUpon>AffichageActiviteVisiteur.vb</DependentUpon>
+    <EmbeddedResource Include="AffichageCompteRenduVisiteur.resx">
+      <DependentUpon>AffichageCompteRenduVisiteur.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionActivite.resx">
       <DependentUpon>SelectionActivite.vb</DependentUpon>
