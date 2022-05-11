@@ -30,10 +30,11 @@ Partial Class AffichageActivite
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
-        Me.LinkLabelmodifiermoncompte = New System.Windows.Forms.LinkLabel()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelNomGraphique = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +52,7 @@ Partial Class AffichageActivite
         '
         ChartArea1.Name = "Test"
         Me.Chart1.ChartAreas.Add(ChartArea1)
-        Me.Chart1.Location = New System.Drawing.Point(160, 92)
+        Me.Chart1.Location = New System.Drawing.Point(164, 154)
         Me.Chart1.Name = "Chart1"
         Series1.ChartArea = "Test"
         Series1.LegendText = "TEST"
@@ -82,7 +83,7 @@ Partial Class AffichageActivite
         'LabelVisiteurMedical
         '
         Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(123, 60)
+        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(123, 85)
         Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
         Me.LabelVisiteurMedical.Size = New System.Drawing.Size(87, 13)
         Me.LabelVisiteurMedical.TabIndex = 63
@@ -91,26 +92,16 @@ Partial Class AffichageActivite
         'Labelhiérarchieparsecteur
         '
         Me.Labelhiérarchieparsecteur.AutoSize = True
-        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(56, 60)
+        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(56, 85)
         Me.Labelhiérarchieparsecteur.Name = "Labelhiérarchieparsecteur"
         Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(61, 13)
         Me.Labelhiérarchieparsecteur.TabIndex = 62
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
-        'LinkLabelmodifiermoncompte
-        '
-        Me.LinkLabelmodifiermoncompte.AutoSize = True
-        Me.LinkLabelmodifiermoncompte.Location = New System.Drawing.Point(56, 35)
-        Me.LinkLabelmodifiermoncompte.Name = "LinkLabelmodifiermoncompte"
-        Me.LinkLabelmodifiermoncompte.Size = New System.Drawing.Size(105, 13)
-        Me.LinkLabelmodifiermoncompte.TabIndex = 61
-        Me.LinkLabelmodifiermoncompte.TabStop = True
-        Me.LinkLabelmodifiermoncompte.Text = "Modifier mon compte"
-        '
         'Labelnom
         '
         Me.Labelnom.AutoSize = True
-        Me.Labelnom.Location = New System.Drawing.Point(102, 22)
+        Me.Labelnom.Location = New System.Drawing.Point(56, 54)
         Me.Labelnom.Name = "Labelnom"
         Me.Labelnom.Size = New System.Drawing.Size(29, 13)
         Me.Labelnom.TabIndex = 60
@@ -133,20 +124,39 @@ Partial Class AffichageActivite
         Me.PictureBox1.TabIndex = 58
         Me.PictureBox1.TabStop = False
         '
-        'AfficheDelegueregional
+        'LabelNomGraphique
+        '
+        Me.LabelNomGraphique.AutoSize = True
+        Me.LabelNomGraphique.Location = New System.Drawing.Point(319, 85)
+        Me.LabelNomGraphique.Name = "LabelNomGraphique"
+        Me.LabelNomGraphique.Size = New System.Drawing.Size(62, 13)
+        Me.LabelNomGraphique.TabIndex = 64
+        Me.LabelNomGraphique.Text = "Graphique :"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(418, 85)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 65
+        Me.Label1.Text = "Label1"
+        '
+        'AffichageActivite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(887, 527)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LabelNomGraphique)
         Me.Controls.Add(Me.LabelVisiteurMedical)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
-        Me.Controls.Add(Me.LinkLabelmodifiermoncompte)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "AfficheDelegueregional"
+        Me.Name = "AffichageActivite"
         Me.Text = "AfficheDelegueregional"
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -158,8 +168,9 @@ Partial Class AffichageActivite
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents LabelVisiteurMedical As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
-    Friend WithEvents LinkLabelmodifiermoncompte As LinkLabel
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LabelNomGraphique As Label
+    Friend WithEvents Label1 As Label
 End Class
