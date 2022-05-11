@@ -28,11 +28,10 @@ Partial Class SelectionActivite
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ComboBoxActiviteVisiteur = New System.Windows.Forms.ComboBox()
-        Me.ComboBoxActiviteEquipe = New System.Windows.Forms.ComboBox()
         Me.LabelChoixVisiteur = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonVisionnerActiviteVisiteur = New System.Windows.Forms.Button()
+        Me.ButtonVisionnerActiviteEquipe = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -89,24 +88,15 @@ Partial Class SelectionActivite
         Me.ComboBoxActiviteVisiteur.Size = New System.Drawing.Size(92, 21)
         Me.ComboBoxActiviteVisiteur.TabIndex = 64
         '
-        'ComboBoxActiviteEquipe
-        '
-        Me.ComboBoxActiviteEquipe.FormattingEnabled = True
-        Me.ComboBoxActiviteEquipe.Location = New System.Drawing.Point(56, 332)
-        Me.ComboBoxActiviteEquipe.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBoxActiviteEquipe.Name = "ComboBoxActiviteEquipe"
-        Me.ComboBoxActiviteEquipe.Size = New System.Drawing.Size(92, 21)
-        Me.ComboBoxActiviteEquipe.TabIndex = 65
-        '
         'LabelChoixVisiteur
         '
         Me.LabelChoixVisiteur.AutoSize = True
         Me.LabelChoixVisiteur.Location = New System.Drawing.Point(54, 137)
         Me.LabelChoixVisiteur.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelChoixVisiteur.Name = "LabelChoixVisiteur"
-        Me.LabelChoixVisiteur.Size = New System.Drawing.Size(84, 13)
+        Me.LabelChoixVisiteur.Size = New System.Drawing.Size(150, 13)
         Me.LabelChoixVisiteur.TabIndex = 66
-        Me.LabelChoixVisiteur.Text = "Choix du visiteur"
+        Me.LabelChoixVisiteur.Text = "Visionner l'activité d'un visiteur"
         '
         'Label1
         '
@@ -114,40 +104,39 @@ Partial Class SelectionActivite
         Me.Label1.Location = New System.Drawing.Point(54, 302)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 13)
+        Me.Label1.Size = New System.Drawing.Size(167, 13)
         Me.Label1.TabIndex = 67
-        Me.Label1.Text = "Choix d'une équipe"
+        Me.Label1.Text = "Visionner l'activité de mon équipe "
         '
-        'Button1
+        'ButtonVisionnerActiviteVisiteur
         '
-        Me.Button1.Location = New System.Drawing.Point(56, 210)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(56, 19)
-        Me.Button1.TabIndex = 68
-        Me.Button1.Text = "Valider"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonVisionnerActiviteVisiteur.Location = New System.Drawing.Point(56, 210)
+        Me.ButtonVisionnerActiviteVisiteur.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonVisionnerActiviteVisiteur.Name = "ButtonVisionnerActiviteVisiteur"
+        Me.ButtonVisionnerActiviteVisiteur.Size = New System.Drawing.Size(56, 19)
+        Me.ButtonVisionnerActiviteVisiteur.TabIndex = 68
+        Me.ButtonVisionnerActiviteVisiteur.Text = "Valider"
+        Me.ButtonVisionnerActiviteVisiteur.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonVisionnerActiviteEquipe
         '
-        Me.Button2.Location = New System.Drawing.Point(56, 375)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(56, 19)
-        Me.Button2.TabIndex = 69
-        Me.Button2.Text = "Valider"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonVisionnerActiviteEquipe.Location = New System.Drawing.Point(56, 340)
+        Me.ButtonVisionnerActiviteEquipe.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonVisionnerActiviteEquipe.Name = "ButtonVisionnerActiviteEquipe"
+        Me.ButtonVisionnerActiviteEquipe.Size = New System.Drawing.Size(56, 19)
+        Me.ButtonVisionnerActiviteEquipe.TabIndex = 69
+        Me.ButtonVisionnerActiviteEquipe.Text = "Valider"
+        Me.ButtonVisionnerActiviteEquipe.UseVisualStyleBackColor = True
         '
         'SelectionActivite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(802, 467)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonVisionnerActiviteEquipe)
+        Me.Controls.Add(Me.ButtonVisionnerActiviteVisiteur)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LabelChoixVisiteur)
-        Me.Controls.Add(Me.ComboBoxActiviteEquipe)
         Me.Controls.Add(Me.ComboBoxActiviteVisiteur)
         Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
@@ -169,9 +158,8 @@ Partial Class SelectionActivite
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ComboBoxActiviteVisiteur As ComboBox
-    Friend WithEvents ComboBoxActiviteEquipe As ComboBox
     Friend WithEvents LabelChoixVisiteur As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonVisionnerActiviteVisiteur As Button
+    Friend WithEvents ButtonVisionnerActiviteEquipe As Button
 End Class
