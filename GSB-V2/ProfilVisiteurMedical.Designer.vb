@@ -57,13 +57,11 @@ Partial Class ProfilVisiteurMedical
         'ComboBoxCompteRendu
         '
         Me.ComboBoxCompteRendu.FormattingEnabled = True
-        Me.ComboBoxCompteRendu.Items.AddRange(New Object() {"CompteRendu n°1", "CompteRendu n°2", "CompteRendu n°3"})
         Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(196, 128)
         Me.ComboBoxCompteRendu.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxCompteRendu.Name = "ComboBoxCompteRendu"
         Me.ComboBoxCompteRendu.Size = New System.Drawing.Size(283, 21)
         Me.ComboBoxCompteRendu.TabIndex = 58
-        Me.ComboBoxCompteRendu.Text = "CompteRendu n°1"
         '
         'BoutonRedigerCompteRendu
         '

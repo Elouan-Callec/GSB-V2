@@ -14,33 +14,50 @@
 
         Dim login As String = FormulaireConnexion.TextBoxLogin.Text
 
-        Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" + login + "';"
-        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" + login + "';"
-        Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" + login + "';"
-
         myCommand.Connection = myConnection
 
-        'AffichageActivite Nom utilisateur
+        'Affichage du nom de l utilisateur
+        Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" + login + "';"
         myCommand.CommandText = SQLafficheNom
         myReader = myCommand.ExecuteReader
         myReader.Read()
         Labelnom.Text = myReader.GetValue(0)
         myReader.Close()
 
-        'AffichageActivite Prenom utilisateur
+        'Affichage du prenom de l utilisateur
+        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" + login + "';"
         myCommand.CommandText = SQLaffichePrenom
         myReader = myCommand.ExecuteReader
         myReader.Read()
         Labelprenom.Text = myReader.GetValue(0)
         myReader.Close()
 
-        'AffichageActivite hiérarchie 
+        'Affichage de la hiérarchie de l utilisateur
+        Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.role = ROLE.idrole WHERE VISITEUR.login = '" + login + "';"
         myCommand.CommandText = SQLafficheHierarchie
         myReader = myCommand.ExecuteReader
         myReader.Read()
         LabelAffichageHierarchie.Text = myReader.GetValue(0)
         myReader.Close()
 
+        'Recuperation de l id de l'utilisateur
+        Dim SQLrecupIdVisiteur As String = "SELECT idvis FROM VISITEUR WHERE VISITEUR.login = '" + login + "';"
+        myCommand.CommandText = SQLrecupIdVisiteur
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+        Dim IdVisiteur As Integer = myReader.GetValue(0)
+        myReader.Close()
+
+        'Affichage du numero du compte rendu dans la liste deroulante
+        'Dim SQLafficheNumeroCompteRendu As Integer = "SELECT id FROM COMPTE_RENDU WHERE visiteur = '" + IdVisiteur + "';"
+        Dim SQLafficheNumeroCompteRendu As String = "SELECT id FROM COMPTE_RENDU WHERE visiteur = '" & IdVisiteur & "'"
+        myCommand.CommandText = SQLafficheNumeroCompteRendu
+        myReader = myCommand.ExecuteReader
+        While myReader.Read()
+            ComboBoxCompteRendu.Items.Add("Compte rendu n°" & myReader.GetString(0))
+            Me.ComboBoxCompteRendu.Text = Me.ComboBoxCompteRendu.Items(0).ToString()
+        End While
+        myReader.Close()
 
     End Sub
 
