@@ -82,16 +82,16 @@ Partial Class SelectionActivite
         'ComboBoxActiviteVisiteur
         '
         Me.ComboBoxActiviteVisiteur.FormattingEnabled = True
-        Me.ComboBoxActiviteVisiteur.Location = New System.Drawing.Point(56, 167)
+        Me.ComboBoxActiviteVisiteur.Location = New System.Drawing.Point(260, 157)
         Me.ComboBoxActiviteVisiteur.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxActiviteVisiteur.Name = "ComboBoxActiviteVisiteur"
-        Me.ComboBoxActiviteVisiteur.Size = New System.Drawing.Size(92, 21)
+        Me.ComboBoxActiviteVisiteur.Size = New System.Drawing.Size(164, 21)
         Me.ComboBoxActiviteVisiteur.TabIndex = 64
         '
         'LabelChoixVisiteur
         '
         Me.LabelChoixVisiteur.AutoSize = True
-        Me.LabelChoixVisiteur.Location = New System.Drawing.Point(54, 137)
+        Me.LabelChoixVisiteur.Location = New System.Drawing.Point(257, 120)
         Me.LabelChoixVisiteur.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelChoixVisiteur.Name = "LabelChoixVisiteur"
         Me.LabelChoixVisiteur.Size = New System.Drawing.Size(150, 13)
@@ -101,7 +101,7 @@ Partial Class SelectionActivite
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(54, 302)
+        Me.Label1.Location = New System.Drawing.Point(257, 299)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(167, 13)
@@ -110,7 +110,7 @@ Partial Class SelectionActivite
         '
         'ButtonVisionnerActiviteVisiteur
         '
-        Me.ButtonVisionnerActiviteVisiteur.Location = New System.Drawing.Point(56, 210)
+        Me.ButtonVisionnerActiviteVisiteur.Location = New System.Drawing.Point(260, 182)
         Me.ButtonVisionnerActiviteVisiteur.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonVisionnerActiviteVisiteur.Name = "ButtonVisionnerActiviteVisiteur"
         Me.ButtonVisionnerActiviteVisiteur.Size = New System.Drawing.Size(56, 19)
@@ -120,7 +120,7 @@ Partial Class SelectionActivite
         '
         'ButtonVisionnerActiviteEquipe
         '
-        Me.ButtonVisionnerActiviteEquipe.Location = New System.Drawing.Point(56, 340)
+        Me.ButtonVisionnerActiviteEquipe.Location = New System.Drawing.Point(259, 337)
         Me.ButtonVisionnerActiviteEquipe.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonVisionnerActiviteEquipe.Name = "ButtonVisionnerActiviteEquipe"
         Me.ButtonVisionnerActiviteEquipe.Size = New System.Drawing.Size(56, 19)
@@ -132,7 +132,7 @@ Partial Class SelectionActivite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(802, 467)
+        Me.ClientSize = New System.Drawing.Size(714, 455)
         Me.Controls.Add(Me.ButtonVisionnerActiviteEquipe)
         Me.Controls.Add(Me.ButtonVisionnerActiviteVisiteur)
         Me.Controls.Add(Me.Label1)

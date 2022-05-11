@@ -12,10 +12,11 @@
 
         Dim login As String = ProfilDelegueregional.login
 
-        Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" + login + "';"
-        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" + login + "';"
-        Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" + login + "';"
-        Dim SQLafficheVisiteur As String = "SELECT nom FROM VISITEUR ;"
+        Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" & login & "';"
+        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" & login & "';"
+        Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" & login & "';"
+        Dim SQLSecteur As String = "SELECT id_secteur FROM VISITEUR where LOGIN ='" & login & "';"
+
 
         myCommand.Connection = myConnection
 
@@ -42,11 +43,22 @@
         myReader.Close()
 
         'AffichageVisiteur
-        myCommand.CommandText = SQLafficheVisiteur
+
+
+        myCommand.CommandText = SQLSecteur
         myReader = myCommand.ExecuteReader
         myReader.Read()
-        Dim Visiteur As New List(Of String)
-        Visiteur.Add(myReader.GetValue(0))
+        Dim secteur = myReader.GetValue(0)
+        myReader.Close()
+
+        Dim SQLafficheVisiteur As String = "SELECT nom FROM VISITEUR WHERE id_secteur =" & secteur & ";"
+
+        myCommand.CommandText = SQLafficheVisiteur
+        myReader = myCommand.ExecuteReader
+        While myReader.Read()
+            ComboBoxActiviteVisiteur.Items.Add(myReader.GetString(0))
+            Me.ComboBoxActiviteVisiteur.Text = Me.ComboBoxActiviteVisiteur.Items(0).ToString()
+        End While
 
         myReader.Close()
 
