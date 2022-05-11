@@ -15,6 +15,7 @@
         Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" + login + "';"
         Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" + login + "';"
         Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" + login + "';"
+        Dim SQLafficheVisiteur As String = "SELECT nom FROM VISITEUR ;"
 
         myCommand.Connection = myConnection
 
@@ -34,18 +35,20 @@
         myReader.Close()
 
         'AffichageActivite hiérarchie 
-        myCommand.CommandText = SQLaffichePrenom
+        myCommand.CommandText = SQLafficheHierarchie
         myReader = myCommand.ExecuteReader
         myReader.Read()
-        Labelprenom.Text = myReader.GetValue(0)
+        LabelHierarchie.Text = myReader.GetValue(0)
         myReader.Close()
 
+        'AffichageVisiteur
+        myCommand.CommandText = SQLafficheVisiteur
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+        Dim Visiteur As New List(Of String)
+        Visiteur.Add(myReader.GetValue(0))
 
-
-
-
-
-
+        myReader.Close()
 
     End Sub
 

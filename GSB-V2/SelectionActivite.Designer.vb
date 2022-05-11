@@ -22,7 +22,7 @@ Partial Class SelectionActivite
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
+        Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
@@ -36,14 +36,14 @@ Partial Class SelectionActivite
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'LabelVisiteurMedical
+        'LabelHierarchie
         '
-        Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(120, 58)
-        Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(87, 13)
-        Me.LabelVisiteurMedical.TabIndex = 63
-        Me.LabelVisiteurMedical.Text = "Délégué régional"
+        Me.LabelHierarchie.AutoSize = True
+        Me.LabelHierarchie.Location = New System.Drawing.Point(120, 58)
+        Me.LabelHierarchie.Name = "LabelHierarchie"
+        Me.LabelHierarchie.Size = New System.Drawing.Size(87, 13)
+        Me.LabelHierarchie.TabIndex = 63
+        Me.LabelHierarchie.Text = "Délégué régional"
         '
         'Labelhiérarchieparsecteur
         '
@@ -149,7 +149,7 @@ Partial Class SelectionActivite
         Me.Controls.Add(Me.LabelChoixVisiteur)
         Me.Controls.Add(Me.ComboBoxActiviteEquipe)
         Me.Controls.Add(Me.ComboBoxActiviteVisiteur)
-        Me.Controls.Add(Me.LabelVisiteurMedical)
+        Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
@@ -163,7 +163,7 @@ Partial Class SelectionActivite
 
     End Sub
 
-    Friend WithEvents LabelVisiteurMedical As Label
+    Friend WithEvents LabelHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
