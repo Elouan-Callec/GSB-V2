@@ -3,7 +3,7 @@ Public Class ProfilDelegueregional
     Dim myCommand As New Odbc.OdbcCommand
     Dim myReader As Odbc.OdbcDataReader
 
-
+    Public login As String = FormulaireConnexion.TextBoxLogin.Text
     'Function Connection(codesql)
     '    Dim connString As String = "DSN=CNXORA06;Uid=SCOTT;Pwd=TIGER;"
     '    myConnection.ConnectionString = connString
@@ -21,7 +21,6 @@ Public Class ProfilDelegueregional
         myConnection.ConnectionString = connString
         myConnection.Open()
 
-        Dim login As String = FormulaireConnexion.TextBoxLogin.Text
 
         Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" + login + "';"
         Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" + login + "';"
