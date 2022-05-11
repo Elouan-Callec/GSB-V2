@@ -41,6 +41,7 @@
         LabelAffichageHierarchie.Text = myReader.GetValue(0)
         myReader.Close()
 
+
     End Sub
 
     Private Sub BoutonAffichage_Click(sender As Object, e As EventArgs) Handles BoutonAffichage.Click
@@ -50,6 +51,11 @@
 
     Private Sub BoutonModifier_Click(sender As Object, e As EventArgs) Handles BoutonModifier.Click
         ModificationCompteRendu.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub BoutonRedigerCompteRendu_Click(sender As Object, e As EventArgs) Handles BoutonRedigerCompteRendu.Click
+        RedactionCompteRendu.Show()
         Me.Close()
     End Sub
 End Class
