@@ -27,7 +27,7 @@ Partial Class ProfilVisiteurMedical
         Me.ComboBoxCompteRendu = New System.Windows.Forms.ComboBox()
         Me.BoutonRedigerCompteRendu = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
+        Me.LabelAffichageHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
@@ -82,14 +82,14 @@ Partial Class ProfilVisiteurMedical
         Me.PictureBox1.TabIndex = 51
         Me.PictureBox1.TabStop = False
         '
-        'LabelVisiteurMedical
+        'LabelAffichageHierarchie
         '
-        Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(124, 57)
-        Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(87, 13)
-        Me.LabelVisiteurMedical.TabIndex = 65
-        Me.LabelVisiteurMedical.Text = "Délégué régional"
+        Me.LabelAffichageHierarchie.AutoSize = True
+        Me.LabelAffichageHierarchie.Location = New System.Drawing.Point(124, 57)
+        Me.LabelAffichageHierarchie.Name = "LabelAffichageHierarchie"
+        Me.LabelAffichageHierarchie.Size = New System.Drawing.Size(87, 13)
+        Me.LabelAffichageHierarchie.TabIndex = 65
+        Me.LabelAffichageHierarchie.Text = "Délégué régional"
         '
         'Labelhiérarchieparsecteur
         '
@@ -123,7 +123,7 @@ Partial Class ProfilVisiteurMedical
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(682, 385)
-        Me.Controls.Add(Me.LabelVisiteurMedical)
+        Me.Controls.Add(Me.LabelAffichageHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
@@ -145,7 +145,7 @@ Partial Class ProfilVisiteurMedical
     Friend WithEvents ComboBoxCompteRendu As ComboBox
     Friend WithEvents BoutonRedigerCompteRendu As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents LabelVisiteurMedical As Label
+    Friend WithEvents LabelAffichageHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
