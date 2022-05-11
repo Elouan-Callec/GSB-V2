@@ -31,12 +31,13 @@ Partial Class ProfilVisiteurMedical
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
+        Me.LabelSelectionCompteRendu = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BoutonModifier
         '
-        Me.BoutonModifier.Location = New System.Drawing.Point(361, 171)
+        Me.BoutonModifier.Location = New System.Drawing.Point(360, 215)
         Me.BoutonModifier.Margin = New System.Windows.Forms.Padding(2)
         Me.BoutonModifier.Name = "BoutonModifier"
         Me.BoutonModifier.Size = New System.Drawing.Size(118, 21)
@@ -46,7 +47,7 @@ Partial Class ProfilVisiteurMedical
         '
         'BoutonAffichage
         '
-        Me.BoutonAffichage.Location = New System.Drawing.Point(196, 171)
+        Me.BoutonAffichage.Location = New System.Drawing.Point(195, 215)
         Me.BoutonAffichage.Margin = New System.Windows.Forms.Padding(2)
         Me.BoutonAffichage.Name = "BoutonAffichage"
         Me.BoutonAffichage.Size = New System.Drawing.Size(118, 21)
@@ -57,7 +58,7 @@ Partial Class ProfilVisiteurMedical
         'ComboBoxCompteRendu
         '
         Me.ComboBoxCompteRendu.FormattingEnabled = True
-        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(196, 128)
+        Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(195, 167)
         Me.ComboBoxCompteRendu.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxCompteRendu.Name = "ComboBoxCompteRendu"
         Me.ComboBoxCompteRendu.Size = New System.Drawing.Size(283, 21)
@@ -65,7 +66,7 @@ Partial Class ProfilVisiteurMedical
         '
         'BoutonRedigerCompteRendu
         '
-        Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(196, 263)
+        Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(195, 302)
         Me.BoutonRedigerCompteRendu.Name = "BoutonRedigerCompteRendu"
         Me.BoutonRedigerCompteRendu.Size = New System.Drawing.Size(151, 30)
         Me.BoutonRedigerCompteRendu.TabIndex = 55
@@ -116,11 +117,22 @@ Partial Class ProfilVisiteurMedical
         Me.Labelprenom.TabIndex = 62
         Me.Labelprenom.Text = "Prenom"
         '
+        'LabelSelectionCompteRendu
+        '
+        Me.LabelSelectionCompteRendu.AutoSize = True
+        Me.LabelSelectionCompteRendu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelSelectionCompteRendu.Location = New System.Drawing.Point(191, 121)
+        Me.LabelSelectionCompteRendu.Name = "LabelSelectionCompteRendu"
+        Me.LabelSelectionCompteRendu.Size = New System.Drawing.Size(250, 20)
+        Me.LabelSelectionCompteRendu.TabIndex = 66
+        Me.LabelSelectionCompteRendu.Text = "Selectionner un compte rendu"
+        '
         'ProfilVisiteurMedical
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(682, 385)
+        Me.Controls.Add(Me.LabelSelectionCompteRendu)
         Me.Controls.Add(Me.LabelAffichageHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
@@ -147,4 +159,5 @@ Partial Class ProfilVisiteurMedical
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
+    Friend WithEvents LabelSelectionCompteRendu As Label
 End Class
