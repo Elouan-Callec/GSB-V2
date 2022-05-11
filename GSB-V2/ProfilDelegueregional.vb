@@ -44,10 +44,10 @@ Public Class ProfilDelegueregional
         myReader.Close()
 
         'AffichageActivite hiérarchie 
-        myCommand.CommandText = SQLaffichePrenom
+        myCommand.CommandText = SQLafficheHierarchie
         myReader = myCommand.ExecuteReader
         myReader.Read()
-        Labelprenom.Text = myReader.GetValue(0)
+        LabelHierarchie.Text = myReader.GetValue(0)
         myReader.Close()
 
 

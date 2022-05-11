@@ -26,7 +26,7 @@ Partial Class ProfilDelegueregional
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.ButtonRedigerCompteRendu = New System.Windows.Forms.Button()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
-        Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
+        Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ButtonSelectionActivite = New System.Windows.Forms.Button()
         Me.ButtonVoirCompteRendu = New System.Windows.Forms.Button()
@@ -69,14 +69,14 @@ Partial Class ProfilDelegueregional
         Me.Labelhiérarchieparsecteur.TabIndex = 56
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
-        'LabelVisiteurMedical
+        'LabelHierarchie
         '
-        Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(124, 60)
-        Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(87, 13)
-        Me.LabelVisiteurMedical.TabIndex = 57
-        Me.LabelVisiteurMedical.Text = "Délégué régional"
+        Me.LabelHierarchie.AutoSize = True
+        Me.LabelHierarchie.Location = New System.Drawing.Point(124, 60)
+        Me.LabelHierarchie.Name = "LabelHierarchie"
+        Me.LabelHierarchie.Size = New System.Drawing.Size(87, 13)
+        Me.LabelHierarchie.TabIndex = 57
+        Me.LabelHierarchie.Text = "Délégué régional"
         '
         'PictureBox1
         '
@@ -112,7 +112,7 @@ Partial Class ProfilDelegueregional
         Me.ClientSize = New System.Drawing.Size(489, 476)
         Me.Controls.Add(Me.ButtonVoirCompteRendu)
         Me.Controls.Add(Me.ButtonSelectionActivite)
-        Me.Controls.Add(Me.LabelVisiteurMedical)
+        Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.ButtonRedigerCompteRendu)
         Me.Controls.Add(Me.Labelnom)
@@ -130,7 +130,7 @@ Partial Class ProfilDelegueregional
     Friend WithEvents Labelnom As Label
     Friend WithEvents ButtonRedigerCompteRendu As Button
     Friend WithEvents Labelhiérarchieparsecteur As Label
-    Friend WithEvents LabelVisiteurMedical As Label
+    Friend WithEvents LabelHierarchie As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ButtonSelectionActivite As Button
     Friend WithEvents ButtonVoirCompteRendu As Button
