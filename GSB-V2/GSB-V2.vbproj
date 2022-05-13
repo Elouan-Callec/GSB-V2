@@ -91,6 +91,13 @@
     <Compile Include="ChoixRedacteurCompteRendu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClassConnexion.vb" />
+    <Compile Include="FormTestConnexion.Designer.vb">
+      <DependentUpon>FormTestConnexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestConnexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SelectionActivite.Designer.vb">
       <DependentUpon>SelectionActivite.vb</DependentUpon>
     </Compile>
@@ -180,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChoixRedacteurCompteRendu.resx">
       <DependentUpon>ChoixRedacteurCompteRendu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestConnexion.resx">
+      <DependentUpon>FormTestConnexion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionActivite.resx">
       <DependentUpon>SelectionActivite.vb</DependentUpon>

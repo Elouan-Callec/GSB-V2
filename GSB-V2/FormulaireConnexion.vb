@@ -58,7 +58,8 @@ Public Class FormulaireConnexion
             End If
 
             If (myReader.GetString(0) = 2) Then
-                ProfilDelegueregional.Show()
+                'ProfilDelegueregional.Show()
+                FormTestConnexion.Show()
                 Me.Close()
             End If
 
