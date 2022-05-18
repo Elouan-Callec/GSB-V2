@@ -2,17 +2,11 @@
     Dim myConnection As New Odbc.OdbcConnection
     Dim myCommand As New Odbc.OdbcCommand
     Dim myReader As Odbc.OdbcDataReader
-    Dim myAdapter As Odbc.OdbcDataAdapter
-    Dim myBuilder As Odbc.OdbcCommandBuilder
-    Dim connString As String
 
-    Private _login As String = FormulaireConnexion.TextBoxLogin.Text
+    Private _login As String
     Private _nom As String
     Private _prenom As String
     Private _hierarchie As String
-
-
-
 
 
     Public Property Login As String
@@ -50,6 +44,55 @@
             _hierarchie = value
         End Set
     End Property
+
+
+    Public Sub New()
+
+        Dim connString As String = "DSN=CNXORA06;Uid=SYSTEM;Pwd=Iroise29;"
+        myConnection.ConnectionString = connString
+        myConnection.Open()
+
+        myCommand.Connection = myConnection
+
+        'Affiche Login'
+        Me.Login = FormulaireConnexion.TextBoxLogin.Text
+
+        'Affiche Nom'
+        Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" + Me.Login + "';"
+
+        myCommand.CommandText = SQLafficheNom
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+        Me.Nom = myReader.GetValue(0)
+        myReader.Close()
+
+        'Affiche Prenom'
+        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" + Login + "';"
+
+        myCommand.CommandText = SQLaffichePrenom
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+        Me.Prenom = myReader.GetValue(0)
+        myReader.Close()
+
+        'Affiche Hierarchie'
+        Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" + Login + "';"
+
+        myCommand.CommandText = SQLafficheHierarchie
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+        Me.Hierarchie = myReader.GetValue(0)
+        myReader.Close()
+
+
+    End Sub
+
+    'Public Sub New(login As String, nom As String, prenom As String, hierarchie As String)
+    '    Me.Login = login
+    '    Me.Nom = nom
+    '    Me.Prenom = prenom
+    '    Me.Hierarchie = hierarchie
+    'End Sub
 
     Public Sub New(login As String, nom As String, prenom As String, hierarchie As String)
         Me.Login = login

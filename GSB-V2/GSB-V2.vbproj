@@ -180,6 +180,12 @@
     <Compile Include="SelectionVisiteur.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Test_Form.Designer.vb">
+      <DependentUpon>Test_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Test_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AffichageCompteRendu.resx">
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionVisiteur.resx">
       <DependentUpon>SelectionVisiteur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test_Form.resx">
+      <DependentUpon>Test_Form.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
