@@ -70,6 +70,8 @@ Public Class FormulaireConnexion
             MessageBox.Show("Connexion échouée")
         End If
     End Sub
+
+
 End Class
 
 

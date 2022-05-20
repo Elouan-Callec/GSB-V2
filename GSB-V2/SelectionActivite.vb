@@ -42,9 +42,8 @@
         LabelHierarchie.Text = myReader.GetValue(0)
         myReader.Close()
 
-        'AffichageVisiteur
 
-
+        'AffichageVisiteur 
         myCommand.CommandText = SQLSecteur
         myReader = myCommand.ExecuteReader
         myReader.Read()
