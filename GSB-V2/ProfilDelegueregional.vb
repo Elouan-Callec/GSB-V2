@@ -51,27 +51,25 @@ Public Class ProfilDelegueregional
         myReader.Close()
 
 
-
-
     End Sub
 
     'Selectionner une activite
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonSelectionActivite.Click
         SelectionActivite.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     'Selectionner un compte rendu 
     Private Sub ButtonVoirCompteRendu_Click(sender As Object, e As EventArgs) Handles ButtonVoirCompteRendu.Click
         ChoixRedacteurCompteRendu.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
 
     'Rediger un compte rendu
     Private Sub ButtonRedigerCompteRendu_Click(sender As Object, e As EventArgs) Handles ButtonRedigerCompteRendu.Click
         AffichageActivite.Show()
-        Me.Close()
+        Me.Hide()
 
     End Sub
 

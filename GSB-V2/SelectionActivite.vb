@@ -66,11 +66,11 @@
 
     Private Sub ButtonVisionnerActiviteVisiteur_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActiviteVisiteur.Click
         AffichageActivite.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub ButtonVisionnerActiviteEquipe_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActiviteEquipe.Click
         AffichageActivite.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 End Class
