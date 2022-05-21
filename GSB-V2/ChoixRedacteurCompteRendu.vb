@@ -48,7 +48,7 @@
     End Sub
 
     Private Sub BoutonModifier_Click(sender As Object, e As EventArgs) Handles BoutonModifier.Click
-        SelectionCompteRenduDuVisiteur.Show()
+        SelectionVisiteur.Show()
         Me.Close()
     End Sub
 End Class

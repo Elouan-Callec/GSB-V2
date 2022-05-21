@@ -22,7 +22,7 @@ Partial Class SelectionVisiteur
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
+        Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
@@ -33,15 +33,15 @@ Partial Class SelectionVisiteur
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'LabelVisiteurMedical
+        'LabelHierarchie
         '
-        Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(184, 78)
-        Me.LabelVisiteurMedical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(129, 20)
-        Me.LabelVisiteurMedical.TabIndex = 63
-        Me.LabelVisiteurMedical.Text = "Délégué régional"
+        Me.LabelHierarchie.AutoSize = True
+        Me.LabelHierarchie.Location = New System.Drawing.Point(184, 78)
+        Me.LabelHierarchie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelHierarchie.Name = "LabelHierarchie"
+        Me.LabelHierarchie.Size = New System.Drawing.Size(42, 20)
+        Me.LabelHierarchie.TabIndex = 63
+        Me.LabelHierarchie.Text = "Role"
         '
         'Labelhiérarchieparsecteur
         '
@@ -96,7 +96,6 @@ Partial Class SelectionVisiteur
         'ComboBoxChoixVisiteur
         '
         Me.ComboBoxChoixVisiteur.FormattingEnabled = True
-        Me.ComboBoxChoixVisiteur.Items.AddRange(New Object() {"Visiteur numéro 1", "Visiteur numéro 2"})
         Me.ComboBoxChoixVisiteur.Location = New System.Drawing.Point(430, 302)
         Me.ComboBoxChoixVisiteur.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBoxChoixVisiteur.Name = "ComboBoxChoixVisiteur"
@@ -121,7 +120,7 @@ Partial Class SelectionVisiteur
         Me.Controls.Add(Me.ValiderCompteRendu)
         Me.Controls.Add(Me.ComboBoxChoixVisiteur)
         Me.Controls.Add(Me.LabelChoixVisiteur)
-        Me.Controls.Add(Me.LabelVisiteurMedical)
+        Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
@@ -135,7 +134,7 @@ Partial Class SelectionVisiteur
 
     End Sub
 
-    Friend WithEvents LabelVisiteurMedical As Label
+    Friend WithEvents LabelHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
