@@ -1,58 +1,16 @@
 Public Class ProfilDelegueregional
-    Dim myConnection As New Odbc.OdbcConnection
-    Dim myCommand As New Odbc.OdbcCommand
-    Dim myReader As Odbc.OdbcDataReader
-
-    Public login As String = FormulaireConnexion.TextBoxLogin.Text
-    'Function Connection(codesql)
-    '    Dim connString As String = "DSN=CNXORA06;Uid=SCOTT;Pwd=TIGER;"
-    '    myConnection.ConnectionString = connString
-    '    myConnection.Open()
-    '    myCommand.Connection = myConnection
-    '    myCommand.CommandText = codesql
-    '    myReader = myCommand.ExecuteReader
-    '    myReader.Read()
-    'End Function
-
 
     Private Sub InterfaceDelegueregional_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        Dim connString As String = "DSN=CNXORA06;Uid=SYSTEM;Pwd=Iroise29;"
-        myConnection.ConnectionString = connString
-        myConnection.Open()
-
-
-        Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" + login + "';"
-        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" + login + "';"
-        Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" + login + "';"
-
-        myCommand.Connection = myConnection
-
+        Dim login As String = BDD.afficheLogin()
 
         'AffichageActivite Nom utilisateur
-        myCommand.CommandText = SQLafficheNom
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        Labelnom.Text = myReader.GetValue(0)
-        myReader.Close()
+        Labelnom.Text = BDD.afficheNom(login)
 
         'AffichageActivite Prenom utilisateur
-        myCommand.CommandText = SQLaffichePrenom
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        Labelprenom.Text = myReader.GetValue(0)
-        myReader.Close()
+        Labelprenom.Text = BDD.affichePrenom(login)
 
         'AffichageActivite hiérarchie 
-        myCommand.CommandText = SQLafficheHierarchie
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        LabelHierarchie.Text = myReader.GetValue(0)
-        myReader.Close()
-
-
-
-
+        LabelHierarchie.Text = BDD.afficheHierarchie(login)
     End Sub
 
     'Selectionner une activite
@@ -74,6 +32,5 @@ Public Class ProfilDelegueregional
         Me.Close()
 
     End Sub
-
 
 End Class

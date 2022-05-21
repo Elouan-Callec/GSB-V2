@@ -32,17 +32,19 @@ Partial Class FormulaireConnexion
         '
         'TextBoxLogin
         '
-        Me.TextBoxLogin.Location = New System.Drawing.Point(119, 190)
+        Me.TextBoxLogin.Location = New System.Drawing.Point(159, 234)
+        Me.TextBoxLogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxLogin.Name = "TextBoxLogin"
-        Me.TextBoxLogin.Size = New System.Drawing.Size(399, 20)
+        Me.TextBoxLogin.Size = New System.Drawing.Size(531, 22)
         Me.TextBoxLogin.TabIndex = 18
         Me.TextBoxLogin.Text = "Entrer le login"
         '
         'ButtonLogin
         '
-        Me.ButtonLogin.Location = New System.Drawing.Point(119, 383)
+        Me.ButtonLogin.Location = New System.Drawing.Point(159, 471)
+        Me.ButtonLogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonLogin.Name = "ButtonLogin"
-        Me.ButtonLogin.Size = New System.Drawing.Size(399, 40)
+        Me.ButtonLogin.Size = New System.Drawing.Size(532, 49)
         Me.ButtonLogin.TabIndex = 17
         Me.ButtonLogin.Text = "LOGIN"
         Me.ButtonLogin.UseVisualStyleBackColor = True
@@ -50,9 +52,10 @@ Partial Class FormulaireConnexion
         'TextBoxMotDePasse
         '
         Me.TextBoxMotDePasse.AutoCompleteCustomSource.AddRange(New String() {"Entrer le mot de passe"})
-        Me.TextBoxMotDePasse.Location = New System.Drawing.Point(119, 297)
+        Me.TextBoxMotDePasse.Location = New System.Drawing.Point(159, 366)
+        Me.TextBoxMotDePasse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxMotDePasse.Name = "TextBoxMotDePasse"
-        Me.TextBoxMotDePasse.Size = New System.Drawing.Size(399, 20)
+        Me.TextBoxMotDePasse.Size = New System.Drawing.Size(531, 22)
         Me.TextBoxMotDePasse.TabIndex = 16
         Me.TextBoxMotDePasse.Tag = ""
         Me.TextBoxMotDePasse.Text = "Entrer le mot de passe"
@@ -61,9 +64,10 @@ Partial Class FormulaireConnexion
         '
         Me.Labelmotdepasse.AutoSize = True
         Me.Labelmotdepasse.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labelmotdepasse.Location = New System.Drawing.Point(116, 263)
+        Me.Labelmotdepasse.Location = New System.Drawing.Point(155, 324)
+        Me.Labelmotdepasse.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelmotdepasse.Name = "Labelmotdepasse"
-        Me.Labelmotdepasse.Size = New System.Drawing.Size(93, 17)
+        Me.Labelmotdepasse.Size = New System.Drawing.Size(110, 20)
         Me.Labelmotdepasse.TabIndex = 15
         Me.Labelmotdepasse.Text = "Mot de passe"
         '
@@ -71,9 +75,10 @@ Partial Class FormulaireConnexion
         '
         Me.Labellogin.AutoSize = True
         Me.Labellogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labellogin.Location = New System.Drawing.Point(116, 150)
+        Me.Labellogin.Location = New System.Drawing.Point(155, 185)
+        Me.Labellogin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labellogin.Name = "Labellogin"
-        Me.Labellogin.Size = New System.Drawing.Size(43, 17)
+        Me.Labellogin.Size = New System.Drawing.Size(50, 20)
         Me.Labellogin.TabIndex = 14
         Me.Labellogin.Text = "Login"
         '
@@ -81,23 +86,25 @@ Partial Class FormulaireConnexion
         '
         Me.Labelconnexion.AutoSize = True
         Me.Labelconnexion.Font = New System.Drawing.Font("Microsoft Sans Serif", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labelconnexion.Location = New System.Drawing.Point(204, 46)
+        Me.Labelconnexion.Location = New System.Drawing.Point(272, 57)
+        Me.Labelconnexion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelconnexion.Name = "Labelconnexion"
-        Me.Labelconnexion.Size = New System.Drawing.Size(229, 51)
+        Me.Labelconnexion.Size = New System.Drawing.Size(286, 63)
         Me.Labelconnexion.TabIndex = 13
         Me.Labelconnexion.Text = "Connexion"
         '
         'FormulaireConnexion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(624, 506)
+        Me.ClientSize = New System.Drawing.Size(832, 623)
         Me.Controls.Add(Me.TextBoxLogin)
         Me.Controls.Add(Me.ButtonLogin)
         Me.Controls.Add(Me.TextBoxMotDePasse)
         Me.Controls.Add(Me.Labelmotdepasse)
         Me.Controls.Add(Me.Labellogin)
         Me.Controls.Add(Me.Labelconnexion)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormulaireConnexion"
         Me.Text = "FormulaireConnexion"
         Me.ResumeLayout(False)
