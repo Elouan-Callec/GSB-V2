@@ -33,7 +33,7 @@ Partial Class AffichageActivite
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LabelUtilisateurSelect = New System.Windows.Forms.Label()
+        Me.LabelTypeActivité = New System.Windows.Forms.Label()
         Me.LabelSelection = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,14 +131,14 @@ Partial Class AffichageActivite
         Me.PictureBox1.TabIndex = 58
         Me.PictureBox1.TabStop = False
         '
-        'LabelUtilisateurSelect
+        'LabelTypeActivité
         '
-        Me.LabelUtilisateurSelect.AutoSize = True
-        Me.LabelUtilisateurSelect.Location = New System.Drawing.Point(604, 34)
-        Me.LabelUtilisateurSelect.Name = "LabelUtilisateurSelect"
-        Me.LabelUtilisateurSelect.Size = New System.Drawing.Size(90, 20)
-        Me.LabelUtilisateurSelect.TabIndex = 64
-        Me.LabelUtilisateurSelect.Text = "Activité de :"
+        Me.LabelTypeActivité.AutoSize = True
+        Me.LabelTypeActivité.Location = New System.Drawing.Point(604, 34)
+        Me.LabelTypeActivité.Name = "LabelTypeActivité"
+        Me.LabelTypeActivité.Size = New System.Drawing.Size(57, 20)
+        Me.LabelTypeActivité.TabIndex = 64
+        Me.LabelTypeActivité.Text = "Label2"
         '
         'LabelSelection
         '
@@ -155,7 +155,7 @@ Partial Class AffichageActivite
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1200, 692)
         Me.Controls.Add(Me.LabelSelection)
-        Me.Controls.Add(Me.LabelUtilisateurSelect)
+        Me.Controls.Add(Me.LabelTypeActivité)
         Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Label)
         Me.Controls.Add(Me.Labelnom)
@@ -179,6 +179,6 @@ Partial Class AffichageActivite
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents LabelUtilisateurSelect As Label
+    Friend WithEvents LabelTypeActivité As Label
     Friend WithEvents LabelSelection As Label
 End Class

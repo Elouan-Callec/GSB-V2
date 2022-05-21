@@ -25,7 +25,7 @@ Partial Class SelectionCompteRendu
         Me.BoutonModifier = New System.Windows.Forms.Button()
         Me.BoutonAffichage = New System.Windows.Forms.Button()
         Me.ComboBoxCompteRendu = New System.Windows.Forms.ComboBox()
-        Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
+        Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
@@ -54,22 +54,20 @@ Partial Class SelectionCompteRendu
         'ComboBoxCompteRendu
         '
         Me.ComboBoxCompteRendu.FormattingEnabled = True
-        Me.ComboBoxCompteRendu.Items.AddRange(New Object() {"CompteRendu n°1", "CompteRendu n°2", "CompteRendu n°3"})
         Me.ComboBoxCompteRendu.Location = New System.Drawing.Point(158, 245)
         Me.ComboBoxCompteRendu.Name = "ComboBoxCompteRendu"
         Me.ComboBoxCompteRendu.Size = New System.Drawing.Size(422, 28)
         Me.ComboBoxCompteRendu.TabIndex = 63
-        Me.ComboBoxCompteRendu.Text = "CompteRendu n°1"
         '
-        'LabelVisiteurMedical
+        'LabelHierarchie
         '
-        Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(184, 77)
-        Me.LabelVisiteurMedical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(129, 20)
-        Me.LabelVisiteurMedical.TabIndex = 71
-        Me.LabelVisiteurMedical.Text = "Délégué régional"
+        Me.LabelHierarchie.AutoSize = True
+        Me.LabelHierarchie.Location = New System.Drawing.Point(184, 77)
+        Me.LabelHierarchie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelHierarchie.Name = "LabelHierarchie"
+        Me.LabelHierarchie.Size = New System.Drawing.Size(42, 20)
+        Me.LabelHierarchie.TabIndex = 71
+        Me.LabelHierarchie.Text = "Role"
         '
         'Labelhiérarchieparsecteur
         '
@@ -115,7 +113,7 @@ Partial Class SelectionCompteRendu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(688, 491)
-        Me.Controls.Add(Me.LabelVisiteurMedical)
+        Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
@@ -135,7 +133,7 @@ Partial Class SelectionCompteRendu
     Friend WithEvents BoutonModifier As Button
     Friend WithEvents BoutonAffichage As Button
     Friend WithEvents ComboBoxCompteRendu As ComboBox
-    Friend WithEvents LabelVisiteurMedical As Label
+    Friend WithEvents LabelHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label

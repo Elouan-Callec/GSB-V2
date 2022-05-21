@@ -49,12 +49,13 @@
         myReader.Close()
 
         'Affichage du numero du compte rendu dans la liste deroulante
-        'Dim SQLafficheNumeroCompteRendu As Integer = "SELECT id FROM COMPTE_RENDU WHERE visiteur = '" + IdVisiteur + "';"
-        Dim SQLafficheNumeroCompteRendu As String = "SELECT id FROM COMPTE_RENDU WHERE visiteur = '" & IdVisiteur & "'"
-        myCommand.CommandText = SQLafficheNumeroCompteRendu
+
+        Dim SQLafficheDateCompteRendu As String = "SELECT DTE FROM COMPTE_RENDU WHERE visiteur = '" & IdVisiteur & "'Order by DTE DESC;"
+        myCommand.CommandText = SQLafficheDateCompteRendu
         myReader = myCommand.ExecuteReader
         While myReader.Read()
-            ComboBoxCompteRendu.Items.Add("Compte rendu n°" & myReader.GetString(0))
+            Dim AfficheDate As Date = myReader.GetString(0)
+            ComboBoxCompteRendu.Items.Add("Compte rendu du " & AfficheDate)
             Me.ComboBoxCompteRendu.Text = Me.ComboBoxCompteRendu.Items(0).ToString()
         End While
         myReader.Close()

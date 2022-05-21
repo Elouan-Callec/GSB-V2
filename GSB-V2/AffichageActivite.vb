@@ -53,6 +53,7 @@
             myReader = myCommand.ExecuteReader
             myReader.Read()
             LabelSelection.Text = myReader.GetValue(0)
+            LabelTypeActivité.Text = "Activité du visiteur :"
             myReader.Close()
 
         ElseIf (SelectionActivite.ValeurBouton2 = 1) Then
@@ -62,6 +63,7 @@
             myReader = myCommand.ExecuteReader
             myReader.Read()
             LabelSelection.Text = myReader.GetValue(0)
+            LabelTypeActivité.Text = "Activité du secteur :"
             myReader.Close()
         End If
 
