@@ -105,7 +105,7 @@ Partial Class AffichageActivite
         'Labelnom
         '
         Me.Labelnom.AutoSize = True
-        Me.Labelnom.Location = New System.Drawing.Point(84, 63)
+        Me.Labelnom.Location = New System.Drawing.Point(84, 34)
         Me.Labelnom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelnom.Name = "Labelnom"
         Me.Labelnom.Size = New System.Drawing.Size(42, 20)
@@ -115,7 +115,7 @@ Partial Class AffichageActivite
         'Labelprenom
         '
         Me.Labelprenom.AutoSize = True
-        Me.Labelprenom.Location = New System.Drawing.Point(84, 34)
+        Me.Labelprenom.Location = New System.Drawing.Point(84, 61)
         Me.Labelprenom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelprenom.Name = "Labelprenom"
         Me.Labelprenom.Size = New System.Drawing.Size(64, 20)
