@@ -22,10 +22,10 @@ Partial Class AffichageActivite
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Title3 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title4 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title1 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim Title2 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.LabelHierarchie = New System.Windows.Forms.Label()
@@ -33,6 +33,8 @@ Partial Class AffichageActivite
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelUtilisateurSelect = New System.Windows.Forms.Label()
+        Me.LabelSelection = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,36 +51,36 @@ Partial Class AffichageActivite
         '
         'Chart1
         '
-        ChartArea2.Name = "Test"
-        Me.Chart1.ChartAreas.Add(ChartArea2)
+        ChartArea1.Name = "Test"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
         Me.Chart1.Location = New System.Drawing.Point(240, 142)
         Me.Chart1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Chart1.Name = "Chart1"
-        Series2.ChartArea = "Test"
-        Series2.LegendText = "TEST"
-        Series2.Name = "Series1"
-        Me.Chart1.Series.Add(Series2)
+        Series1.ChartArea = "Test"
+        Series1.LegendText = "TEST"
+        Series1.Name = "Series1"
+        Me.Chart1.Series.Add(Series1)
         Me.Chart1.Size = New System.Drawing.Size(770, 532)
         Me.Chart1.TabIndex = 2
         Me.Chart1.Text = "Delegue Regional"
-        Title3.Alignment = System.Drawing.ContentAlignment.TopCenter
-        Title3.Name = "Mois"
-        Title3.Position.Auto = False
-        Title3.Position.Width = 94.0!
-        Title3.Position.X = 6.0!
-        Title3.Position.Y = 95.0!
-        Title3.Text = "Mois"
-        Title4.Alignment = System.Drawing.ContentAlignment.TopLeft
-        Title4.Name = "Title1"
-        Title4.Position.Auto = False
-        Title4.Position.Height = 27.88597!
-        Title4.Position.Width = 94.0!
-        Title4.Position.X = 3.0!
-        Title4.Position.Y = 40.0!
-        Title4.Text = "Nombre de visite"
-        Title4.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
-        Me.Chart1.Titles.Add(Title3)
-        Me.Chart1.Titles.Add(Title4)
+        Title1.Alignment = System.Drawing.ContentAlignment.TopCenter
+        Title1.Name = "Mois"
+        Title1.Position.Auto = False
+        Title1.Position.Width = 94.0!
+        Title1.Position.X = 6.0!
+        Title1.Position.Y = 95.0!
+        Title1.Text = "Mois"
+        Title2.Alignment = System.Drawing.ContentAlignment.TopLeft
+        Title2.Name = "Title1"
+        Title2.Position.Auto = False
+        Title2.Position.Height = 27.88597!
+        Title2.Position.Width = 94.0!
+        Title2.Position.X = 3.0!
+        Title2.Position.Y = 40.0!
+        Title2.Text = "Nombre de visite"
+        Title2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
+        Me.Chart1.Titles.Add(Title1)
+        Me.Chart1.Titles.Add(Title2)
         '
         'LabelHierarchie
         '
@@ -129,11 +131,31 @@ Partial Class AffichageActivite
         Me.PictureBox1.TabIndex = 58
         Me.PictureBox1.TabStop = False
         '
+        'LabelUtilisateurSelect
+        '
+        Me.LabelUtilisateurSelect.AutoSize = True
+        Me.LabelUtilisateurSelect.Location = New System.Drawing.Point(604, 34)
+        Me.LabelUtilisateurSelect.Name = "LabelUtilisateurSelect"
+        Me.LabelUtilisateurSelect.Size = New System.Drawing.Size(90, 20)
+        Me.LabelUtilisateurSelect.TabIndex = 64
+        Me.LabelUtilisateurSelect.Text = "Activité de :"
+        '
+        'LabelSelection
+        '
+        Me.LabelSelection.AutoSize = True
+        Me.LabelSelection.Location = New System.Drawing.Point(604, 72)
+        Me.LabelSelection.Name = "LabelSelection"
+        Me.LabelSelection.Size = New System.Drawing.Size(57, 20)
+        Me.LabelSelection.TabIndex = 65
+        Me.LabelSelection.Text = "Label1"
+        '
         'AffichageActivite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1200, 692)
+        Me.Controls.Add(Me.LabelSelection)
+        Me.Controls.Add(Me.LabelUtilisateurSelect)
         Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Label)
         Me.Controls.Add(Me.Labelnom)
@@ -157,4 +179,6 @@ Partial Class AffichageActivite
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LabelUtilisateurSelect As Label
+    Friend WithEvents LabelSelection As Label
 End Class

@@ -16,6 +16,10 @@
         Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" & login & "';"
         Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" & login & "';"
 
+        Dim UtilisateurSelect As String = SelectionActivite.ComboBoxActiviteVisiteur.Text
+        Dim SQLafficheNomFonctionSelectionner As String = "SELECT nom FROM VISITEUR WHERE nom ='" & UtilisateurSelect & "';"
+
+
         myCommand.Connection = myConnection
 
         'AffichageActivite Nom utilisateur
@@ -24,6 +28,8 @@
         myReader.Read()
         Labelnom.Text = myReader.GetValue(0)
         myReader.Close()
+
+        Dim SQLafficheSecteur As String = "SELECT SECTEUR.nom FROM SECTEUR INNER JOIN VISITEUR ON visiteur.id_secteur = secteur.id where visiteur.nom = '" & Labelnom.Text & "';"
 
         'AffichageActivite Prenom utilisateur
         myCommand.CommandText = SQLaffichePrenom
@@ -40,9 +46,31 @@
         myReader.Close()
 
 
+        If (SelectionActivite.ValeurBouton1 = 1) Then
+
+            'AffichageActivite Visiteur 
+            myCommand.CommandText = SQLafficheNomFonctionSelectionner
+            myReader = myCommand.ExecuteReader
+            myReader.Read()
+            LabelSelection.Text = myReader.GetValue(0)
+            myReader.Close()
+
+        ElseIf (SelectionActivite.ValeurBouton2 = 1) Then
+
+            'AffichageActivite Secteur 
+            myCommand.CommandText = SQLafficheSecteur
+            myReader = myCommand.ExecuteReader
+            myReader.Read()
+            LabelSelection.Text = myReader.GetValue(0)
+            myReader.Close()
+        End If
+
     End Sub
+
+
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ProfilDelegueregional.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class
