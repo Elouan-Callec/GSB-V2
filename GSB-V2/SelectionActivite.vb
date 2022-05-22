@@ -42,9 +42,8 @@
         LabelHierarchie.Text = myReader.GetValue(0)
         myReader.Close()
 
-        'AffichageVisiteur
 
-
+        'AffichageVisiteur 
         myCommand.CommandText = SQLSecteur
         myReader = myCommand.ExecuteReader
         myReader.Read()
@@ -64,12 +63,16 @@
 
     End Sub
 
-    Private Sub ButtonVisionnerActiviteVisiteur_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActiviteVisiteur.Click
+    Public ValeurBouton1 As Integer = 0
+    Public ValeurBouton2 As Integer = 0
+    Public Sub ButtonVisionnerActiviteVisiteur_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActiviteVisiteur.Click
+        ValeurBouton1 = 1
         AffichageActivite.Show()
         Me.Close()
     End Sub
 
-    Private Sub ButtonVisionnerActiviteEquipe_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActiviteEquipe.Click
+    Public Sub ButtonVisionnerActiviteEquipe_Click(sender As Object, e As EventArgs) Handles ButtonVisionnerActiviteEquipe.Click
+        ValeurBouton2 = 1
         AffichageActivite.Show()
         Me.Close()
     End Sub

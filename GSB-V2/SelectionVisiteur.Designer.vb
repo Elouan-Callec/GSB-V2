@@ -22,9 +22,8 @@ Partial Class SelectionVisiteur
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
+        Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
-        Me.LinkLabelmodifiermoncompte = New System.Windows.Forms.LinkLabel()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -34,63 +33,52 @@ Partial Class SelectionVisiteur
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'LabelVisiteurMedical
+        'LabelHierarchie
         '
-        Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(164, 62)
-        Me.LabelVisiteurMedical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(116, 17)
-        Me.LabelVisiteurMedical.TabIndex = 63
-        Me.LabelVisiteurMedical.Text = "Délégué régional"
+        Me.LabelHierarchie.AutoSize = True
+        Me.LabelHierarchie.Location = New System.Drawing.Point(184, 78)
+        Me.LabelHierarchie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelHierarchie.Name = "LabelHierarchie"
+        Me.LabelHierarchie.Size = New System.Drawing.Size(42, 20)
+        Me.LabelHierarchie.TabIndex = 63
+        Me.LabelHierarchie.Text = "Role"
         '
         'Labelhiérarchieparsecteur
         '
         Me.Labelhiérarchieparsecteur.AutoSize = True
-        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(75, 62)
+        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(84, 78)
         Me.Labelhiérarchieparsecteur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelhiérarchieparsecteur.Name = "Labelhiérarchieparsecteur"
-        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(81, 17)
+        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(89, 20)
         Me.Labelhiérarchieparsecteur.TabIndex = 62
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
-        '
-        'LinkLabelmodifiermoncompte
-        '
-        Me.LinkLabelmodifiermoncompte.AutoSize = True
-        Me.LinkLabelmodifiermoncompte.Location = New System.Drawing.Point(75, 31)
-        Me.LinkLabelmodifiermoncompte.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabelmodifiermoncompte.Name = "LinkLabelmodifiermoncompte"
-        Me.LinkLabelmodifiermoncompte.Size = New System.Drawing.Size(139, 17)
-        Me.LinkLabelmodifiermoncompte.TabIndex = 61
-        Me.LinkLabelmodifiermoncompte.TabStop = True
-        Me.LinkLabelmodifiermoncompte.Text = "Modifier mon compte"
         '
         'Labelnom
         '
         Me.Labelnom.AutoSize = True
-        Me.Labelnom.Location = New System.Drawing.Point(136, 15)
+        Me.Labelnom.Location = New System.Drawing.Point(84, 19)
         Me.Labelnom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelnom.Name = "Labelnom"
-        Me.Labelnom.Size = New System.Drawing.Size(37, 17)
+        Me.Labelnom.Size = New System.Drawing.Size(42, 20)
         Me.Labelnom.TabIndex = 60
         Me.Labelnom.Text = "Nom"
         '
         'Labelprenom
         '
         Me.Labelprenom.AutoSize = True
-        Me.Labelprenom.Location = New System.Drawing.Point(75, 15)
+        Me.Labelprenom.Location = New System.Drawing.Point(84, 48)
         Me.Labelprenom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelprenom.Name = "Labelprenom"
-        Me.Labelprenom.Size = New System.Drawing.Size(57, 17)
+        Me.Labelprenom.Size = New System.Drawing.Size(64, 20)
         Me.Labelprenom.TabIndex = 59
         Me.Labelprenom.Text = "Prenom"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(16, 15)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(18, 19)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
+        Me.PictureBox1.Size = New System.Drawing.Size(58, 80)
         Me.PictureBox1.TabIndex = 58
         Me.PictureBox1.TabStop = False
         '
@@ -98,48 +86,46 @@ Partial Class SelectionVisiteur
         '
         Me.LabelChoixVisiteur.AutoSize = True
         Me.LabelChoixVisiteur.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelChoixVisiteur.Location = New System.Drawing.Point(433, 190)
+        Me.LabelChoixVisiteur.Location = New System.Drawing.Point(487, 238)
         Me.LabelChoixVisiteur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelChoixVisiteur.Name = "LabelChoixVisiteur"
-        Me.LabelChoixVisiteur.Size = New System.Drawing.Size(178, 25)
+        Me.LabelChoixVisiteur.Size = New System.Drawing.Size(216, 29)
         Me.LabelChoixVisiteur.TabIndex = 64
         Me.LabelChoixVisiteur.Text = "Choisir le visiteur"
         '
         'ComboBoxChoixVisiteur
         '
         Me.ComboBoxChoixVisiteur.FormattingEnabled = True
-        Me.ComboBoxChoixVisiteur.Items.AddRange(New Object() {"Visiteur numéro 1", "Visiteur numéro 2"})
-        Me.ComboBoxChoixVisiteur.Location = New System.Drawing.Point(382, 242)
-        Me.ComboBoxChoixVisiteur.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBoxChoixVisiteur.Location = New System.Drawing.Point(430, 302)
+        Me.ComboBoxChoixVisiteur.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBoxChoixVisiteur.Name = "ComboBoxChoixVisiteur"
-        Me.ComboBoxChoixVisiteur.Size = New System.Drawing.Size(267, 24)
+        Me.ComboBoxChoixVisiteur.Size = New System.Drawing.Size(300, 28)
         Me.ComboBoxChoixVisiteur.TabIndex = 65
         '
         'ValiderCompteRendu
         '
-        Me.ValiderCompteRendu.Location = New System.Drawing.Point(438, 292)
+        Me.ValiderCompteRendu.Location = New System.Drawing.Point(493, 365)
         Me.ValiderCompteRendu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ValiderCompteRendu.Name = "ValiderCompteRendu"
-        Me.ValiderCompteRendu.Size = New System.Drawing.Size(157, 26)
+        Me.ValiderCompteRendu.Size = New System.Drawing.Size(177, 32)
         Me.ValiderCompteRendu.TabIndex = 136
         Me.ValiderCompteRendu.Text = "Valider"
         Me.ValiderCompteRendu.UseVisualStyleBackColor = True
         '
         'SelectionVisiteur
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(996, 475)
+        Me.ClientSize = New System.Drawing.Size(1120, 594)
         Me.Controls.Add(Me.ValiderCompteRendu)
         Me.Controls.Add(Me.ComboBoxChoixVisiteur)
         Me.Controls.Add(Me.LabelChoixVisiteur)
-        Me.Controls.Add(Me.LabelVisiteurMedical)
+        Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
-        Me.Controls.Add(Me.LinkLabelmodifiermoncompte)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "SelectionVisiteur"
         Me.Text = "VisionnageActiviteVisiteur"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -148,9 +134,8 @@ Partial Class SelectionVisiteur
 
     End Sub
 
-    Friend WithEvents LabelVisiteurMedical As Label
+    Friend WithEvents LabelHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
-    Friend WithEvents LinkLabelmodifiermoncompte As LinkLabel
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
