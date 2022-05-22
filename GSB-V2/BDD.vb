@@ -149,7 +149,7 @@
     'Affichage du compte rendu
     Public Function AffichageCompteRendu(idVisiteur, dte)
         Dim donnees
-        Dim SQLafficheCompteRendu As String = "SELECT id FROM compte_rendu WHERE visiteur = '" & idVisiteur & "' AND dte = '" & dte & "';"
+        Dim SQLafficheCompteRendu As String = "SELECT id FROM compte_rendu WHERE visiteur = '" & idVisiteur & "' AND dte = TO_DATE('" & dte & "','DD/MM/YY');"
 
         myCommand.Connection = myConnection
         myCommand.CommandText = SQLafficheCompteRendu

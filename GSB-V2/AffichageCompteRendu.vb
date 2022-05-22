@@ -4,6 +4,7 @@
         Dim idVisiteur = BDD.afficheIdVisiteur(login)
         Dim dte = ProfilVisiteurMedical.ComboBoxCompteRendu.Text.Substring(16, 10)
         dte = dte.Remove(7, 2)
+        Dim datefinal As DateTime = dte
         Dim donnees As String
 
         'Affichage du nom
@@ -15,8 +16,9 @@
         'Affichage de la hierarchie
         LabelHierarchie.Text = BDD.afficheHierarchie(login)
 
-        donnees = BDD.AffichageCompteRendu(idVisiteur, dte)
+        donnees = BDD.AffichageCompteRendu(idVisiteur, datefinal)
 
-        LabelMedicament.Text = donnees("medecin")
+        Label1.Text = donnees
+        'LabelMedicament.Text = donnees("medecin")
     End Sub
 End Class
