@@ -22,39 +22,29 @@ Partial Class RedactionCompteRendu
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CheckedListBox2 = New System.Windows.Forms.CheckedListBox()
         Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.LabelNom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Labelcompterendu = New System.Windows.Forms.Label()
         Me.ButtonRetour = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBoxMedecin = New System.Windows.Forms.ComboBox()
+        Me.TextBoxBilan = New System.Windows.Forms.TextBox()
+        Me.ComboBoxMedicament = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxMotif = New System.Windows.Forms.ComboBox()
+        Me.DateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBoxEchantillon = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'CheckedListBox2
-        '
-        Me.CheckedListBox2.FormattingEnabled = True
-        Me.CheckedListBox2.Location = New System.Drawing.Point(508, 404)
-        Me.CheckedListBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.CheckedListBox2.Name = "CheckedListBox2"
-        Me.CheckedListBox2.Size = New System.Drawing.Size(336, 38)
-        Me.CheckedListBox2.TabIndex = 148
         '
         'LabelHierarchie
         '
@@ -79,7 +69,7 @@ Partial Class RedactionCompteRendu
         'LabelNom
         '
         Me.LabelNom.AutoSize = True
-        Me.LabelNom.Location = New System.Drawing.Point(75, 13)
+        Me.LabelNom.Location = New System.Drawing.Point(72, 13)
         Me.LabelNom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelNom.Name = "LabelNom"
         Me.LabelNom.Size = New System.Drawing.Size(37, 17)
@@ -99,218 +89,215 @@ Partial Class RedactionCompteRendu
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(13, 13)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
         Me.PictureBox1.TabIndex = 142
         Me.PictureBox1.TabStop = False
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(509, 378)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(335, 22)
-        Me.TextBox2.TabIndex = 141
-        Me.TextBox2.Text = "Rechercher :"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(80, 378)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(335, 22)
-        Me.TextBox1.TabIndex = 140
-        Me.TextBox1.Text = "Rechercher :"
-        '
-        'CheckedListBox1
-        '
-        Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(80, 404)
-        Me.CheckedListBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(335, 38)
-        Me.CheckedListBox1.TabIndex = 139
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(80, 243)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(264, 22)
-        Me.DateTimePicker1.TabIndex = 138
-        Me.DateTimePicker1.Value = New Date(2015, 8, 12, 0, 0, 0, 0)
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(506, 521)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(162, 17)
-        Me.Label4.TabIndex = 137
-        Me.Label4.Text = "Description des Produits"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(76, 521)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 17)
-        Me.Label5.TabIndex = 136
-        Me.Label5.Text = "Bilan"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(506, 341)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(185, 17)
-        Me.Label6.TabIndex = 135
-        Me.Label6.Text = "Nombre Echantillons Offerts"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(80, 553)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(335, 22)
-        Me.TextBox3.TabIndex = 134
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(509, 553)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(336, 22)
-        Me.TextBox4.TabIndex = 133
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(76, 341)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(159, 17)
-        Me.Label3.TabIndex = 132
-        Me.Label3.Text = "Médicaments Présentés"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(506, 208)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 17)
-        Me.Label2.TabIndex = 131
-        Me.Label2.Text = "Motif"
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(366, 639)
+        Me.Button1.BackColor = System.Drawing.Color.Lime
+        Me.Button1.Location = New System.Drawing.Point(316, 550)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(180, 48)
+        Me.Button1.Size = New System.Drawing.Size(180, 38)
         Me.Button1.TabIndex = 130
         Me.Button1.Text = "Valider le compte rendu"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(76, 208)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 17)
-        Me.Label1.TabIndex = 129
-        Me.Label1.Text = "Date"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(509, 243)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(239, 22)
-        Me.TextBox6.TabIndex = 128
-        '
-        'Labelcompterendu
-        '
-        Me.Labelcompterendu.AutoSize = True
-        Me.Labelcompterendu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labelcompterendu.Location = New System.Drawing.Point(74, 128)
-        Me.Labelcompterendu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Labelcompterendu.Name = "Labelcompterendu"
-        Me.Labelcompterendu.Size = New System.Drawing.Size(280, 25)
-        Me.Labelcompterendu.TabIndex = 127
-        Me.Labelcompterendu.Text = "Réaction d'un compte rendu"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'ButtonRetour
         '
-        Me.ButtonRetour.Location = New System.Drawing.Point(672, 60)
+        Me.ButtonRetour.Location = New System.Drawing.Point(502, 550)
         Me.ButtonRetour.Name = "ButtonRetour"
-        Me.ButtonRetour.Size = New System.Drawing.Size(125, 38)
+        Me.ButtonRetour.Size = New System.Drawing.Size(98, 38)
         Me.ButtonRetour.TabIndex = 149
-        Me.ButtonRetour.Text = "Retour"
+        Me.ButtonRetour.Text = "Annuler"
         Me.ButtonRetour.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.TextBoxEchantillon)
+        Me.GroupBox1.Controls.Add(Me.ComboBoxMedecin)
+        Me.GroupBox1.Controls.Add(Me.TextBoxBilan)
+        Me.GroupBox1.Controls.Add(Me.ComboBoxMedicament)
+        Me.GroupBox1.Controls.Add(Me.ComboBoxMotif)
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(58, 139)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(839, 394)
+        Me.GroupBox1.TabIndex = 155
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Réaction d'un compte rendu"
+        '
+        'ComboBoxMedecin
+        '
+        Me.ComboBoxMedecin.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxMedecin.FormattingEnabled = True
+        Me.ComboBoxMedecin.Location = New System.Drawing.Point(21, 285)
+        Me.ComboBoxMedecin.Name = "ComboBoxMedecin"
+        Me.ComboBoxMedecin.Size = New System.Drawing.Size(336, 24)
+        Me.ComboBoxMedecin.TabIndex = 166
+        '
+        'TextBoxBilan
+        '
+        Me.TextBoxBilan.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxBilan.Location = New System.Drawing.Point(451, 285)
+        Me.TextBoxBilan.Multiline = True
+        Me.TextBoxBilan.Name = "TextBoxBilan"
+        Me.TextBoxBilan.Size = New System.Drawing.Size(335, 62)
+        Me.TextBoxBilan.TabIndex = 165
+        '
+        'ComboBoxMedicament
+        '
+        Me.ComboBoxMedicament.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxMedicament.FormattingEnabled = True
+        Me.ComboBoxMedicament.Location = New System.Drawing.Point(21, 185)
+        Me.ComboBoxMedicament.Name = "ComboBoxMedicament"
+        Me.ComboBoxMedicament.Size = New System.Drawing.Size(335, 24)
+        Me.ComboBoxMedicament.TabIndex = 163
+        '
+        'ComboBoxMotif
+        '
+        Me.ComboBoxMotif.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxMotif.FormattingEnabled = True
+        Me.ComboBoxMotif.Location = New System.Drawing.Point(451, 89)
+        Me.ComboBoxMotif.Name = "ComboBoxMotif"
+        Me.ComboBoxMotif.Size = New System.Drawing.Size(336, 24)
+        Me.ComboBoxMotif.TabIndex = 162
+        '
+        'DateTimePicker
+        '
+        Me.DateTimePicker.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker.Location = New System.Drawing.Point(21, 91)
+        Me.DateTimePicker.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DateTimePicker.Name = "DateTimePicker"
+        Me.DateTimePicker.Size = New System.Drawing.Size(264, 22)
+        Me.DateTimePicker.TabIndex = 161
+        Me.DateTimePicker.Value = New Date(2015, 8, 12, 0, 0, 0, 0)
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(18, 250)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(143, 17)
+        Me.Label7.TabIndex = 160
+        Me.Label7.Text = "Médecin rencontré"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(448, 250)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(44, 17)
+        Me.Label8.TabIndex = 159
+        Me.Label8.Text = "Bilan"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(448, 148)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(221, 17)
+        Me.Label9.TabIndex = 158
+        Me.Label9.Text = "Nombre d'echantillons offerts"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(18, 148)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(163, 17)
+        Me.Label10.TabIndex = 157
+        Me.Label10.Text = "Médicament présenté"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(448, 60)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(43, 17)
+        Me.Label11.TabIndex = 156
+        Me.Label11.Text = "Motif"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(18, 60)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(42, 17)
+        Me.Label12.TabIndex = 155
+        Me.Label12.Text = "Date"
+        '
+        'TextBoxEchantillon
+        '
+        Me.TextBoxEchantillon.Location = New System.Drawing.Point(452, 185)
+        Me.TextBoxEchantillon.Name = "TextBoxEchantillon"
+        Me.TextBoxEchantillon.Size = New System.Drawing.Size(336, 30)
+        Me.TextBoxEchantillon.TabIndex = 167
         '
         'RedactionCompteRendu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(951, 729)
+        Me.ClientSize = New System.Drawing.Size(956, 647)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ButtonRetour)
-        Me.Controls.Add(Me.CheckedListBox2)
         Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.LabelNom)
         Me.Controls.Add(Me.Labelprenom)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.CheckedListBox1)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.Labelcompterendu)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "RedactionCompteRendu"
         Me.Text = "RedigerCompteRendu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents CheckedListBox2 As CheckedListBox
     Friend WithEvents LabelHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents LabelNom As Label
     Friend WithEvents Labelprenom As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents CheckedListBox1 As CheckedListBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Labelcompterendu As Label
     Friend WithEvents ButtonRetour As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents ComboBoxMedecin As ComboBox
+    Friend WithEvents TextBoxBilan As TextBox
+    Friend WithEvents ComboBoxMedicament As ComboBox
+    Friend WithEvents ComboBoxMotif As ComboBox
+    Friend WithEvents DateTimePicker As DateTimePicker
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents TextBoxEchantillon As TextBox
 End Class
