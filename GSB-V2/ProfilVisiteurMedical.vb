@@ -1,12 +1,5 @@
 ﻿Public Class ProfilVisiteurMedical
 
-    Dim myConnection As New Odbc.OdbcConnection
-    Dim myCommand As New Odbc.OdbcCommand
-    Dim myReader As Odbc.OdbcDataReader
-    Dim myAdapter As Odbc.OdbcDataAdapter
-    Dim myBuilder As Odbc.OdbcCommandBuilder
-    Dim connString As String
-
     Private Sub ProfilVisiteurMedical_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim login As String = BDD.afficheLogin()
 
