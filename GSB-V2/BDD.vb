@@ -83,4 +83,29 @@
         myReader.Close()
         Return hierarchie
     End Function
+
+    Public Function SelectionNomVisiteur(login)
+
+        Dim SQLSecteur As String = "SELECT id_secteur FROM VISITEUR where LOGIN ='" & login & "';"
+
+        'Recuperation du secteur
+        myCommand.CommandText = SQLSecteur
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+
+        Dim secteur = myReader.GetValue(0)
+        myReader.Close()
+
+        'Recuperation du nom du visiteur
+        Dim SQLafficheVisiteur As String = "SELECT nom FROM VISITEUR WHERE id_secteur =" & secteur & ";"
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLafficheVisiteur
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        Dim nom = myReader.GetString(0)
+        myReader.Close()
+        Return nom
+
+    End Function
 End Module

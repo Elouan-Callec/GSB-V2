@@ -27,7 +27,7 @@ Partial Class ProfilVisiteurMedical
         Me.ComboBoxCompteRendu = New System.Windows.Forms.ComboBox()
         Me.BoutonRedigerCompteRendu = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LabelAffichageHierarchie = New System.Windows.Forms.Label()
+        Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
@@ -67,7 +67,7 @@ Partial Class ProfilVisiteurMedical
         'BoutonRedigerCompteRendu
         '
         Me.BoutonRedigerCompteRendu.Location = New System.Drawing.Point(260, 372)
-        Me.BoutonRedigerCompteRendu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BoutonRedigerCompteRendu.Margin = New System.Windows.Forms.Padding(4)
         Me.BoutonRedigerCompteRendu.Name = "BoutonRedigerCompteRendu"
         Me.BoutonRedigerCompteRendu.Size = New System.Drawing.Size(201, 37)
         Me.BoutonRedigerCompteRendu.TabIndex = 55
@@ -77,21 +77,21 @@ Partial Class ProfilVisiteurMedical
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(16, 15)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
         Me.PictureBox1.TabIndex = 51
         Me.PictureBox1.TabStop = False
         '
-        'LabelAffichageHierarchie
+        'LabelHierarchie
         '
-        Me.LabelAffichageHierarchie.AutoSize = True
-        Me.LabelAffichageHierarchie.Location = New System.Drawing.Point(165, 70)
-        Me.LabelAffichageHierarchie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelAffichageHierarchie.Name = "LabelAffichageHierarchie"
-        Me.LabelAffichageHierarchie.Size = New System.Drawing.Size(36, 17)
-        Me.LabelAffichageHierarchie.TabIndex = 65
-        Me.LabelAffichageHierarchie.Text = "Test"
+        Me.LabelHierarchie.AutoSize = True
+        Me.LabelHierarchie.Location = New System.Drawing.Point(165, 70)
+        Me.LabelHierarchie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelHierarchie.Name = "LabelHierarchie"
+        Me.LabelHierarchie.Size = New System.Drawing.Size(36, 17)
+        Me.LabelHierarchie.TabIndex = 65
+        Me.LabelHierarchie.Text = "Test"
         '
         'Labelhiérarchieparsecteur
         '
@@ -140,7 +140,7 @@ Partial Class ProfilVisiteurMedical
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(909, 474)
         Me.Controls.Add(Me.LabelSelectionCompteRendu)
-        Me.Controls.Add(Me.LabelAffichageHierarchie)
+        Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
         Me.Controls.Add(Me.Labelprenom)
@@ -149,7 +149,7 @@ Partial Class ProfilVisiteurMedical
         Me.Controls.Add(Me.ComboBoxCompteRendu)
         Me.Controls.Add(Me.BoutonRedigerCompteRendu)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ProfilVisiteurMedical"
         Me.Text = "ProfilVisiteurMedical"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -163,7 +163,7 @@ Partial Class ProfilVisiteurMedical
     Friend WithEvents ComboBoxCompteRendu As ComboBox
     Friend WithEvents BoutonRedigerCompteRendu As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents LabelAffichageHierarchie As Label
+    Friend WithEvents LabelHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelprenom As Label

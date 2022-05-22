@@ -4,62 +4,24 @@
     Dim myReader As Odbc.OdbcDataReader
 
     Private Sub SelectionActivite_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim login As String = BDD.afficheLogin()
+        Dim nom As String
 
-        'Connexion 
-        Dim connString As String = "DSN=CNXORA06;Uid=SYSTEM;Pwd=Iroise29;"
-        myConnection.ConnectionString = connString
-        myConnection.Open()
+        'Affichage du nom
+        Labelnom.Text = BDD.afficheNom(login)
 
-        Dim login As String = ProfilDelegueregional.login
+        'Affichage du prenom
+        Labelprenom.Text = BDD.affichePrenom(login)
 
-        Dim SQLafficheNom As String = "SELECT nom FROM VISITEUR WHERE login = '" & login & "';"
-        Dim SQLaffichePrenom As String = "SELECT prenom FROM VISITEUR WHERE login = '" & login & "';"
-        Dim SQLafficheHierarchie As String = "SELECT nomrole FROM ROLE INNER JOIN VISITEUR ON VISITEUR.ROLE = ROLE.IDROLE where visiteur.login = '" & login & "';"
-        Dim SQLSecteur As String = "SELECT id_secteur FROM VISITEUR where LOGIN ='" & login & "';"
+        'Affichage de la hierarchie
+        LabelHierarchie.Text = BDD.afficheHierarchie(login)
 
-
-        myCommand.Connection = myConnection
-
-
-        'AffichageActivite Nom utilisateur
-        myCommand.CommandText = SQLafficheNom
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        Labelnom.Text = myReader.GetValue(0)
-        myReader.Close()
-
-        'AffichageActivite Prenom utilisateur
-        myCommand.CommandText = SQLaffichePrenom
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        Labelprenom.Text = myReader.GetValue(0)
-        myReader.Close()
-
-        'AffichageActivite hiérarchie 
-        myCommand.CommandText = SQLafficheHierarchie
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        LabelHierarchie.Text = myReader.GetValue(0)
-        myReader.Close()
-
-
-        'AffichageVisiteur 
-        myCommand.CommandText = SQLSecteur
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        Dim secteur = myReader.GetValue(0)
-        myReader.Close()
-
-        Dim SQLafficheVisiteur As String = "SELECT nom FROM VISITEUR WHERE id_secteur =" & secteur & ";"
-
-        myCommand.CommandText = SQLafficheVisiteur
-        myReader = myCommand.ExecuteReader
-        While myReader.Read()
+        nom = BDD.SelectionNomVisiteur(login)
+        Dim test As String = 0
+        While test = nom
             ComboBoxActiviteVisiteur.Items.Add(myReader.GetString(0))
             Me.ComboBoxActiviteVisiteur.Text = Me.ComboBoxActiviteVisiteur.Items(0).ToString()
         End While
-
-        myReader.Close()
 
     End Sub
 

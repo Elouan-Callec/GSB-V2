@@ -35,75 +35,77 @@ Partial Class ChoixRedacteurCompteRendu
         'LabelHierarchie
         '
         Me.LabelHierarchie.AutoSize = True
-        Me.LabelHierarchie.Location = New System.Drawing.Point(184, 91)
+        Me.LabelHierarchie.Location = New System.Drawing.Point(164, 73)
         Me.LabelHierarchie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelHierarchie.Name = "LabelHierarchie"
-        Me.LabelHierarchie.Size = New System.Drawing.Size(42, 20)
+        Me.LabelHierarchie.Size = New System.Drawing.Size(37, 17)
         Me.LabelHierarchie.TabIndex = 79
         Me.LabelHierarchie.Text = "Role"
         '
         'Labelhiérarchieparsecteur
         '
         Me.Labelhiérarchieparsecteur.AutoSize = True
-        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(84, 91)
+        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(75, 73)
         Me.Labelhiérarchieparsecteur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelhiérarchieparsecteur.Name = "Labelhiérarchieparsecteur"
-        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(89, 20)
+        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(81, 17)
         Me.Labelhiérarchieparsecteur.TabIndex = 78
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
         'Labelnom
         '
         Me.Labelnom.AutoSize = True
-        Me.Labelnom.Location = New System.Drawing.Point(84, 32)
+        Me.Labelnom.Location = New System.Drawing.Point(75, 26)
         Me.Labelnom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelnom.Name = "Labelnom"
-        Me.Labelnom.Size = New System.Drawing.Size(42, 20)
+        Me.Labelnom.Size = New System.Drawing.Size(37, 17)
         Me.Labelnom.TabIndex = 76
         Me.Labelnom.Text = "Nom"
         '
         'Labelprenom
         '
         Me.Labelprenom.AutoSize = True
-        Me.Labelprenom.Location = New System.Drawing.Point(84, 62)
+        Me.Labelprenom.Location = New System.Drawing.Point(75, 50)
         Me.Labelprenom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelprenom.Name = "Labelprenom"
-        Me.Labelprenom.Size = New System.Drawing.Size(64, 20)
+        Me.Labelprenom.Size = New System.Drawing.Size(57, 17)
         Me.Labelprenom.TabIndex = 75
         Me.Labelprenom.Text = "Prenom"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(18, 32)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 26)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(58, 80)
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
         Me.PictureBox1.TabIndex = 74
         Me.PictureBox1.TabStop = False
         '
         'BoutonModifier
         '
-        Me.BoutonModifier.Location = New System.Drawing.Point(411, 300)
+        Me.BoutonModifier.Location = New System.Drawing.Point(365, 240)
+        Me.BoutonModifier.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BoutonModifier.Name = "BoutonModifier"
-        Me.BoutonModifier.Size = New System.Drawing.Size(188, 52)
+        Me.BoutonModifier.Size = New System.Drawing.Size(167, 42)
         Me.BoutonModifier.TabIndex = 73
         Me.BoutonModifier.Text = "Compte rendu d'un visiteur"
         Me.BoutonModifier.UseVisualStyleBackColor = True
         '
         'BoutonAffichage
         '
-        Me.BoutonAffichage.Location = New System.Drawing.Point(122, 300)
+        Me.BoutonAffichage.Location = New System.Drawing.Point(108, 240)
+        Me.BoutonAffichage.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BoutonAffichage.Name = "BoutonAffichage"
-        Me.BoutonAffichage.Size = New System.Drawing.Size(194, 52)
+        Me.BoutonAffichage.Size = New System.Drawing.Size(172, 42)
         Me.BoutonAffichage.TabIndex = 72
         Me.BoutonAffichage.Text = "Mes comptes rendus"
         Me.BoutonAffichage.UseVisualStyleBackColor = True
         '
         'ChoixRedacteurCompteRendu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(796, 488)
+        Me.ClientSize = New System.Drawing.Size(655, 427)
         Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
@@ -111,7 +113,7 @@ Partial Class ChoixRedacteurCompteRendu
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.BoutonModifier)
         Me.Controls.Add(Me.BoutonAffichage)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "ChoixRedacteurCompteRendu"
         Me.Text = "ChoixRedacteurCompteRendu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

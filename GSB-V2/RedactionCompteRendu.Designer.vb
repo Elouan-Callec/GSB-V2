@@ -23,7 +23,7 @@ Partial Class RedactionCompteRendu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.CheckedListBox2 = New System.Windows.Forms.CheckedListBox()
-        Me.LabelVisiteurMedical = New System.Windows.Forms.Label()
+        Me.LabelHierarchie = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
         Me.LabelNom = New System.Windows.Forms.Label()
         Me.Labelprenom = New System.Windows.Forms.Label()
@@ -50,169 +50,169 @@ Partial Class RedactionCompteRendu
         'CheckedListBox2
         '
         Me.CheckedListBox2.FormattingEnabled = True
-        Me.CheckedListBox2.Location = New System.Drawing.Point(572, 505)
+        Me.CheckedListBox2.Location = New System.Drawing.Point(508, 404)
         Me.CheckedListBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CheckedListBox2.Name = "CheckedListBox2"
-        Me.CheckedListBox2.Size = New System.Drawing.Size(378, 50)
+        Me.CheckedListBox2.Size = New System.Drawing.Size(336, 38)
         Me.CheckedListBox2.TabIndex = 148
         '
-        'LabelVisiteurMedical
+        'LabelHierarchie
         '
-        Me.LabelVisiteurMedical.AutoSize = True
-        Me.LabelVisiteurMedical.Location = New System.Drawing.Point(181, 75)
-        Me.LabelVisiteurMedical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelVisiteurMedical.Name = "LabelVisiteurMedical"
-        Me.LabelVisiteurMedical.Size = New System.Drawing.Size(120, 20)
-        Me.LabelVisiteurMedical.TabIndex = 147
-        Me.LabelVisiteurMedical.Text = "Visiteur Médical"
+        Me.LabelHierarchie.AutoSize = True
+        Me.LabelHierarchie.Location = New System.Drawing.Point(161, 60)
+        Me.LabelHierarchie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelHierarchie.Name = "LabelHierarchie"
+        Me.LabelHierarchie.Size = New System.Drawing.Size(107, 17)
+        Me.LabelHierarchie.TabIndex = 147
+        Me.LabelHierarchie.Text = "Visiteur Médical"
         '
         'Labelhiérarchieparsecteur
         '
         Me.Labelhiérarchieparsecteur.AutoSize = True
-        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(81, 75)
+        Me.Labelhiérarchieparsecteur.Location = New System.Drawing.Point(72, 60)
         Me.Labelhiérarchieparsecteur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelhiérarchieparsecteur.Name = "Labelhiérarchieparsecteur"
-        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(89, 20)
+        Me.Labelhiérarchieparsecteur.Size = New System.Drawing.Size(81, 17)
         Me.Labelhiérarchieparsecteur.TabIndex = 146
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
         'LabelNom
         '
         Me.LabelNom.AutoSize = True
-        Me.LabelNom.Location = New System.Drawing.Point(84, 16)
+        Me.LabelNom.Location = New System.Drawing.Point(75, 13)
         Me.LabelNom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelNom.Name = "LabelNom"
-        Me.LabelNom.Size = New System.Drawing.Size(42, 20)
+        Me.LabelNom.Size = New System.Drawing.Size(37, 17)
         Me.LabelNom.TabIndex = 144
         Me.LabelNom.Text = "Nom"
         '
         'Labelprenom
         '
         Me.Labelprenom.AutoSize = True
-        Me.Labelprenom.Location = New System.Drawing.Point(81, 45)
+        Me.Labelprenom.Location = New System.Drawing.Point(72, 36)
         Me.Labelprenom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelprenom.Name = "Labelprenom"
-        Me.Labelprenom.Size = New System.Drawing.Size(64, 20)
+        Me.Labelprenom.Size = New System.Drawing.Size(57, 17)
         Me.Labelprenom.TabIndex = 143
         Me.Labelprenom.Text = "Prenom"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(15, 16)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 13)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(58, 80)
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
         Me.PictureBox1.TabIndex = 142
         Me.PictureBox1.TabStop = False
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(573, 472)
+        Me.TextBox2.Location = New System.Drawing.Point(509, 378)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(376, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(335, 22)
         Me.TextBox2.TabIndex = 141
         Me.TextBox2.Text = "Rechercher :"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(90, 472)
+        Me.TextBox1.Location = New System.Drawing.Point(80, 378)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(376, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(335, 22)
         Me.TextBox1.TabIndex = 140
         Me.TextBox1.Text = "Rechercher :"
         '
         'CheckedListBox1
         '
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(90, 505)
+        Me.CheckedListBox1.Location = New System.Drawing.Point(80, 404)
         Me.CheckedListBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(376, 50)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(335, 38)
         Me.CheckedListBox1.TabIndex = 139
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(90, 304)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(80, 243)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(296, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(264, 22)
         Me.DateTimePicker1.TabIndex = 138
         Me.DateTimePicker1.Value = New Date(2015, 8, 12, 0, 0, 0, 0)
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(569, 651)
+        Me.Label4.Location = New System.Drawing.Point(506, 521)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(181, 20)
+        Me.Label4.Size = New System.Drawing.Size(162, 17)
         Me.Label4.TabIndex = 137
         Me.Label4.Text = "Description des Produits"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(86, 651)
+        Me.Label5.Location = New System.Drawing.Point(76, 521)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(44, 20)
+        Me.Label5.Size = New System.Drawing.Size(39, 17)
         Me.Label5.TabIndex = 136
         Me.Label5.Text = "Bilan"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(569, 426)
+        Me.Label6.Location = New System.Drawing.Point(506, 341)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(208, 20)
+        Me.Label6.Size = New System.Drawing.Size(185, 17)
         Me.Label6.TabIndex = 135
         Me.Label6.Text = "Nombre Echantillons Offerts"
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(90, 691)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox3.Location = New System.Drawing.Point(80, 553)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(376, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(335, 22)
         Me.TextBox3.TabIndex = 134
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(573, 691)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox4.Location = New System.Drawing.Point(509, 553)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(378, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(336, 22)
         Me.TextBox4.TabIndex = 133
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(86, 426)
+        Me.Label3.Location = New System.Drawing.Point(76, 341)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(180, 20)
+        Me.Label3.Size = New System.Drawing.Size(159, 17)
         Me.Label3.TabIndex = 132
         Me.Label3.Text = "Médicaments Présentés"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(569, 260)
+        Me.Label2.Location = New System.Drawing.Point(506, 208)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 20)
+        Me.Label2.Size = New System.Drawing.Size(38, 17)
         Me.Label2.TabIndex = 131
         Me.Label2.Text = "Motif"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(412, 799)
+        Me.Button1.Location = New System.Drawing.Point(366, 639)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(202, 60)
+        Me.Button1.Size = New System.Drawing.Size(180, 48)
         Me.Button1.TabIndex = 130
         Me.Button1.Text = "Valider le compte rendu"
         Me.Button1.UseVisualStyleBackColor = True
@@ -220,50 +220,49 @@ Partial Class RedactionCompteRendu
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(86, 260)
+        Me.Label1.Location = New System.Drawing.Point(76, 208)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 20)
+        Me.Label1.Size = New System.Drawing.Size(38, 17)
         Me.Label1.TabIndex = 129
         Me.Label1.Text = "Date"
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(573, 304)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox6.Location = New System.Drawing.Point(509, 243)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(268, 26)
+        Me.TextBox6.Size = New System.Drawing.Size(239, 22)
         Me.TextBox6.TabIndex = 128
         '
         'Labelcompterendu
         '
         Me.Labelcompterendu.AutoSize = True
         Me.Labelcompterendu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labelcompterendu.Location = New System.Drawing.Point(83, 160)
+        Me.Labelcompterendu.Location = New System.Drawing.Point(74, 128)
         Me.Labelcompterendu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labelcompterendu.Name = "Labelcompterendu"
-        Me.Labelcompterendu.Size = New System.Drawing.Size(338, 29)
+        Me.Labelcompterendu.Size = New System.Drawing.Size(280, 25)
         Me.Labelcompterendu.TabIndex = 127
         Me.Labelcompterendu.Text = "Réaction d'un compte rendu"
         '
         'ButtonRetour
         '
-        Me.ButtonRetour.Location = New System.Drawing.Point(756, 75)
-        Me.ButtonRetour.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.ButtonRetour.Location = New System.Drawing.Point(672, 60)
         Me.ButtonRetour.Name = "ButtonRetour"
-        Me.ButtonRetour.Size = New System.Drawing.Size(141, 48)
+        Me.ButtonRetour.Size = New System.Drawing.Size(125, 38)
         Me.ButtonRetour.TabIndex = 149
         Me.ButtonRetour.Text = "Retour"
         Me.ButtonRetour.UseVisualStyleBackColor = True
         '
         'RedactionCompteRendu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1070, 911)
+        Me.ClientSize = New System.Drawing.Size(951, 729)
         Me.Controls.Add(Me.ButtonRetour)
         Me.Controls.Add(Me.CheckedListBox2)
-        Me.Controls.Add(Me.LabelVisiteurMedical)
+        Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.LabelNom)
         Me.Controls.Add(Me.Labelprenom)
@@ -283,7 +282,7 @@ Partial Class RedactionCompteRendu
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Labelcompterendu)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "RedactionCompteRendu"
         Me.Text = "RedigerCompteRendu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -293,7 +292,7 @@ Partial Class RedactionCompteRendu
     End Sub
 
     Friend WithEvents CheckedListBox2 As CheckedListBox
-    Friend WithEvents LabelVisiteurMedical As Label
+    Friend WithEvents LabelHierarchie As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
     Friend WithEvents LabelNom As Label
     Friend WithEvents Labelprenom As Label

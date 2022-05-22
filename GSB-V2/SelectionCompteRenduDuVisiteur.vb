@@ -47,7 +47,6 @@
         myReader.Close()
 
         'Affichage du numero du compte rendu dans la liste deroulante
-
         Dim SQLafficheDateCompteRendu As String = "SELECT DTE FROM COMPTE_RENDU WHERE visiteur = '" & IdVisiteur & "'Order by DTE DESC;"
         myCommand.CommandText = SQLafficheDateCompteRendu
         myReader = myCommand.ExecuteReader
