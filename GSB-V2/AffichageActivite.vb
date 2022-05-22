@@ -5,9 +5,9 @@
 
     Private Sub AffichageActivite_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim login As String = BDD.afficheLogin()
+
         Dim UtilisateurSelect As String = SelectionActivite.ComboBoxActiviteVisiteur.Text
-        Dim SQLafficheNomFonctionSelectionner As String = "SELECT nom FROM VISITEUR WHERE nom ='" & UtilisateurSelect & "';"
-        Dim SQLafficheSecteur As String = "SELECT SECTEUR.nom FROM SECTEUR INNER JOIN VISITEUR ON visiteur.id_secteur = secteur.id where visiteur.nom = '" & Labelnom.Text & "';"
+
 
         'Affichage du nom
         Labelnom.Text = BDD.afficheNom(login)
@@ -19,25 +19,25 @@
         LabelHierarchie.Text = BDD.afficheHierarchie(login)
 
 
+        Dim SQLafficheSecteur As String = "SELECT SECTEUR.nom FROM SECTEUR INNER JOIN VISITEUR ON visiteur.id_secteur = secteur.id where visiteur.nom = '" & Labelnom.Text & "';"
+
         If (SelectionActivite.ValeurBouton1 = 1) Then
 
             'AffichageActivite Visiteur 
-            myCommand.CommandText = SQLafficheNomFonctionSelectionner
-            myReader = myCommand.ExecuteReader
-            myReader.Read()
-            LabelSelection.Text = myReader.GetValue(0)
+
+            LabelSelection.Text = UtilisateurSelect
             LabelTypeActivité.Text = "Activité du visiteur :"
-            myReader.Close()
+
+
+
 
         ElseIf (SelectionActivite.ValeurBouton2 = 1) Then
 
             'AffichageActivite Secteur 
-            myCommand.CommandText = SQLafficheSecteur
-            myReader = myCommand.ExecuteReader
-            myReader.Read()
-            LabelSelection.Text = myReader.GetValue(0)
+
+            LabelSelection.Text = BDD.AffichageAciviteSecteur(login)
             LabelTypeActivité.Text = "Activité du secteur :"
-            myReader.Close()
+
 
         End If
     End Sub

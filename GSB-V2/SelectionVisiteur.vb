@@ -7,7 +7,6 @@
 
     Private Sub SelectionVisiteur_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim login As String = BDD.afficheLogin()
-        Dim SQLSecteur As String = "SELECT id_secteur FROM VISITEUR where LOGIN ='" & login & "';"
 
         'Affichage du nom
         Labelnom.Text = BDD.afficheNom(login)
@@ -18,24 +17,13 @@
         'Affichage de la hierarchie
         LabelHierarchie.Text = BDD.afficheHierarchie(login)
 
-        'AffichageVisiteur 
-        myCommand.CommandText = SQLSecteur
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-        Dim secteur = myReader.GetValue(0)
-        myReader.Close()
+        Dim donnees = BDD.SelectionNomVisiteur(login)
 
-        Dim SQLafficheVisiteur As String = "SELECT nom FROM VISITEUR WHERE id_secteur =" & secteur & ";"
-
-        myCommand.CommandText = SQLafficheVisiteur
-        myReader = myCommand.ExecuteReader
-
-        While myReader.Read()
-            ComboBoxChoixVisiteur.Items.Add(myReader.GetString(0))
+        For Each donnee As String In donnees
+            ComboBoxChoixVisiteur.Items.Add(donnee)
             Me.ComboBoxChoixVisiteur.Text = Me.ComboBoxChoixVisiteur.Items(0).ToString()
-        End While
+        Next
 
-        myReader.Close()
 
     End Sub
 

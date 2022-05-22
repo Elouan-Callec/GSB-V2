@@ -171,7 +171,7 @@
         Return donnees
     End Function
 
-
+  
     'Selection des motifs
     Public Function SelectionMotifs(login, dte)
         Dim donnees As New List(Of String)
@@ -202,6 +202,19 @@
             donnees.Add(myReader.GetString(0))
         End While
 
+
+    'Fonction specifique à AffichageActivite
+    Public Function AffichageAciviteSecteur(login)
+        Dim donnees
+        Dim nom = afficheNom(login)
+        Dim SQLafficheSecteur As String = "SELECT SECTEUR.nom FROM SECTEUR INNER JOIN VISITEUR ON visiteur.id_secteur = secteur.id where visiteur.nom = '" & nom & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLafficheSecteur
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
         myReader.Close()
 
         Return donnees
@@ -233,6 +246,16 @@
 
         myCommand.CommandText = SQLselectionMedecins
         myReader = myCommand.ExecuteReader
+
+      
+    Public Function AffichageCompteRenduDunVisiteurSelectionne(utilisateurselect)
+        Dim donnees As New List(Of String)
+        Dim SQLCompteRenduVisiteurSelect = "SELECT DTE FROM COMPTE_RENDU INNER JOIN VISITEUR ON visiteur.idvis = Compte_rendu.visiteur WHERE VISITEUR.nom='" & utilisateurselect & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLCompteRenduVisiteurSelect
+
+        myReader = myCommand.ExecuteReader()
 
         While myReader.Read()
             donnees.Add(myReader.GetString(0))
@@ -309,4 +332,5 @@
 
         Return resultat
     End Function
+
 End Module
