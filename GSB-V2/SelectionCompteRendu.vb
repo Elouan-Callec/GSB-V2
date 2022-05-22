@@ -6,6 +6,7 @@
 
     Dim connString As String
 
+
     Private Sub SelectionCompteRendu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim login As String = BDD.afficheLogin()
 
