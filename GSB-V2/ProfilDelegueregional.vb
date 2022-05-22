@@ -27,7 +27,7 @@ Public Class ProfilDelegueregional
 
     'Rediger un compte rendu
     Private Sub ButtonRedigerCompteRendu_Click(sender As Object, e As EventArgs) Handles ButtonRedigerCompteRendu.Click
-        AffichageActivite.Show()
+        RedactionCompteRendu.Show()
         Me.Hide()
 
     End Sub
