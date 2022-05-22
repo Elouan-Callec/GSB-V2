@@ -16,13 +16,12 @@
         'Affichage de la hierarchie
         LabelHierarchie.Text = BDD.afficheHierarchie(login)
 
-        nom = BDD.SelectionNomVisiteur(login)
-        Dim test As String = 0
-        While test = nom
-            ComboBoxActiviteVisiteur.Items.Add(myReader.GetString(0))
-            Me.ComboBoxActiviteVisiteur.Text = Me.ComboBoxActiviteVisiteur.Items(0).ToString()
-        End While
+        Dim donnees = BDD.SelectionNomVisiteur(login)
 
+        For Each donnee As String In donnees
+            ComboBoxActiviteVisiteur.Items.Add(donnee)
+            Me.ComboBoxActiviteVisiteur.Text = Me.ComboBoxActiviteVisiteur.Items(0).ToString()
+        Next
     End Sub
 
     Public ValeurBouton1 As Integer = 0

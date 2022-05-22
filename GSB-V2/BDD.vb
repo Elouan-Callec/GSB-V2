@@ -84,9 +84,10 @@
         Return hierarchie
     End Function
 
+    'Selection du nom des visiteurs
     Public Function SelectionNomVisiteur(login)
-
         Dim SQLSecteur As String = "SELECT id_secteur FROM VISITEUR where LOGIN ='" & login & "';"
+        Dim donnees As New List(Of String)
 
         'Recuperation du secteur
         myCommand.CommandText = SQLSecteur
@@ -101,11 +102,41 @@
         myCommand.Connection = myConnection
         myCommand.CommandText = SQLafficheVisiteur
         myReader = myCommand.ExecuteReader()
+
+        While myReader.Read()
+            donnees.Add(myReader.GetString(0))
+        End While
+
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+    'Selection de la date des comptes rendus
+    Public Function SelectionDateCompteRendu(login)
+        Dim SQLrecupIdVisiteur As String = "SELECT idvis FROM VISITEUR WHERE VISITEUR.login = '" + login + "';"
+        Dim IdVisiteur As Integer
+        Dim donnees As New List(Of String)
+
+        'Recuperation de l id de l'utilisateur
+        myCommand.CommandText = SQLrecupIdVisiteur
+        myReader = myCommand.ExecuteReader
         myReader.Read()
 
-        Dim nom = myReader.GetString(0)
+        IdVisiteur = myReader.GetValue(0)
         myReader.Close()
-        Return nom
 
+        'Affichage de la date du compte rendu dans la liste deroulante
+        Dim SQLafficheDateCompteRendu As String = "SELECT DTE FROM COMPTE_RENDU WHERE visiteur = '" & IdVisiteur & "'Order by DTE DESC;"
+        myCommand.CommandText = SQLafficheDateCompteRendu
+        myReader = myCommand.ExecuteReader
+
+        While myReader.Read()
+            donnees.Add(myReader.GetString(0))
+        End While
+
+        myReader.Close()
+
+        Return donnees
     End Function
 End Module
