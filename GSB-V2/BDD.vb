@@ -146,13 +146,13 @@
         Return donnees
     End Function
 
-    'Affichage du compte rendu
-    Public Function AffichageCompteRendu(idVisiteur, dte)
+    'Recuperation ID CompteRendu
+    Public Function RecuperationIDCompteRendu(idVisiteur, dte)
         Dim donnees
-        Dim SQLafficheCompteRendu As String = "SELECT id FROM compte_rendu WHERE visiteur = '" & idVisiteur & "' AND dte = TO_DATE('" & dte & "','DD/MM/YY');"
+        Dim SQL As String = "SELECT id FROM compte_rendu WHERE visiteur = '" & idVisiteur & "' AND dte = TO_DATE('" & dte & "','DD/MM/YY');"
 
         myCommand.Connection = myConnection
-        myCommand.CommandText = SQLafficheCompteRendu
+        myCommand.CommandText = SQL
         myReader = myCommand.ExecuteReader()
         myReader.Read()
 
@@ -161,6 +161,89 @@
 
         Return donnees
     End Function
+
+    'Affichage Bilandesc du CompteRENDU
+    Public Function AfficheBilan(idCompteRendu)
+        Dim donnees
+        Dim SQL As String = "SELECT bilandesc FROM compte_rendu WHERE ID = " & idCompteRendu & ";"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQL
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+    'Affichage QTE_MEDOC du CompteRENDU
+    Public Function AfficheQTE_Medoc(idCompteRendu)
+        Dim donnees
+        Dim SQL As String = "SELECT QTE_MEDOC FROM compte_rendu WHERE ID = " & idCompteRendu & ";"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQL
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+    'Affichage Medicament du CompteRENDU
+    Public Function AfficheMedicament(idCompteRendu)
+        Dim donnees
+        Dim SQL As String = "SELECT Medic FROM compte_rendu WHERE ID = " & idCompteRendu & ";"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = Sql
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+    'AffichageMotif du CompteRENDU
+    Public Function AfficheMotifduCompteRendu(idCompteRendu)
+        Dim donnees
+        Dim SQL As String = "SELECT Motif.nom FROM Motif INNER JOIN COMPTE_RENDU ON COMPTE_RENDU.MOTIF = Motif.id WHERE COMPTE_RENDU.ID = " & idCompteRendu & ";"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQL
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+    'AffichageMedecin du CompteRendu
+    Public Function AfficheMedecinduCompteRendu(idCompteRendu)
+        Dim donnees
+        Dim SQL As String = "SELECT Medecin.nom FROM Medecin INNER JOIN COMPTE_RENDU ON COMPTE_RENDU.Medecin = Medecin.id WHERE COMPTE_RENDU.ID = " & idCompteRendu & ";"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQL
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+
+
 
     'Fonction specifique à AffichageActivite
     Public Function AffichageAciviteSecteur(login)
@@ -178,6 +261,13 @@
 
         Return donnees
     End Function
+
+
+
+
+
+
+
 
     Public Function AffichageCompteRenduDunVisiteurSelectionne(utilisateurselect)
         Dim donnees As New List(Of String)

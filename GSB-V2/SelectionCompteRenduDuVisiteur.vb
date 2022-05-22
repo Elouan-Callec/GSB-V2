@@ -5,11 +5,12 @@
 
     Dim connString As String
 
+    Public UtilisateurSelect As String = SelectionVisiteur.ComboBoxChoixVisiteur.Text
     Private Sub SelectionCompteRenduDuVisiteur_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim login As String = BDD.afficheLogin()
 
-        Dim UtilisateurSelect As String = SelectionVisiteur.ComboBoxChoixVisiteur.Text
+        'Dim UtilisateurSelect As String = SelectionVisiteur.ComboBoxChoixVisiteur.Text
 
 
         'Affichage du nom
@@ -34,7 +35,9 @@
 
     End Sub
 
+    Public ValeurBouton1 As Integer = 0
     Private Sub BoutonAffichage_Click(sender As Object, e As EventArgs) Handles BoutonAffichage.Click
+        ValeurBouton1 = 1
         AffichageCompteRendu.Show()
         Me.Hide()
     End Sub
