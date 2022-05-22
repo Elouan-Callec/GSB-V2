@@ -23,16 +23,16 @@
 
     Private Sub BoutonAffichage_Click(sender As Object, e As EventArgs) Handles BoutonAffichage.Click
         AffichageCompteRendu.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BoutonModifier_Click(sender As Object, e As EventArgs) Handles BoutonModifier.Click
         ModificationCompteRendu.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BoutonRedigerCompteRendu_Click(sender As Object, e As EventArgs) Handles BoutonRedigerCompteRendu.Click
         RedactionCompteRendu.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class
