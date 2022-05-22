@@ -3,8 +3,8 @@
 
         If (SelectionCompteRenduDuVisiteur.ValeurBouton1 = 1) Then
             Dim login As String = BDD.afficheLogin()
-            Dim idVisiteur = BDD.afficheIdVisiteur(login)
-
+            Dim nom = SelectionCompteRenduDuVisiteur.LabelnomVisiteur.Text
+            Dim idVisiteur = RecuperationIDVisiteurSelect(nom)
             Dim dte = SelectionCompteRenduDuVisiteur.ComboBoxCompteRendu.Text.Substring(16, 10)
             dte = dte.Remove(7, 2)
             Dim datefinal As DateTime = dte
@@ -25,7 +25,16 @@
             LabelHierarchie.Text = BDD.afficheHierarchie(login)
             Dim visiteur = SelectionCompteRenduDuVisiteur.UtilisateurSelect
 
-            LabelVisiteurSelectionner.Text = visiteur
+            LabelVisiteurSelectionner.Text = "Visiteur : " & visiteur
+
+            LabelID.Text = ID
+            LabelBilan.Text = Bilan
+            LabelDte.Text = datefinal
+            LabelQTE_Medoc.Text = QTE_Medoc
+            LabelMedicament.Text = Medicament
+            LabelMotif.Text = Motif
+            LabelMedecin.Text = Medecin
+
 
         Else
             Dim login As String = BDD.afficheLogin()

@@ -242,6 +242,22 @@
         Return donnees
     End Function
 
+    'Recuperation ID visiteur Selectionné
+
+    Public Function RecuperationIDVisiteurSelect(nom)
+        Dim donnees
+        Dim SQL As String = "SELECT Compte_rendu.visiteur FROM Compte_rendu INNER JOIN VISITEUR ON VISITEUR.idvis = Compte_rendu.visiteur WHERE Visiteur.nom = '" & nom & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQL
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
+
+        Return donnees
+    End Function
 
 
 
