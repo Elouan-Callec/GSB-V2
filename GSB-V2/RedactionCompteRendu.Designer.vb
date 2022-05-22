@@ -30,6 +30,7 @@ Partial Class RedactionCompteRendu
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ButtonRetour = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBoxEchantillon = New System.Windows.Forms.TextBox()
         Me.ComboBoxMedecin = New System.Windows.Forms.ComboBox()
         Me.TextBoxBilan = New System.Windows.Forms.TextBox()
         Me.ComboBoxMedicament = New System.Windows.Forms.ComboBox()
@@ -41,7 +42,6 @@ Partial Class RedactionCompteRendu
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBoxEchantillon = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -136,6 +136,14 @@ Partial Class RedactionCompteRendu
         Me.GroupBox1.TabIndex = 155
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Réaction d'un compte rendu"
+        '
+        'TextBoxEchantillon
+        '
+        Me.TextBoxEchantillon.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxEchantillon.Location = New System.Drawing.Point(452, 185)
+        Me.TextBoxEchantillon.Name = "TextBoxEchantillon"
+        Me.TextBoxEchantillon.Size = New System.Drawing.Size(336, 22)
+        Me.TextBoxEchantillon.TabIndex = 167
         '
         'ComboBoxMedecin
         '
@@ -248,13 +256,6 @@ Partial Class RedactionCompteRendu
         Me.Label12.Size = New System.Drawing.Size(42, 17)
         Me.Label12.TabIndex = 155
         Me.Label12.Text = "Date"
-        '
-        'TextBoxEchantillon
-        '
-        Me.TextBoxEchantillon.Location = New System.Drawing.Point(452, 185)
-        Me.TextBoxEchantillon.Name = "TextBoxEchantillon"
-        Me.TextBoxEchantillon.Size = New System.Drawing.Size(336, 30)
-        Me.TextBoxEchantillon.TabIndex = 167
         '
         'RedactionCompteRendu
         '
