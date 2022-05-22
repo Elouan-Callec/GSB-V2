@@ -15,7 +15,7 @@
 
         Dim donnees = BDD.SelectionDateCompteRendu(login, idVisiteur)
 
-        For Each donnee As String In donnees
+        For Each donnee As Date In donnees
             ComboBoxCompteRendu.Items.Add("Compte rendu du " & donnee)
             Me.ComboBoxCompteRendu.Text = Me.ComboBoxCompteRendu.Items(0).ToString()
         Next

@@ -3,6 +3,7 @@
         Dim login As String = BDD.afficheLogin()
         Dim idVisiteur = BDD.afficheIdVisiteur(login)
         Dim dte = ProfilVisiteurMedical.ComboBoxCompteRendu.Text.Substring(16, 10)
+        dte = dte.Remove(7, 2)
         Dim donnees As String
 
         'Affichage du nom
