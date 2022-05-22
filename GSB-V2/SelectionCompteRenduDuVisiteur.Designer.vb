@@ -29,6 +29,8 @@ Partial Class SelectionCompteRenduDuVisiteur
         Me.Labelprenom = New System.Windows.Forms.Label()
         Me.Labelnom = New System.Windows.Forms.Label()
         Me.Labelhiérarchieparsecteur = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LabelnomVisiteur = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -98,11 +100,31 @@ Partial Class SelectionCompteRenduDuVisiteur
         Me.Labelhiérarchieparsecteur.TabIndex = 79
         Me.Labelhiérarchieparsecteur.Text = "Hiérarchie :"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(88, 169)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(204, 20)
+        Me.Label1.TabIndex = 81
+        Me.Label1.Text = "Compte Rendu du Visiteur :"
+        '
+        'LabelnomVisiteur
+        '
+        Me.LabelnomVisiteur.AutoSize = True
+        Me.LabelnomVisiteur.Location = New System.Drawing.Point(88, 210)
+        Me.LabelnomVisiteur.Name = "LabelnomVisiteur"
+        Me.LabelnomVisiteur.Size = New System.Drawing.Size(57, 20)
+        Me.LabelnomVisiteur.TabIndex = 82
+        Me.LabelnomVisiteur.Text = "Label2"
+        '
         'SelectionCompteRenduDuVisiteur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(576, 482)
+        Me.Controls.Add(Me.LabelnomVisiteur)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LabelHierarchie)
         Me.Controls.Add(Me.Labelhiérarchieparsecteur)
         Me.Controls.Add(Me.Labelnom)
@@ -126,4 +148,6 @@ Partial Class SelectionCompteRenduDuVisiteur
     Friend WithEvents Labelprenom As Label
     Friend WithEvents Labelnom As Label
     Friend WithEvents Labelhiérarchieparsecteur As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents LabelnomVisiteur As Label
 End Class
