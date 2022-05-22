@@ -85,6 +85,7 @@
     <Compile Include="AffichageCompteRendu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BDD.vb" />
     <Compile Include="ChoixRedacteurCompteRendu.Designer.vb">
       <DependentUpon>ChoixRedacteurCompteRendu.vb</DependentUpon>
     </Compile>
