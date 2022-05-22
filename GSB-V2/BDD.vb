@@ -161,4 +161,22 @@
 
         Return donnees
     End Function
+
+    'Fonction specifique à AffichageActivite
+    Public Function AffichageAciviteSecteur(login)
+        Dim donnees
+        Dim nom = afficheNom(login)
+        Dim SQLafficheSecteur As String = "SELECT SECTEUR.nom FROM SECTEUR INNER JOIN VISITEUR ON visiteur.id_secteur = secteur.id where visiteur.nom = '" & nom & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLafficheSecteur
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
+
+        Return donnees
+    End Function
+
 End Module
