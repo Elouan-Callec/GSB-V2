@@ -202,8 +202,13 @@
             donnees.Add(myReader.GetString(0))
         End While
 
+        myReader.Close()
 
-    'Fonction specifique à AffichageActivite
+        Return donnees
+    End Function
+
+
+    'Fonction specifique a AffichageActivite
     Public Function AffichageAciviteSecteur(login)
         Dim donnees
         Dim nom = afficheNom(login)
@@ -247,7 +252,16 @@
         myCommand.CommandText = SQLselectionMedecins
         myReader = myCommand.ExecuteReader
 
-      
+        While myReader.Read()
+            donnees.Add(myReader.GetString(0))
+        End While
+
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+
     Public Function AffichageCompteRenduDunVisiteurSelectionne(utilisateurselect)
         Dim donnees As New List(Of String)
         Dim SQLCompteRenduVisiteurSelect = "SELECT DTE FROM COMPTE_RENDU INNER JOIN VISITEUR ON visiteur.idvis = Compte_rendu.visiteur WHERE VISITEUR.nom='" & utilisateurselect & "';"
