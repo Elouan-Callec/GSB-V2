@@ -2,8 +2,6 @@
     Public ReadOnly myConnection As New Odbc.OdbcConnection
     Public myCommand As New Odbc.OdbcCommand
     Public myReader As Odbc.OdbcDataReader
-    'Public myAdapter As Odbc.OdbcDataAdapter
-    'Public myBuilder As Odbc.OdbcCommandBuilder
     Dim connString As String
 
     Public Sub connexion()
@@ -30,6 +28,7 @@
 
         resultat = myReader.GetString(0)
         myReader.Close()
+
         Return resultat
     End Function
 
@@ -37,6 +36,21 @@
     Public Function afficheLogin() As String
         Dim login As String = FormulaireConnexion.TextBoxLogin.Text
         Return login
+    End Function
+
+    'Affichage de l id
+    Public Function afficheIdVisiteur(login) As Integer
+        Dim SQLrecupIdVisiteur As String = "SELECT idvis FROM VISITEUR WHERE VISITEUR.login = '" + login + "';"
+        Dim IdVisiteur As Integer
+
+        myCommand.CommandText = SQLrecupIdVisiteur
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+
+        IdVisiteur = myReader.GetValue(0)
+        myReader.Close()
+
+        Return IdVisiteur
     End Function
 
     'Affichage du nom
@@ -51,6 +65,7 @@
 
         nom = myReader.GetValue(0)
         myReader.Close()
+
         Return nom
     End Function
 
@@ -66,6 +81,7 @@
 
         prenom = myReader.GetValue(0)
         myReader.Close()
+
         Return prenom
     End Function
 
@@ -81,6 +97,7 @@
 
         hierarchie = myReader.GetValue(0)
         myReader.Close()
+
         Return hierarchie
     End Function
 
@@ -113,21 +130,10 @@
     End Function
 
     'Selection de la date des comptes rendus
-    Public Function SelectionDateCompteRendu(login)
-        Dim SQLrecupIdVisiteur As String = "SELECT idvis FROM VISITEUR WHERE VISITEUR.login = '" + login + "';"
-        Dim IdVisiteur As Integer
+    Public Function SelectionDateCompteRendu(login, idVisiteur)
         Dim donnees As New List(Of String)
+        Dim SQLafficheDateCompteRendu As String = "SELECT DTE FROM COMPTE_RENDU WHERE visiteur = '" & idVisiteur & "'Order by DTE DESC;"
 
-        'Recuperation de l id de l'utilisateur
-        myCommand.CommandText = SQLrecupIdVisiteur
-        myReader = myCommand.ExecuteReader
-        myReader.Read()
-
-        IdVisiteur = myReader.GetValue(0)
-        myReader.Close()
-
-        'Affichage de la date du compte rendu dans la liste deroulante
-        Dim SQLafficheDateCompteRendu As String = "SELECT DTE FROM COMPTE_RENDU WHERE visiteur = '" & IdVisiteur & "'Order by DTE DESC;"
         myCommand.CommandText = SQLafficheDateCompteRendu
         myReader = myCommand.ExecuteReader
 
@@ -135,6 +141,22 @@
             donnees.Add(myReader.GetString(0))
         End While
 
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+    'Affichage du compte rendu
+    Public Function AffichageCompteRendu(idVisiteur, dte)
+        Dim donnees
+        Dim SQLafficheCompteRendu As String = "SELECT * FROM compte_rendu WHERE visiteur = '" & idVisiteur & "' AND dte = '" & dte & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLafficheCompteRendu
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
         myReader.Close()
 
         Return donnees

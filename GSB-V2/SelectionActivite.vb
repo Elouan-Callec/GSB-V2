@@ -5,7 +5,6 @@
 
     Private Sub SelectionActivite_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim login As String = BDD.afficheLogin()
-        Dim nom As String
 
         'Affichage du nom
         Labelnom.Text = BDD.afficheNom(login)

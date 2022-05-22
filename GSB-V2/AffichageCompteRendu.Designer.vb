@@ -34,9 +34,9 @@ Partial Class AffichageCompteRendu
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Labelcompterendu = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.LabelDate = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.LabelMedicament = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -87,7 +87,7 @@ Partial Class AffichageCompteRendu
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(16, 14)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(52, 64)
         Me.PictureBox1.TabIndex = 143
@@ -164,15 +164,15 @@ Partial Class AffichageCompteRendu
         Me.Labelcompterendu.TabIndex = 149
         Me.Labelcompterendu.Text = "Affichage du compte rendu"
         '
-        'Label7
+        'LabelDate
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(327, 270)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 17)
-        Me.Label7.TabIndex = 165
-        Me.Label7.Text = "Label7"
+        Me.LabelDate.AutoSize = True
+        Me.LabelDate.Location = New System.Drawing.Point(327, 270)
+        Me.LabelDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelDate.Name = "LabelDate"
+        Me.LabelDate.Size = New System.Drawing.Size(51, 17)
+        Me.LabelDate.TabIndex = 165
+        Me.LabelDate.Text = "Label7"
         '
         'Label8
         '
@@ -184,15 +184,15 @@ Partial Class AffichageCompteRendu
         Me.Label8.TabIndex = 166
         Me.Label8.Text = "Label8"
         '
-        'Label9
+        'LabelMedicament
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(327, 410)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(51, 17)
-        Me.Label9.TabIndex = 167
-        Me.Label9.Text = "Label9"
+        Me.LabelMedicament.AutoSize = True
+        Me.LabelMedicament.Location = New System.Drawing.Point(327, 410)
+        Me.LabelMedicament.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelMedicament.Name = "LabelMedicament"
+        Me.LabelMedicament.Size = New System.Drawing.Size(51, 17)
+        Me.LabelMedicament.TabIndex = 167
+        Me.LabelMedicament.Text = "Label9"
         '
         'Label10
         '
@@ -242,9 +242,9 @@ Partial Class AffichageCompteRendu
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.LabelMedicament)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.LabelDate)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label6)
@@ -258,7 +258,7 @@ Partial Class AffichageCompteRendu
         Me.Controls.Add(Me.LabelNom)
         Me.Controls.Add(Me.Labelprenom)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "AffichageCompteRendu"
         Me.Text = "Affichage2CompteRenduVisiteurMedical"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -279,9 +279,9 @@ Partial Class AffichageCompteRendu
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Labelcompterendu As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents LabelDate As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents LabelMedicament As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label

@@ -2,6 +2,7 @@
 
     Private Sub ProfilVisiteurMedical_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim login As String = BDD.afficheLogin()
+        Dim idVisiteur As Integer = BDD.afficheIdVisiteur(login)
 
         'Affichage du nom
         Labelnom.Text = BDD.afficheNom(login)
@@ -12,7 +13,7 @@
         'Affichage de la hierarchie
         LabelHierarchie.Text = BDD.afficheHierarchie(login)
 
-        Dim donnees = BDD.SelectionDateCompteRendu(login)
+        Dim donnees = BDD.SelectionDateCompteRendu(login, idVisiteur)
 
         For Each donnee As String In donnees
             ComboBoxCompteRendu.Items.Add("Compte rendu du " & donnee)
