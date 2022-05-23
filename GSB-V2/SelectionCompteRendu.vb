@@ -28,8 +28,9 @@
         Next
 
     End Sub
-
+    Public ValeurBouton1 As Integer = 0
     Private Sub BoutonAffichage_Click(sender As Object, e As EventArgs) Handles BoutonAffichage.Click
+        ValeurBouton1 = 1
         AffichageCompteRendu.Show()
         Me.Close()
     End Sub
