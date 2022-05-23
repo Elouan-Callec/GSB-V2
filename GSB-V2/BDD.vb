@@ -157,7 +157,16 @@
 
     'Recuperation ID CompteRendu
     Public Function RecuperationIDCompteRendu(idVisiteur, dte)
+        Dim donnees
+        Dim SQL As String = "SELECT id FROM compte_rendu WHERE visiteur = '" & idVisiteur & "' AND dte = TO_DATE('" & dte & "','DD/MM/YY');"
 
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQL
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        donnees = myReader.GetValue(0)
+        myReader.Close()
 
         Return donnees
     End Function
@@ -258,6 +267,8 @@
         myReader.Read()
 
         donnees = myReader.GetValue(0)
+        myReader.Close()
+
     End Function
 
 
