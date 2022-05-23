@@ -16,6 +16,7 @@
         End Try
     End Sub
 
+
     'Verification des informations de connexion
     Public Function verifIdentification(login, password)
         Dim query As String = "SELECT count(*) FROM VISITEUR WHERE login = '" + login + "' AND password = '" + password + "';"
@@ -32,11 +33,13 @@
         Return resultat
     End Function
 
+
     'Affichage du login
     Public Function afficheLogin() As String
         Dim login As String = FormulaireConnexion.TextBoxLogin.Text
         Return login
     End Function
+
 
     'Affichage de l id
     Public Function afficheIdVisiteur(login) As Integer
@@ -52,6 +55,7 @@
 
         Return IdVisiteur
     End Function
+
 
     'Affichage du nom
     Public Function afficheNom(login) As String
@@ -69,6 +73,7 @@
         Return nom
     End Function
 
+
     'Affichage du prenom
     Public Function affichePrenom(login) As String
         Dim prenom As String
@@ -85,6 +90,7 @@
         Return prenom
     End Function
 
+
     'Affichage hierarchie
     Public Function afficheHierarchie(login)
         Dim hierarchie As String
@@ -100,6 +106,7 @@
 
         Return hierarchie
     End Function
+
 
     'Selection du nom des visiteurs
     Public Function SelectionNomVisiteur(login)
@@ -129,6 +136,7 @@
         Return donnees
     End Function
 
+
     'Selection de la date des comptes rendus
     Public Function SelectionDateCompteRendu(login, idVisiteur)
         Dim donnees As New List(Of String)
@@ -146,8 +154,14 @@
         Return donnees
     End Function
 
+
     'Recuperation ID CompteRendu
     Public Function RecuperationIDCompteRendu(idVisiteur, dte)
+
+
+    'Affichage du compte rendu
+    Public Function AffichageCompteRendu(idVisiteur, dte)
+
         Dim donnees
         Dim SQL As String = "SELECT id FROM compte_rendu WHERE visiteur = '" & idVisiteur & "' AND dte = TO_DATE('" & dte & "','DD/MM/YY');"
 
@@ -161,6 +175,7 @@
 
         Return donnees
     End Function
+
 
     'Affichage Bilandesc du CompteRENDU
     Public Function AfficheBilan(idCompteRendu)
@@ -189,10 +204,26 @@
         myReader.Read()
 
         donnees = myReader.GetValue(0)
+
+  
+    'Selection des motifs
+    Public Function SelectionMotifs(login, dte)
+        Dim donnees As New List(Of String)
+        Dim SQLselectionMotifs As String = "SELECT nom FROM motif"
+
+        myCommand.CommandText = SQLselectionMotifs
+        myReader = myCommand.ExecuteReader
+
+        While myReader.Read()
+            donnees.Add(myReader.GetString(0))
+        End While
+
+
         myReader.Close()
 
         Return donnees
     End Function
+
 
     'Affichage Medicament du CompteRENDU
     Public Function AfficheMedicament(idCompteRendu)
@@ -221,10 +252,26 @@
         myReader.Read()
 
         donnees = myReader.GetValue(0)
+
+
+    'Selection du nom des motifs
+    Public Function SelectionMotifs()
+        Dim donnees As New List(Of String)
+        Dim SQLselectionMotifs As String = "SELECT nom FROM motif"
+
+        myCommand.CommandText = SQLselectionMotifs
+        myReader = myCommand.ExecuteReader
+
+        While myReader.Read()
+            donnees.Add(myReader.GetString(0))
+        End While
+
+
         myReader.Close()
 
         Return donnees
     End Function
+
 
     'AffichageMedecin du CompteRendu
     Public Function AfficheMedecinduCompteRendu(idCompteRendu)
@@ -261,7 +308,8 @@
 
 
 
-    'Fonction specifique à AffichageActivite
+    'Fonction specifique a AffichageActivite
+
     Public Function AffichageAciviteSecteur(login)
         Dim donnees
         Dim nom = afficheNom(login)
@@ -282,7 +330,40 @@
 
 
 
+    'Selection des medicaments
+    Public Function SelectionMedicaments()
+        Dim donnees As New List(Of String)
+        Dim SQLselectionMedicaments As String = "SELECT nommedoc FROM medicament"
 
+        myCommand.CommandText = SQLselectionMedicaments
+        myReader = myCommand.ExecuteReader
+
+        While myReader.Read()
+            donnees.Add(myReader.GetString(0))
+        End While
+
+        myReader.Close()
+
+        Return donnees
+    End Function
+
+
+    'Selection des medecins
+    Public Function SelectionMedecins()
+        Dim donnees As New List(Of String)
+        Dim SQLselectionMedecins As String = "SELECT nom FROM medecin"
+
+        myCommand.CommandText = SQLselectionMedecins
+        myReader = myCommand.ExecuteReader
+
+        While myReader.Read()
+            donnees.Add(myReader.GetString(0))
+        End While
+
+        myReader.Close()
+
+        Return donnees
+    End Function
 
 
     Public Function AffichageCompteRenduDunVisiteurSelectionne(utilisateurselect)
@@ -302,4 +383,72 @@
 
         Return donnees
     End Function
+
+
+    'Selection de l id du motif
+    Public Function SelectionIdMotif(nomMotif)
+        Dim idMotif As String
+        Dim SQLselectionIdMotif As String = "SELECT id FROM motif WHERE nom = '" & nomMotif & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLselectionIdMotif
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        idMotif = myReader.GetValue(0)
+        myReader.Close()
+
+        Return idMotif
+    End Function
+
+
+    'Selection de l id du medecin
+    Public Function SelectionIdMedecin(nomMedecin)
+        Dim idMedecin As String
+        Dim SQLselectionIdMedecin As String = "SELECT id FROM medecin WHERE nom = '" & nomMedecin & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLselectionIdMedecin
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        idMedecin = myReader.GetValue(0)
+        myReader.Close()
+
+        Return idMedecin
+    End Function
+
+
+    'Selection de l id du medecin
+    Public Function SelectionIdMedicament(nomMedicament)
+        Dim idMedicament As String
+        Dim SQLselectionIdMedicament As String = "SELECT idmedoc FROM medicament WHERE nommedoc = '" & nomMedicament & "';"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLselectionIdMedicament
+        myReader = myCommand.ExecuteReader()
+        myReader.Read()
+
+        idMedicament = myReader.GetValue(0)
+        myReader.Close()
+
+        Return idMedicament
+    End Function
+
+
+    'Insertion d un compte rendu
+    Public Function InsertionCompteRendu(medecin, visiteur, bilandesc, dte, qteMedoc, medicament, motif)
+        Dim resultat
+        Dim SQLinsertionCompteRendu As String = "INSERT INTO compte_rendu (MEDECIN, VISITEUR, BILANDESC, DTE, QTE_MEDOC, MEDIC, MOTIF) VALUES ('" & medecin & "', '" & visiteur & "', '" & bilandesc & "', TO_DATE('" & dte & "','DD/MM/YY'), '" & qteMedoc & "', '" & medicament & "', '" & motif & "');"
+
+        myCommand.Connection = myConnection
+        myCommand.CommandText = SQLinsertionCompteRendu
+        myReader = myCommand.ExecuteReader()
+
+        resultat = myReader
+        myReader.Close()
+
+        Return resultat
+    End Function
+
 End Module
