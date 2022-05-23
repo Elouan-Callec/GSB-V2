@@ -35,7 +35,9 @@
         Me.Close()
     End Sub
 
+    Public ValeurBouton2 As Integer = 0
     Private Sub BoutonModifier_Click(sender As Object, e As EventArgs) Handles BoutonModifier.Click
+        ValeurBouton2 = 1
         ModificationCompteRendu.Show()
         Me.Close()
     End Sub
