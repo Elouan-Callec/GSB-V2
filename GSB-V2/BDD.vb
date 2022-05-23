@@ -159,6 +159,10 @@
     Public Function RecuperationIDCompteRendu(idVisiteur, dte)
 
 
+        Return donnees
+    End Function
+
+
     'Affichage du compte rendu
     Public Function AffichageCompteRendu(idVisiteur, dte)
 
@@ -204,8 +208,10 @@
         myReader.Read()
 
         donnees = myReader.GetValue(0)
+        Return donnees
+    End Function
 
-  
+
     'Selection des motifs
     Public Function SelectionMotifs(login, dte)
         Dim donnees As New List(Of String)
@@ -231,7 +237,7 @@
         Dim SQL As String = "SELECT Medic FROM compte_rendu WHERE ID = " & idCompteRendu & ";"
 
         myCommand.Connection = myConnection
-        myCommand.CommandText = Sql
+        myCommand.CommandText = SQL
         myReader = myCommand.ExecuteReader()
         myReader.Read()
 
@@ -252,6 +258,7 @@
         myReader.Read()
 
         donnees = myReader.GetValue(0)
+    End Function
 
 
     'Selection du nom des motifs
