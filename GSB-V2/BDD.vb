@@ -206,6 +206,7 @@
         Return donnees
     End Function
 
+
     'Affichage QTE_MEDOC du CompteRENDU
     Public Function AfficheQTE_Medoc(idCompteRendu)
         Dim donnees
@@ -217,6 +218,8 @@
         myReader.Read()
 
         donnees = myReader.GetValue(0)
+        myReader.Close()
+
         Return donnees
     End Function
 
