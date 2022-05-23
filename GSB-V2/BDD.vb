@@ -256,6 +256,7 @@
         Return donnees
     End Function
 
+
     'AffichageMotif du CompteRENDU
     Public Function AfficheMotifduCompteRendu(idCompteRendu)
         Dim donnees
@@ -269,6 +270,7 @@
         donnees = myReader.GetValue(0)
         myReader.Close()
 
+        Return donnees
     End Function
 
 
